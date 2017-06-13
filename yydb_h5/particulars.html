@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>详情页</title>
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+	<meta name="format-detection" content="telephone=no"/>
+	<link rel="stylesheet" href="css/apple.css">
+	<link rel="stylesheet" href="css/total.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/swiper.jquery.min.js"></script>
+</head>
+<body style="background-color: #f5f5f5;">
+	<div class="banner">
+		<div class="nav_white">
+			<p class="nav_white_bg"></p>
+			<span class="getback"></span>
+			<span class="getHome"></span>
+		</div>
+		<div class="swiper-container banner-container">
+			<div class="swiper-wrapper">
+				<a class="swiper-slide" href="#1"><img class="swiper-img" src="" alt="Slide 1"></a>
+				<a class="swiper-slide" href="#2"><img class="swiper-img" src="" alt="Slide 2"></a>
+				<a class="swiper-slide" href="#3"><img class="swiper-img" src="" alt="Slide 3"></a>
+				<a class="swiper-slide" href="#3"><img class="swiper-img" src="" alt="Slide 4"></a>
+			</div>
+			<!-- Add Pagination -->
+			<div class="swiper-pagination"></div>
+		</div>
+	</div>
+	<div class="dmessage">
+		<div class="dmessage_title">
+			<span class="state">进行中</span>
+			<span class="text">商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品</span>
+		</div>
+		<p class="idname">期号：<span>753948</span></p>
+		<div class="progressbar"><div class="progressbar_sublevel"></div></div>
+		<div class="share">
+			<span>已购买：200</span>
+			<span>总需：328</span>
+			<span>剩余：128</span>
+		</div>
+	</div>
+	<ul class="ddetails">
+		<li>图文详情</li>
+		<li>往期揭晓</li>
+		<li>往期晒单</li>
+	</ul>
+	<div class="papn">
+		<h3>本期参与者</h3>
+		<ul class="papn_ul">
+			<li>
+				<div class="papn_her"><img src="images/image.png" alt=""></div>
+				<div class="papn_div">
+					<p>用户名字用户名字用户名字</p>
+					<p>湖南 IP:223.146.123.223</p>
+					<p>参与时间：2016-12-06 14：17：25</p>
+					<p>本期购买：<span>10</span>人次</p>
+				</div>
+			</li>
+			<li>
+				<div class="papn_her"><img src="images/image.png" alt=""></div>
+				<div class="papn_div">
+					<p>用户名字用户名字用户名字</p>
+					<p>湖南 IP:223.146.123.223</p>
+					<p>参与时间：2016-12-06 14：17：25</p>
+					<p>本期购买：<span>10</span>人次</p>
+				</div>
+			</li>
+			<li>
+				<div class="papn_her"><img src="images/image.png" alt=""></div>
+				<div class="papn_div">
+					<p>用户名字用户名字用户名字</p>
+					<p>湖南 IP:223.146.123.223</p>
+					<p>参与时间：2016-12-06 14：17：25</p>
+					<p>本期购买：<span>10</span>人次</p>
+				</div>
+			</li>
+			<li>
+				<div class="papn_her"><img src="images/image.png" alt=""></div>
+				<div class="papn_div">
+					<p>用户名字用户名字用户名字</p>
+					<p>湖南 IP:223.146.123.223</p>
+					<p>参与时间：2016-12-06 14：17：25</p>
+					<p>本期购买：<span>10</span>人次</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="nav purchase">
+		<div class="purchase_l">
+			<span class="circle">-</span>
+			<span id="sum">1</span>
+			<span class="circle cur">+</span>
+		</div>
+		<div id="but_01" class="purchase_but fl" style="margin-left:0.05rem;"><span>包尾</span></div>
+		<p>共<span id="money">1</span>金币</p>
+		<div class="purchase_but fr"><span>立即购买</span></div>
+	</div>
+<script src="js/total.js"></script>
+<script>
+    //	轮播图
+    var swiper = new Swiper('.banner-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        autoplay:4000,
+
+    });
+</script>
+</body>
+</html>

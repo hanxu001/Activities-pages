@@ -1,0 +1,156 @@
+.m-cashier {
+	padding: 38px 0 64px;
+	line-height: 2;
+}
+
+.m-cashier-main {
+	background: #fff;
+	border-bottom: 1px solid #d5d5d5;
+	padding: 0 10px;
+	margin-bottom: 15px;
+}
+
+.m-cashier-info {
+	margin-bottom: 10px;
+	padding: 20px 0;
+	font-size: 16px;
+	text-align: center;
+	background: #fff;
+	border-bottom: 1px solid #D5D5D5;
+}
+
+.m-cashier .title {
+	font-size: 24px;
+	margin-bottom: 15px;
+}
+
+.m-cashier .title .icon {
+	margin-right: 10px;
+}
+
+.m-cashier-button {
+	position: fixed;
+	z-index: 9;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 14px;
+	text-align: center;
+	background: #fff
+}
+
+.m-cashier-button .w-button {
+	width: 100%;
+}
+
+.m-cashier .tips {
+	margin-top: 5px;
+	padding: 0 14px;
+}
+
+.m-cashier .w-pay-selector {
+	font-size: 12px;
+}
+
+.m-cashier-recharge {
+	padding-bottom: 58px
+}
+
+.embed .m-cashier,.embed .m-simpleBody {
+	padding-top: 0;
+}
+
+.embed .m-simpleHeader {
+	display: none
+}
+.chongzhi{
+	overflow: hidden;
+	padding:10px;
+	border-bottom: 1px solid #E8E8E8;
+	margin-top: 38px;
+	font-size: 12px;
+}
+.chongzhi .cz-left{
+	float: left;
+}
+.chongzhi .cz-left span{
+	font-size: 14px;
+	margin-left: 10px;
+}
+.chongzhi .cz-right{
+	float: right;
+}
+.cz-title{
+	text-align: center;
+	font-size: 12px;
+	color: #999;
+}
+.pay-list{
+	padding:10px;
+}
+.pay-list li{
+	background: url(../images/select.png) no-repeat 94% center;
+	padding:10px 0px;
+	border-bottom: 1px solid #EDEDED;
+}
+.pay-list .selected{
+	background: url(../images/selected.png) no-repeat 94% center;
+}
+.pay-list li i{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background: url(../images/pay-list.png) no-repeat;
+	background-size: 100%;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.pay-list .wx{
+	background-position: 0px 0px;
+}
+.pay-list .zfb{
+	background-position: 0px -57px;
+}
+.cz-jilut{
+	padding:20px 10px;
+	text-align: center;
+}
+.cz-jilut .cz-pic{
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	border:2px solid #E23A3A;
+	overflow: hidden;
+	margin:0 auto;
+}
+.cz-jilut .cz-pic img{
+	width: 100%;
+}
+.cz-jilut h3{
+	margin-top: 6px;
+}
+.cz-jilulist{
+    
+}
+.cz-jilulist h3{
+    background: #F7F7F7;
+    padding:10px;
+    color: #232323;
+}
+.cz-jilulist .jilu-list{
+    overflow: hidden;
+    border-bottom: 1px solid #E8E8E8;
+    padding:10px;
+}
+.cz-jilulist .jilu-list .jl-left{
+    float: left;
+    color: #343434;
+}
+.jilu-list .jl-left p:last-child{
+    color: #999;
+    font-size: 12px;
+}
+.cz-jilulist .jilu-list .jl-right{
+    float: right;
+    margin-top: 10px;
+}

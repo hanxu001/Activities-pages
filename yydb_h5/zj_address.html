@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="background:#fff;">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>地址 - 1元夺宝</title>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width">
+    <meta content="telephone=no" name="format-detection">
+    <link rel="stylesheet" href="css/zjzt.css">
+    <link rel="stylesheet" href="css/zhongjiang.css">
+    <script type="text/javascript" src="js/jqbase.js"></script>
+</head>
+<body>
+	<div class="nav" style="position: relative;"><em class="back" style="width: 15px;height: 20px;background: url(images/icon_title_back_black.png);background-size: 100% 100%;position: absolute;left: 10px;top: 10px;"></em>收货地址</div>
+    <div class="address-wrap">
+        <p>上海闵行区宝城路159弄23好909</p>
+        <p>
+            <span class="txt-hui">妹子</span>
+            <span class="txt-blue">15656895235</span>
+        </p>
+    </div>
+    <div class="address-list">
+        <span class="txt-red btn-left">
+            <i class="moren01 moren"></i>
+            默认地址
+        </span>
+        <p class="btn-right">
+            <a href="#">
+                <i class="edit"></i>编辑
+            </a>
+            <a href="#" class="delete-a">
+                <i class="delete"></i>删除
+            </a>
+        </p>
+    </div>
+    <div class="address-wrap">
+        <p>上海闵行区宝城路159弄23好909</p>
+        <p>
+            <span class="txt-hui">妹子</span>
+            <span class="txt-blue">15656895235</span>
+        </p>
+    </div>
+    <div class="address-list">
+        <span class="txt-red btn-left">
+            <i class="moren01"></i>
+            默认地址
+        </span>
+        <p class="btn-right">
+            <a href="#">
+                <i class="edit"></i>编辑
+            </a>
+            <a href="#" class="delete-a">
+                <i class="delete"></i>删除
+            </a>
+        </p>
+    </div>
+    <script>
+        $(function(){
+            $(".btn-left").each(function(){
+                $(this).click(function(){
+                    $(this).find(".moren01").addClass("moren").parents('.address-list').siblings().find(".moren01").removeClass("moren");
+                })
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>夺宝记录</title>
+	<meta name="description" content="1元夺宝">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width">    
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/geren.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jqbase.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/qiehuan.js"></script>
+</head>
+<body style="background:#fff;">
+    <div class="mine-top">
+        <div class="mine-shpic">
+            <img src="images/35a42384c221bc02a2baa26a25156aae_40.jpeg" alt="" id="file_img01">
+        </div>
+        <input type="file" class="file_input01" multiple="multiple" accept="image/*">
+        <h3 class="txt-blue">点击修改头像</h3>
+    </div>
+    <div class="mine-wrap">
+        <div class="wrap-list">
+            <span>用户名字</span>
+            <b>水电费家欧式的</b>
+        </div>
+        <div class="wrap-list">
+            <span>手机号码</span>
+            <b>18365321562</b>
+        </div>
+        <div class="wrap-list">
+            <span>性别</span>
+            <ul>
+                <li class="sex-selected">先生</li>
+                <li>女士</li>
+            </ul>
+        </div>
+    </div>
+    <div class="cz-jilulist">
+        <h3>消费记录</h3>
+        <div class="jilu-list">
+            <div class="jl-left">
+                <p>充值</p>
+                <p>2016-07-08 9:12:09</p>
+            </div>
+            <div class="jl-right txt-red">+50</div>
+        </div>
+        <div class="jilu-list">
+            <div class="jl-left">
+                <p>充值</p>
+                <p>2016-07-08 9:12:09</p>
+            </div>
+            <div class="jl-right txt-red">+50</div>
+        </div>
+        <div class="jilu-list">
+            <div class="jl-left">
+                <p>充值</p>
+                <p>2016-07-08 9:12:09</p>
+            </div>
+            <div class="jl-right txt-red">+50</div>
+        </div>
+        <div class="jilu-list">
+            <div class="jl-left">
+                <p>充值</p>
+                <p>2016-07-08 9:12:09</p>
+            </div>
+            <div class="jl-right txt-red">+50</div>
+        </div>
+    </div>
+    <div class="pub-btn">
+        <a href="#">保存</a>
+    </div>
+    <script>
+        $(function(){
+            $(".wrap-list ul li").each(function(){
+                $(this).click(function(){
+                    $(this).addClass("sex-selected").siblings().removeClass("sex-selected");
+                })
+            })
+
+             // 上传照片开始
+            $(".file_input01").change(function(){
+                var objUrl = getObjectURL(this.files[0]) ;
+                console.log("objUrl = "+objUrl);
+                if (objUrl) {
+                    $("#file_img01").attr("src", objUrl) ;
+                }
+            }) ;
+            //建立一個可存取到該file的url
+            function getObjectURL(file) {
+                var url = null ; 
+                if (window.createObjectURL!=undefined) { // basic
+                    url = window.createObjectURL(file) ;
+                } else if (window.URL!=undefined) { // mozilla(firefox)
+                    url = window.URL.createObjectURL(file) ;
+                } else if (window.webkitURL!=undefined) { // webkit or chrome
+                    url = window.webkitURL.createObjectURL(file) ;
+                }
+                return url ;
+            }
+            // 上传照片结束
+        })
+    </script>
+</body></html>

@@ -1,0 +1,126 @@
+html,body{
+	background: #E9E9E9;
+}
+.nav{
+	background: #FE2764;
+	width:100%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #FFFFFF;
+}
+.zj-list{
+	background: #fff;
+    padding-top: 2px;
+}
+.zhongjiang{
+	position: relative;
+}
+.zhongjiang .zj-xy{
+	position: absolute;
+    top: 12px;
+    right: 0px;
+    width: 90px;
+}
+.no-border {
+    border: none !important;
+}
+.zj-bg{
+	background: #F3F2F8;
+}
+.zj-bottom{
+	background: #fff;
+	height: 40px;
+	line-height: 40px;
+	text-align: right;
+	padding-right: 10px;
+}
+.zj-bottom i{
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background: url(../images/zj.png) no-repeat;
+	background-size: 100%;
+	background-position: 5px 1px;
+	vertical-align: middle;
+}
+.zj-bottom .sd{
+	background: url(../images/zj.png) no-repeat !important;
+	background-size: 100% !important;
+	background-position: 5px -22px !important;
+}
+.zj-bottom a{
+    background: #E43A3D;
+    display: inline-block;
+    width: 80px;
+    height: 28px;
+    line-height: 28px;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 13px;
+}
+.jx-bottom{
+	background: #fff;
+	height: 40px;
+	line-height: 40px;
+	padding:0px 10px;
+	overflow: hidden;
+}
+.jx-bottom a{
+	background: #E43A3D;
+    display: inline-block;
+    width: 80px;
+    height: 28px;
+    line-height: 28px;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 13px;
+    float: right;
+    margin-top: 6px;
+}
+.jx-bottom span{
+	font-size: 12px;
+	float: left;
+	display: inline-block;
+}
+.jx-bottom span:first-child{
+	width: 40%;
+	overflow: hidden;
+}
+.jx-bottom .cy{
+	width: 30%;
+	text-align: center;
+	overflow: hidden;
+}
+.jxz-bottom{
+	background: #fff;
+	position: relative;
+	padding: 10px 10px 1px 10px;
+}
+.jxz-bottom .w-progressBar {
+    margin-right: 100px;
+}
+.jxz-bottom .w-progressBar .txt {
+    margin-bottom: 6px;
+    font-size: 12px;
+    color: #FF249D;
+}
+.jxz-bottom .w-progressBar .txt strong {
+    color: #FF249D;
+}
+.jxz-bottom .jxz-a{
+	position: absolute;
+	right: 10px;
+	top: 13px;
+	background: #E43A3D;
+    display: inline-block;
+    width: 80px;
+    height: 28px;
+    line-height: 28px;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 13px;
+}

@@ -1,0 +1,281 @@
+html {
+	-overflow-y: scroll;
+	max-width: 640px;
+	margin:0 auto;
+}
+
+body {
+	background: #f7f7f7;
+	color: #666;
+	font-size: 14px;
+	line-height: 1.666;
+	-webkit-text-size-adjust: none;
+	max-width: 640px;
+	margin:0 auto;
+}
+
+body,input,textarea {
+	font-family: arial;
+}
+
+article,aside,blockquote,body,dd,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,legend,li,menu,nav,ol,p,pre,section,table,td,th,ul {
+	margin: 0;
+	padding: 0;
+}
+
+fieldset,img,table,td,th {
+	border: 0;
+}
+
+address,caption,cite,code,dfn,em,i,ins,mark,meter,output,th,time,var {
+	text-decoration: none;
+	font-style: normal;
+}
+
+h1,h2,h3,h4,h5,h6,th {
+	font-weight: 400;
+	font-size: 100%;
+}
+
+button,input,select,table,textarea {
+	margin: 0;
+	font-size: 100%;
+	font-family: inherit;
+}
+
+abbr,acronym {
+	border: 0;
+	font-variant: normal;
+}
+
+q:after,q:before {
+	content: "";
+}
+
+ol,ul {
+	list-style: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+caption,th {
+	text-align: left;
+}
+
+article,aside,figcaption,figure,footer,header,hgroup,nav,section {
+	display: block;
+}
+
+a {
+	outline: 0;
+	color: #0079fe;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+img {
+	display: block;
+}
+
+input {
+	-webkit-appearance: none;
+}
+.zjzt-top{
+	padding:10px;
+	overflow: hidden;
+	display: -webkit-box;
+	display: box;
+	background: #fff;
+}
+.zjzt-top .zjzt-pic{
+	width: 70px;
+	height: 70px;
+	overflow: hidden;
+}
+.zjzt-top .zjzt-pic img{
+	width: 70px;
+}
+.zjzt-top .zjzt-txt{
+	margin-left: 10px;
+	-webkit-box-flex: 1;
+	box-flex: 1;
+}
+.txt-hui{
+	color: #999;
+	font-size: 12px;
+}
+.txt-red {
+	color: #E33A3C;
+	font-size: 12px;
+}
+.txt-blue {
+	color: #0079fe;
+}
+.txt-orange {
+	color: #FF9500;
+	font-size: 12px;
+}
+.mt-10{
+	margin-top: 10px;
+}
+.zjzt-code{
+	margin-top: 10px;
+	background: #fff;
+	padding:10px;
+}
+.zjzt-main{
+	background: #fff;
+	padding:15px; 
+	margin-top: 10px;
+}
+.zjzt-main .line{
+	border-left: 1px solid #CBCBCB;
+	position: relative;
+	height: 30px;
+	float: left;
+	margin-left: 8px;
+    margin-top: 5px;
+}
+.zjzt-main ul li{
+	overflow: hidden;
+	margin-top: -5px;
+}
+.zjzt-main ul li p{
+	margin-left: 20px;
+	float: left;
+	width: 70%;
+}
+.zjzt-main ul li b{
+	font-weight: normal;
+}
+.zjzt-main ul li span{
+	float: right;
+	font-size: 12px;
+}
+.zjzt-main .line i{
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background: url(../images/dian.png) no-repeat;
+	background-size: 100%;
+	background-position: 0px 0px;
+	position: absolute;
+	left: -13px;
+    top: -10px;
+}
+.red-dian{
+	background: url(../images/red-dian.png) no-repeat !important;
+	background-size: 100% !important;
+	background-position: 0px 0px !important;
+}
+.zjzt-main .name{
+	color: #999;
+	font-size: 10px;
+}
+.zjzt-main .name b{
+	font-weight: normal;
+}
+.height-80{
+	height: 80px !important;
+}
+.height-160{
+	height: 160px !important;
+}
+.addbtn{
+	float: right;
+	margin-top: 10px;
+}
+.address-btn{
+	display: inline-block;
+	width: 70px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	background: #E43A3D;
+	color: #fff;
+	border-radius: 5px;
+	font-size: 13px;
+}
+.hui-btn{
+	box-sizing:border-box;
+	background: #fff !important;
+	border:1px solid #999999;
+	color: #999;
+	margin-left: 15px;
+}
+.address-wrap{
+	background: #fff;
+	padding:10px;
+	border-bottom: 1px solid #E6E6E6;
+}
+.address-wrap p{
+	color: #333;
+}
+.address-list{
+	overflow: hidden;
+	padding:10px;
+	background: #fff;
+}
+.address-list i{
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	background: url(../images/delete.png) no-repeat;
+	background-size: 100%;
+	vertical-align: middle;
+}
+.address-list .delete{	
+	background-position: 1px 2px;
+}
+.address-list .edit{	
+	background-position: 1px -23px;
+}
+.address-list .moren{
+	background-position: 0px -47px !important;
+}
+.address-list .moren01{
+	background-position: 0px -72px;
+}
+.address-list .btn-left{
+	float: left;
+}
+.address-list .btn-right{
+	float: right;
+}
+.address-list .btn-right a{
+	display: inline-block;
+	width: 60px;
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+	color: #fff;
+	background: #2DC54D;
+	border-radius: 5px;
+}
+.address-list .delete-a{
+	background: #E43A3D !important;
+}
+.pub-btn{
+	text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    background: #fff;
+}
+.pub-btn a{
+	display: inline-block;
+    width: 80%;
+    margin: 0 auto;
+    height: 40px;
+    line-height: 40px;
+    background-color: #E43A3D;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+}
