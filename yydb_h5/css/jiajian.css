@@ -1,0 +1,183 @@
+@charset "utf8";
+
+.quantity, .quantity .txt, .quantity button{
+    vertical-align: middle
+}
+.quantity, .quantity .minus {
+    position: relative
+}
+
+.quantity, .tag {
+    display: inline-block
+}
+
+.quantity .txt, .quantity button, .tag {
+    margin: 0;
+    text-align: center
+}
+
+.quantity {
+    font-size: 0
+}
+
+.quantity input[type=number]::-webkit-outer-spin-button {
+    margin: 0
+}
+
+.quantity button {
+    border: 2px solid #eee;
+    font-size: 16px;
+    line-height: 10px;
+    font-weight: 700;
+    color: #666;
+    padding: 5px;
+    outline: 0 !important;
+    width: 26px;
+    height: 30px;
+    text-indent: -9999px;
+    overflow: hidden
+}
+
+.quantity .txt {
+    font-size: 14px;
+    width: 24px;
+    height: 18px;
+    -webkit-tap-highlight-color: transparent;
+    border-radius: 0
+}
+.quantity .minus::before, .quantity .plus::before {
+    width: 8px;
+    height: 2px;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #6c6c6c;
+    bottom: 0;
+    content: ''
+}
+
+.quantity .txt:focus {
+    border-color: #eee
+}
+
+.quantity .minus {
+    border-radius: 4px 0 0 4px;
+    border-right: 0 none
+}
+
+.quantity .minus::before {
+    position: absolute
+}
+
+.quantity .plus {
+    position: relative;
+    border-left: 0 none;
+    border-radius: 0 4px 4px 0
+}
+
+.quantity .plus::before {
+    position: absolute
+}
+
+.quantity .plus::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    content: '';
+    width: 2px;
+    height: 8px;
+    background-color: #6c6c6c
+}
+
+.quantity .minus.disabled::before, .quantity .plus.disabled::after, .quantity .plus.disabled::before {
+    background-color: #ddd
+}
+
+.quantity .response-area {
+    width: 42px;
+    height: 42px;
+    top: -7px;
+    position: absolute
+}
+
+.quantity .response-area-plus {
+    right: -5px
+}
+
+.quantity .response-area-minus {
+    left: -5px
+}
+.quantity {
+    float: right
+}
+
+.quantity .minus {
+    border:1px solid #4d4d4d !important;
+}
+
+.quantity .minus.disabled {
+    background-color: #f8f8f8;
+    border-color: #e8e8e8 #999 #e8e8e8 #e8e8e8
+}
+
+.quantity .minus.disabled::before {
+    background-color: #bbb
+}
+
+.quantity .plus {
+}
+
+.quantity .plus.disabled {
+    background-color: #f8f8f8;
+    border-color: #e8e8e8 #e8e8e8 #e8e8e8 #999
+}
+
+.quantity .plus.disabled::after, .quantity .plus.disabled::before {
+    background-color: #bbb
+}
+
+.quantity .txt {
+    width: 33px;
+    height: 25px;
+    padding: 1px;
+    border-width: 0px 0;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    color: #4d4d4d
+}
+
+.quantity .txtCover {
+    position: absolute;
+    top: 0;
+    left: 37px;
+    bottom: 0;
+    right: 37px
+}
+
+.quantity .minus, .quantity .plus {
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    border: 1px solid #fc0048;
+    border-radius: 50%;
+}
+
+.quantity .minus::before, .quantity .plus::before {
+    height: 1px;
+    width: 9px;
+    background-color: #666
+}
+
+.quantity .minus::after, .quantity .plus::after {
+    width: 1px;
+    height: 9px;
+    background-color: #666
+}
+
+
+

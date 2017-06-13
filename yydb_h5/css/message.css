@@ -1,0 +1,51 @@
+.mess-list {
+    overflow: hidden;
+    padding:10px;
+}
+
+.mess-list .text-right {
+    float: left;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid #E33B3B;
+    margin-top: 5px;
+}
+.mess-list .text-right img{
+	width: 100%;
+}
+.lt-picWrap {
+	width: 66%;
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.send-time{
+	background: #EAEAEA;
+	width: 100px;
+	margin:0 auto;
+	text-align: center;
+	border-radius: 5px;
+}
+.send {
+    position: relative;
+    background-color: #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    padding: 10px 10px;
+    text-align: left;
+}
+
+.send .arrow {
+    position: absolute;
+    top: 5px;
+    left: -16px;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    border: solid 8px;
+    border-color: #F7F7F7 #fff #F7F7F7 #F7F7F7;
+}

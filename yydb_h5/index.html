@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+	<meta name="format-detection" content="telephone=no"/>
+	<link rel="stylesheet" href="css/apple.css">
+	<link rel="stylesheet" href="css/total.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/swiper.jquery.min.js"></script>
+</head>
+<body style="background-color: #f5f5f5;">
+	<!--广告条-->
+	<div class="ad">
+		<div	 class="ad-btn">
+			<img src="images/ad/loadApp.png" alt=""/>
+		</div>
+		<div class="ad-xx">
+			<img src="images/ad/X.png" alt="" />
+		</div>
+	</div>
+	<!--title-->
+	<div class="header">
+		<div class="header_logo"></div>
+	</div>
+	<!--轮播图-->
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<a class="swiper-slide" href="#1"><img class="swiper-img" src="" alt="Slide 1"></a>
+			<a class="swiper-slide" href="#2"><img class="swiper-img" src="" alt="Slide 2"></a>
+			<a class="swiper-slide" href="#3"><img class="swiper-img" src="" alt="Slide 3"></a>
+			<a class="swiper-slide" href="#3"><img class="swiper-img" src="" alt="Slide 4"></a>
+		</div>
+		<!-- Add Pagination -->
+		<div class="swiper-pagination"></div>
+	</div>
+	<!--活动、充值、签到、帮助-->
+	<div class="activity_nav">
+		<ul class="activity_ul">
+			<li class="activity_li">
+				<a href="#">
+					<img class="activity_li_img" src="images/activity@2x.png" alt="活动">
+					<span class="activity_li_text">活动</span>
+				</a>
+			</li>
+			<li class="activity_li">
+				<a href="#">
+					<img class="activity_li_img" src="images/recharge@2x.png" alt="充值">
+					<span class="activity_li_text">充值</span>
+				</a>
+			</li>
+			<li class="activity_li">
+				<a href="#">
+					<img class="activity_li_img" src="images/sign-in@2x.png" alt="签到">
+					<span class="activity_li_text">签到</span>
+				</a>
+			</li>
+			<li class="activity_li">
+				<a href="#">
+					<img class="activity_li_img" src="images/help@2x.png" alt="帮助">
+					<span class="activity_li_text">帮助</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<!--跑马灯-->
+	<div class="marquees">
+		<img class="marquees_logo" src="images/top-line@2x.png" alt="夺宝头条">
+		<div class="marquees-container">
+			<ul class="swiper-wrapper">
+				<li class="swiper-slide swiper-no-swiping marquees_div">恭喜<span class="marquees_blue">微信用户xuyiminl 125</span>获得<i class="marquees_back">商品名字商品名字商品名字商品名字商品名字商</i></li>
+				<li class="swiper-slide swiper-no-swiping marquees_div">恭喜<span class="marquees_blue">微信用户fsfse</span>获得<i class="marquees_back">iPhone 7p</i></li>
+				<li class="swiper-slide swiper-no-swiping marquees_div">恭喜<span class="marquees_blue">用户xuyiminl 125</span>获得<i class="marquees_back">iPhone 7p</i></li>
+			</ul>
+		</div>
+	</div>
+	<!--最新揭晓-->
+	<div class="announce">
+		<div class="announce_top">
+			<p class="announce_top_text">最新揭晓</p>
+		</div>
+		<div class="announce_con">
+			<ul class="announce_ul">
+				<li class="announce_li">
+					<a href="#">
+						<img class="announce_img" src="images/activity@2x.png" alt="">
+						<div id="countDown1" class="announce_text">
+							<p class="center"><span class="marquees_back">恭喜</span>啦啦啦...啦啦啦</p>
+						</div>
+					</a>
+				</li>
+				<li class="announce_li">
+					<a href="#">
+						<img class="announce_img" src="images/activity@2x.png" alt="">
+						<div id="countDown2" class="announce_text">
+							<p class="center"><span id="hide" class="marquees_back">恭喜</span>02:22:24</p>
+						</div>
+					</a>
+				</li>
+				<li class="announce_li">
+					<a href="#">
+						<img class="announce_img" src="images/activity@2x.png" alt="">
+						<div id="countDown3" class="announce_text">
+							<p class="center"><span class="marquees_back">恭喜</span>啦啦啦...啦啦啦</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!--首页商品列表-->
+	<div class="list">
+		<div class="list_nav">
+			<ul class="list_top_ul">
+				<li class="cur">人气</li>
+				<li>最新</li>
+				<li>进度</li>
+				<li>价格</li>
+			</ul>
+		</div>
+		<ul class="list_ul">
+			<li>
+				<a href="particulars.html" class="list_li">
+					<img src="" alt="商品图片">
+					<p>商品名称商品名称商品名称商品名称商品名称商品名称商品名称</p>
+					<p>抢宝进度<span class="colorred">68%</span></p>
+					<div class="schedule"><span style="width:50%;"></span></div>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="list_li list_bor0">
+					<img src="" alt="商品图片">
+					<p>iPhone7 128GB128GB1</p>
+					<p>抢宝进度<span class="colorred">68%</span></p>
+					<div class="schedule"><span style="width:50%;"></span></div>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="list_li">
+					<img src="" alt="商品图片">
+					<p>iPhone7 128GB128GB1</p>
+					<p>抢宝进度<span class="colorred">68%</span></p>
+					<div class="schedule"><span style="width:50%;"></span></div>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="list_li list_bor0">
+					<img src="" alt="商品图片">
+					<p>iPhone7 128GB128GB1</p>
+					<p>抢宝进度<span class="colorred">68%</span></p>
+					<div class="schedule"><span style="width:50%;"></span></div>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<!--底部导航-->
+	<div class="nav">
+		<div class="nav_ul">
+			<a href="index.html" class="cur">夺宝</a>
+			<a href="classify.html">分类</a>
+			<a href="publish.html">最新揭晓</a>
+			<a href="baskmonad.html">晒单</a>
+			<a href="mine.html">个人中心</a>
+		</div>
+	</div>
+	<div class="shadow"></div>
+	<div class="logSelect">
+		<hr color="#FF1800"/>
+		<p class="log-title">选择登录方式</p>
+		<dl class="vistor">
+			<dt>
+				<img src="images/ad/vistorLog.png" alt=""/>
+			</dt>
+			<dd>
+				游客登录
+			</dd>
+		</dl>.
+		<dl class="iphone">
+			<dt>
+				<img src="images/ad/iponeLog.png" alt=""/>
+			</dt>
+			<dd>
+				手机号登录
+			</dd>
+		</dl>
+	</div>
+	<div class="nowToGo">
+		<h1 class="nowToGo_title">参与人次</h1>
+		<div class="n_goods_img">
+			<img src=""/>
+		</div>
+		<div class="n_gold clearfix">
+			<div class="n_gold_l">金币&nbsp;<i>10</i></div>
+			<div class="n_gold_r clearfix">
+				<span class="n_sub">-</span>
+				<input class="n_num" type="text" name="" id="" value="10" />
+				<span class="n_plus">+</span>
+			</div>
+		</div>
+		<div class="n_gold_select clearfix">
+			<span class="n_item">5</span>
+			<span class="n_item">10</span>
+			<span class="n_item">100</span>
+			<span class="n_item">200</span>
+			<span class="n_item n_item_last">包尾</span>
+		</div>
+		<div class="n_btn">立即参与</div>
+	</div>
+<script src="js/total.js"></script>
+<script>
+//下载APP广告条
+$('.ad-xx').on('click',function() {
+	$(this).parent().hide();
+	$('.header').css({"top":0});
+})
+//	轮播图
+	var swiper = new Swiper('.swiper-container', {
+		pagination: '.swiper-pagination',
+		paginationClickable: true,
+        autoplay:4000,
+
+	});
+//	跑马灯
+    var swiper = new Swiper('.marquees-container', {
+        direction : 'vertical',
+        loop :true,
+        noSwiping :true,
+        autoplay:4000,
+
+    });
+    
+    //立即购买弹窗
+    $('.announce_top_text').on('click',function(){
+    		$('.nowToGo').animate({bottom:"0"});
+    })
+</script>
+</body>
+</html>
