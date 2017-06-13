@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>父亲节</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="css/apple.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header2">
+            <p class="header-txbg header-txbg1"><span class="header-text" id="header-text1"></span></p>
+            <p class="header-txbg header-txbg2"><span class="header-text" id="header-text2"></span></p>
+            <p class="header-txbg header-txbg3"><span class="header-text" id="header-text3"></span></p>
+            <p class="header-txbg header-txbg4"><span class="header-text" id="header-text4"></span></p>
+        </div>
+        <div class="recharge"></div>
+        <div class="recharge recharge1"></div>
+        <div class="recharge recharge2"></div>
+        <div class="recharge recharge3"></div>
+        <div class="recharge recharge4"></div>
+        <div class="footer">
+            <p class="footer-text">1.必须领取活动资格,才可获得红包资格(全场直减)</p>
+            <p class="footer-text">2.红包即时派发，</p>
+            <p class="footer-text1">50%派发即时生效，20%在6月14日生效；</p>
+            <p class="footer-text1">10%在6月15日生效，10%在6月16日生效；</p>
+            <p class="footer-text1">10%在6月17日生效；</p>
+            <p class="footer-text">3.红包自生效起，有效期为2天哦~</p>
+        </div>
+    </div>
+    <script>
+    $('.recharge').each(function() {
+            $(this).click(function() {
+                console.log(this);
+            })
+        })
+        //倒计时
+    var interval = 1000;
+
+    function ShowCountDown(year, month, day, divname1, divname2, divname3, divname4) {
+        var now = new Date();
+        var endDate = new Date(year, month - 1, day);
+        var leftTime = endDate.getTime() - now.getTime();
+        var leftsecond = parseInt(leftTime / 1000);
+        var day1 = Math.floor(leftsecond / (60 * 60 * 24));
+        var hour = Math.floor((leftsecond - day1 * 24 * 60 * 60) / 3600);
+        var minute = Math.floor((leftsecond - day1 * 24 * 60 * 60 - hour * 3600) / 60);
+        var second = Math.floor(leftsecond - day1 * 24 * 60 * 60 - hour * 3600 - minute * 60);
+        var cc1 = document.getElementById(divname1);
+        var cc2 = document.getElementById(divname2);
+        var cc3 = document.getElementById(divname3);
+        var cc4 = document.getElementById(divname4);
+        cc1.innerHTML = day1;
+        cc2.innerHTML = hour;
+        cc3.innerHTML = minute;
+        cc4.innerHTML = second;
+    }
+    window.setInterval(function() {
+        ShowCountDown(2017, 6, 18, 'header-text1', 'header-text2', 'header-text3', 'header-text4');
+    }, interval);
+    </script>
+</body>
+
+</html>
