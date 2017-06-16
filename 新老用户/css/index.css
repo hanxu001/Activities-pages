@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.bg {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 7.5rem;
+    height: 23.76rem;
+    position: relative;
+}
+
+.bg1 {
+    background-image: url(../images/bg1.png);
+}
+
+.bg2 {
+    background-image: url(../images/bg2.png);
+}
+
+.gift-img {
+    position: absolute;
+    top: 4rem;
+    left: 0.325rem;
+    width: 6.85rem;
+    height: 6.93rem;
+    margin-bottom: -1rem;
+    z-index: 99;
+}
+
+.gift-go {
+    position: absolute;
+    top: 10.68rem;
+    left: 1.88rem;
+    width: 3.74rem;
+    height: 0.9rem;
+}
+
+.content {
+    position: absolute;
+    bottom: 0.5rem;
+}
+
+.content-text {
+    font-size: 0.3rem;
+    color: #62562c;
+    padding: 0 0.7rem;
+    margin-top: 0.12rem;
+}
+
+.alert-img {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 7.5rem;
+    height: 13.34rem;
+    z-index: 999;
+}
