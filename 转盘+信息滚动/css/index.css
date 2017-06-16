@@ -1,0 +1,92 @@
+.container{
+	position: relative;
+	width: 100%;
+	height: 23.81rem;
+	background-image: url(../images/bg2.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.circle{
+	position: absolute;
+	left: 0.3rem;
+	top: 4.4rem;
+	width: 6.7rem;
+	height: 6.6rem;
+	border-radius: 50%;
+}
+.pointer{
+	width: 0.53rem;
+	height: 2.62rem;
+	position: absolute;
+	left: 3.17rem;
+	top: 1.2rem;
+	transform-origin:50% 81.5%;
+}
+@keyframes myfirst
+{
+from {transform: rotate(0deg);}
+to {transform: rotate(3000deg)}
+}
+.go{
+	animation: myfirst 7s;
+	transform: rotate(3000deg);
+}
+.rule{
+	width: 3.5rem;
+	position: absolute;
+	left: 3.9rem;
+	top: 12.5rem;
+}
+.text{ 
+	width: 3.3rem;
+	font-size: 0.2rem;
+	color: #fec625;
+	line-height: 1.4em;
+}
+.mt20{margin-top: 0.2rem;}
+.mt10{margin-top: 0.1rem;}
+.pic{
+	width: 7.5rem;
+	height: 13.34rem;
+	position: fixed;
+	z-index: 999;
+	display: none;
+}
+.news{
+	position: absolute;
+	left: 0;
+	top: 12.2rem;
+	width: 3.8rem;
+}
+.news ul li{ 
+	height:0.4rem; 
+	line-height:0.4rem; 
+	color:#fff; 
+	font-size: 0.22rem;
+	padding-left:5px; 
+	word-break:keep-all;        
+    white-space:nowrap;          
+	overflow:hidden;              
+	text-overflow:ellipsis;        
+}
+.scrollNews{ height:2rem; overflow:hidden;}
+.broadcast{
+	width: 0.2rem;
+	height: 0.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
