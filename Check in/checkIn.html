@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>每日签到</title>
+    <link rel="stylesheet" href="css/check.css">
+</head>
+<body>
+<div class="check_wrapper">
+    <div class="check_banner">
+        <div class="check_title">
+            <span>每日签到</span>
+        </div>
+        <div class="check_content">
+                <div class="check_content_left">
+                    <p>2100积分</p>
+                    <div class="go_exchange">
+                        <a href="#">去兑换>></a>
+                    </div>
+                </div>
+                <div class="check_content_middle">
+                    <div class="check_middle_detail">
+                        <div class="is_check">
+                            未签到
+                        </div>
+                        <div class="check_day">
+                            累计<span>12</span>天
+                        </div>
+                        <div class="check_remind">
+                            <span>点击按钮完成今日签到</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="check_content_right">
+                    <span>签到说明</span>
+                </div>
+        </div>
+    </div>
+    <div class="number_days">
+        <div class="number_days_title"></div>
+        <div class="number_days_content">
+            <ul>
+                <li>
+                    <div class="seven_day_pic">
+                            <p>积分*2</p>
+                    </div>
+                    <div class="seven_day_title">
+                        <span>累计7天</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="fifteen_day_pic">
+                            <p class="mt_change">积分*3</p>
+                            <p>2元红包</p>
+                    </div>
+                    <div class="fifteen_day_title">
+                        <span>累计15天</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="thirty_day_pic">
+                            <p>积分*3</p>
+                            <p>5元红包</p>
+                            <p>5金币</p>
+                    </div>
+                    <div class="thirty_day_title">
+                        <span>累计30天</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="box">
+        <div class='control'>
+            <span id="conYear" class="con-in">2017年</span>
+            <span id="conMonth" class="con-in">3月</span>
+        </div>
+        <div class="DateBox">
+            <div class='week'>
+                <div class="week-in">周日</div>
+                <div class="week-in">周一</div>
+                <div class="week-in">周二</div>
+                <div class="week-in">周三</div>
+                <div class="week-in">周四</div>
+                <div class="week-in">周五</div>
+                <div class="week-in">周六</div>
+            </div>
+            <section class="dayBox" id='dayBox'>
+                <div class="day" id="day1">1</div>
+                <div class="day">2</div>
+                <div class="day">3</div>
+                <div class="day">4</div>
+                <div class="day">5</div>
+                <div class="day">6</div>
+                <div class="day">7</div>
+                <div class="day">8</div>
+                <div class="day">9</div>
+                <div class="day">10</div>
+                <div class="day">11</div>
+                <div class="day">12</div>
+                <div class="day">13</div>
+                <div class="day">14</div>
+                <div class="day">15</div>
+                <div class="day">16</div>
+                <div class="day">17</div>
+                <div class="day">18</div>
+                <div class="day">19</div>
+                <div class="day">20</div>
+                <div class="day">21</div>
+                <div class="day">22</div>
+                <div class="day">23</div>
+                <div class="day">24</div>
+                <div class="day">25</div>
+                <div class="day">26</div>
+                <div class="day">27</div>
+                <div class="day">28</div>
+                <div class="day">29</div>
+                <div class="day" id="day30">30</div>
+                <div class="day" id="day31"></div>
+            </section>
+        </div>
+    </div>
+</div>
+<div class="pup_up">
+    <div class="pup_detail"></div>
+</div>
+<div class="instructions">
+    <div class="instructions_detail">
+        <div class="pup_title">签到说明</div>
+        <div class="pup_text">1.用户每天可签到一次，获得活动积分;</div>
+        <div class="pup_text">2.每次签到可获得50积分奖励，满足累计签到条件后，可领取累签奖励;</div>
+        <div class="pup_text">3.累计签到不可累积到下个月，在每个月的第一天将清除上个月的签到记录;</div>
+        <div class="pup_text">4.用户每天可签到一次，获得活动积分；</div>
+        <div class="go_share">
+            <a href="#">确定</a>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/check.js"></script>
+<script src="js/date.js"></script>
+</body>
+</html>
