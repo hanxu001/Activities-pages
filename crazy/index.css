@@ -386,7 +386,8 @@ input:-ms-input-placeholder {
 .footer {
     text-align: center;
     padding: 15px 0;
-    color: #fff
+    color: #fff;
+    height: 50px;
 }
 
 .com_pop_box {
