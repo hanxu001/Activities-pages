@@ -916,81 +916,81 @@ function callback(t) {}! function(t, e) {
 });
 // 以上为Zepto.js源码，下面是项目需求js代码
 // apiHost/countHost貌似是项目服务器地址 前端用不到
-var envConfig = { apiHost: "https://activitynew.yycaishen.com/", countHost: "https://count.yycaishen.com/" },
-    common = {
-        host: function() {
-            var t = "";
-            return t
-        },
-        resHost: function() {
-            var t = "";
-            return t
-        },
-        isNativeAndroid: function() {
-            return "undefined" != typeof window.androidObj && null != window.androidObj
-        },
-        isNativeIos: function() {
-            return "ios" == $("body").attr("isIos")
-        },
-        isIos: function() {
-            return !!navigator.userAgent.toLowerCase().match(/\(i[^;]+;( u;)? cpu.+mac os x/)
-        },
-        isAndroid: function() {
-            return navigator.userAgent.toLowerCase().indexOf("android") > -1
-        },
-        isMobile: function() {
-            return !!navigator.userAgent.toLowerCase().match(/applewebkit.*mobile.*/)
-        },
-        isMicromessenger: function() {
-            var t = navigator.userAgent.toLowerCase();
-            return !!/micromessenger/.test(t)
-        },
-        checkIos: function(t) { $("body").attr("isIos", t) },
-        getRequest: function() {
-            var t = location.search,
-                e = new Object;
-            if (t.indexOf("?") != -1) {
-                var n = t.substr(1);
-                strs = n.split("&");
-                for (var i = 0; i < strs.length; i++) e[strs[i].split("=")[0]] = strs[i].split("=")[1]
-            }
-            return e
-        },
-        checkTypeof: function(t) {
-            return "undefined" != typeof t && null != t && "" != t && "null" != t
-        },
-        comPopTips: function(t) {
-            var e = '<div class="comPopTips"><span>' + t + "</span></div>";
-            $("body").append(e), setTimeout(function() { $(".comPopTips").fadeOut(500), setTimeout(function() { $(".comPopTips").remove() }, 1e3) }, 1e3)
-        },
-        loading: function(t) {
-            var e = "";
-            void 0 != t && "" != t && (e = t), $("body").append('<span class="loadingGif"><i></i><p>' + e + "</p></span>")
-        },
-        removeLoading: function() { $(".loadingGif").remove() },
-        toRecharge: function() { common.isNativeAndroid() ? window.androidObj.forwardRecharge() : common.isNativeIos() && (document.location = "toRecharge") },
-        toRechargeNum: function(t) {
-            if (common.isNativeAndroid()) {
-                var e = common.getRequest(),
-                    n = e.version;
-                common.checkTypeof(n) && n >= 10 ? window.androidObj.forwardRecharge(t) : common.comPopTips("请先升级到最新版本！")
-            } else common.isNativeIos() && (document.location = "toRecharge&&money=" + t)
-        },
-        forwardProductDetail: function(t) { common.isNativeAndroid() ? window.androidObj.forwardProductDetail(t) : common.isNativeIos() && (document.location = "forwardProductDetail&&id=" + t) },
-        forwardProductCategory: function(t) { common.isNativeAndroid() ? window.androidObj.forwardProductCategory(t) : common.isNativeIos() && (document.location = "forwardProductCategory&&id=" + t) },
-        forwardVipList: function(t) { common.isNativeAndroid() ? window.androidObj.forwardVipList(t) : common.isNativeIos() && (document.location = "forwardVipList&&id=" + t) },
-        forwardHome: function() { common.isNativeAndroid() ? window.androidObj.forwardHome() : common.isNativeIos() && (document.location = "forwardHome") },
-        openUrl: function(t, e) {
-            var n = common.getRequest(),
-                i = n.version;
-            common.isNativeAndroid() ? common.checkTypeof(i) && i >= 16 ? window.androidObj.openUrl(t, e) : document.location = e : common.isNativeIos() && common.checkTypeof(i) && i >= 11 ? document.location = "openUrlTit=" + t + "&openUrlUrl=" + e : document.location = e
-        },
-        isShowQqGroup: function() { $(".isShowQqBtn_no").hide(), $(".isShowQqBtn_yes").show() },
-        getQqGroupStatus: function() { common.isNativeAndroid() ? window.androidObj.getQqGroupStatus() : common.isNativeIos() },
-        addQqGroup: function() { common.isNativeAndroid() ? window.androidObj.addQqGroup() : common.isNativeIos() && (document.location = "addQqGroup") },
-        callService: function(t) { common.isNativeAndroid() ? window.androidObj.callService(t) : common.isNativeIos() && (document.location = "callService") },
-        sendEmail: function(t) { common.isNativeAndroid() ? window.androidObj.sendEmail(t) : common.isNativeIos() && (document.location = "sendEmail") }
-    };
+// var envConfig = { apiHost: "https://activitynew.yycaishen.com/", countHost: "https://count.yycaishen.com/" },
+//     common = {
+//         host: function() {
+//             var t = "";
+//             return t
+//         },
+//         resHost: function() {
+//             var t = "";
+//             return t
+//         },
+//         isNativeAndroid: function() {
+//             return "undefined" != typeof window.androidObj && null != window.androidObj
+//         },
+//         isNativeIos: function() {
+//             return "ios" == $("body").attr("isIos")
+//         },
+//         isIos: function() {
+//             return !!navigator.userAgent.toLowerCase().match(/\(i[^;]+;( u;)? cpu.+mac os x/)
+//         },
+//         isAndroid: function() {
+//             return navigator.userAgent.toLowerCase().indexOf("android") > -1
+//         },
+//         isMobile: function() {
+//             return !!navigator.userAgent.toLowerCase().match(/applewebkit.*mobile.*/)
+//         },
+//         isMicromessenger: function() {
+//             var t = navigator.userAgent.toLowerCase();
+//             return !!/micromessenger/.test(t)
+//         },
+//         checkIos: function(t) { $("body").attr("isIos", t) },
+//         getRequest: function() {
+//             var t = location.search,
+//                 e = new Object;
+//             if (t.indexOf("?") != -1) {
+//                 var n = t.substr(1);
+//                 strs = n.split("&");
+//                 for (var i = 0; i < strs.length; i++) e[strs[i].split("=")[0]] = strs[i].split("=")[1]
+//             }
+//             return e
+//         },
+//         checkTypeof: function(t) {
+//             return "undefined" != typeof t && null != t && "" != t && "null" != t
+//         },
+//         comPopTips: function(t) {
+//             var e = '<div class="comPopTips"><span>' + t + "</span></div>";
+//             $("body").append(e), setTimeout(function() { $(".comPopTips").fadeOut(500), setTimeout(function() { $(".comPopTips").remove() }, 1e3) }, 1e3)
+//         },
+//         loading: function(t) {
+//             var e = "";
+//             void 0 != t && "" != t && (e = t), $("body").append('<span class="loadingGif"><i></i><p>' + e + "</p></span>")
+//         },
+//         removeLoading: function() { $(".loadingGif").remove() },
+//         toRecharge: function() { common.isNativeAndroid() ? window.androidObj.forwardRecharge() : common.isNativeIos() && (document.location = "toRecharge") },
+//         toRechargeNum: function(t) {
+//             if (common.isNativeAndroid()) {
+//                 var e = common.getRequest(),
+//                     n = e.version;
+//                 common.checkTypeof(n) && n >= 10 ? window.androidObj.forwardRecharge(t) : common.comPopTips("请先升级到最新版本！")
+//             } else common.isNativeIos() && (document.location = "toRecharge&&money=" + t)
+//         },
+//         forwardProductDetail: function(t) { common.isNativeAndroid() ? window.androidObj.forwardProductDetail(t) : common.isNativeIos() && (document.location = "forwardProductDetail&&id=" + t) },
+//         forwardProductCategory: function(t) { common.isNativeAndroid() ? window.androidObj.forwardProductCategory(t) : common.isNativeIos() && (document.location = "forwardProductCategory&&id=" + t) },
+//         forwardVipList: function(t) { common.isNativeAndroid() ? window.androidObj.forwardVipList(t) : common.isNativeIos() && (document.location = "forwardVipList&&id=" + t) },
+//         forwardHome: function() { common.isNativeAndroid() ? window.androidObj.forwardHome() : common.isNativeIos() && (document.location = "forwardHome") },
+//         openUrl: function(t, e) {
+//             var n = common.getRequest(),
+//                 i = n.version;
+//             common.isNativeAndroid() ? common.checkTypeof(i) && i >= 16 ? window.androidObj.openUrl(t, e) : document.location = e : common.isNativeIos() && common.checkTypeof(i) && i >= 11 ? document.location = "openUrlTit=" + t + "&openUrlUrl=" + e : document.location = e
+//         },
+//         isShowQqGroup: function() { $(".isShowQqBtn_no").hide(), $(".isShowQqBtn_yes").show() },
+//         getQqGroupStatus: function() { common.isNativeAndroid() ? window.androidObj.getQqGroupStatus() : common.isNativeIos() },
+//         addQqGroup: function() { common.isNativeAndroid() ? window.androidObj.addQqGroup() : common.isNativeIos() && (document.location = "addQqGroup") },
+//         callService: function(t) { common.isNativeAndroid() ? window.androidObj.callService(t) : common.isNativeIos() && (document.location = "callService") },
+//         sendEmail: function(t) { common.isNativeAndroid() ? window.androidObj.sendEmail(t) : common.isNativeIos() && (document.location = "sendEmail") }
+//     };
 ! function(t, e, n) {
     function i(t) { this.opts = n.extend(!0, {}, r, t), this.doing = !1, this.init() }
     var r = { rotateNum: 5, body: "", disabledHandler: function() {}, clickCallback: function() {}, KinerLotteryHandler: function(t) {} };
@@ -1015,6 +1015,7 @@ var envConfig = { apiHost: "https://activitynew.yycaishen.com/", countHost: "htt
         }
     }, t.KinerLottery = i
 }(window, document, $);
+
 var el = document.createElement("fakeelement"),
     t, transitionEnd, transitions = { transition: "transitionend", OTransition: "oTransitionEnd", MozTransition: "transitionend", WebkitTransition: "webkitTransitionEnd" };
 for (t in transitions) void 0 !== el.style[t] && (transitionEnd = transitions[t]);
@@ -1046,6 +1047,7 @@ $(function() {
         $(".slide_show")[0].addEventListener(transitionEnd, e)
     }, 3e3)
 });
+
 var load = {
         rotateFn: function(t) {
             var e = {};
@@ -1092,10 +1094,10 @@ var load = {
             $(".com_pop_winner").show(), $(".com_pop_winner .txt b").html(e.itemT), $(".com_pop_winner .pic_div").attr("src", e.Image)
         }
     });
-if (!localStorage.sessionid) {
-    for (var randnum = Math.random(), sessionId = 0; randnum < .1;) randnum = Math.random();
-    randnum = Math.floor(1e4 * Math.random()), localStorage.sessionid = (new Date).getTime() + randnum
-}
+// if (!localStorage.sessionid) {
+//     for (var randnum = Math.random(), sessionId = 0; randnum < .1;) randnum = Math.random();
+//     randnum = Math.floor(1e4 * Math.random()), localStorage.sessionid = (new Date).getTime() + randnum
+// }
 // var sessionId = localStorage.sessionid,
 //     Request = common.getRequest(),
 //     getExpandId = Request.expand,
