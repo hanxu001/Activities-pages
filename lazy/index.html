@@ -1,0 +1,353 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>疯狂大转盘-一元商品等你抢</title>
+    <meta name="apple-touch-fullscreen" content="YES">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1">
+    <meta name="keywords" content="一元夺宝,夺宝,一元云购,一元夺宝,一元购,云购">
+    <meta name="description" content="一元夺宝，全新的众筹购物方式，全场热门商品1元抢购，惊喜连连，引爆你的运气，实现你的梦想！">
+    <link rel="stylesheet" href="./index.css">
+    <script src="./jquery.min.js"></script>
+    <script>
+    //针对不同设备改变font-size值的大小，以达到通过rem自适应布局的目的
+    (function(t) {
+        var doc = t.documentElement; //获取根元素的dom节点;
+        var curDeviceWidth = doc.clientWidth || window.innerWidth; //拿到当前设备的宽度
+        doc.style.fontSize = curDeviceWidth * (50 / 375) + 'px';
+    })(document);
+    </script>
+    <style>
+    .dl_product_show dd .avatar {
+        width: .50rem;
+        height: .50rem;
+        left: .10rem;
+    }
+    
+    .dl_product_show dd {
+        /*height: 2.6rem;*/
+        /*border: 1px solid #000;*/
+    }
+    
+    .dl_product_show dd h3 {
+        margin-left: -0.5rem;
+    }
+    
+    .dl_product_show dd .info {
+        margin-left: -0.5rem;
+    }
+    
+    .dl_product_show dd .info img {
+        width: 2.25rem;
+        height: .70rem;
+        margin-top: -0.2rem;
+    }
+    
+    .footer {
+        position: absolute;
+        left: 0.3rem;
+        bottom: 0.3rem;
+        background-color: #8310a5;
+        border-radius: .2rem;
+        width: 6.9rem;
+    }
+    
+    .footer h2 {
+        font-size: .32rem;
+        color: #fec623;
+        font-weight: bold;
+        padding-left: .34rem;
+        padding-top: .16rem;
+    }
+    
+    .footer p {
+        font-size: .28rem;
+        color: #fec625;
+        font-weight: bold;
+        padding-left: .34rem;
+        padding-right: .64rem;
+        padding-bottom: .16rem;
+        text-indent: 2em;
+    }
+    
+    .turntable_box {
+        position: absolute;
+        overflow: hidden;
+        text-align: center;
+        left: 0;
+        top: 4.4rem;
+        width: 100%;
+    }
+    
+    .turntable_box .r {
+        width: 6.44rem;
+        height: 6.44rem;
+    }
+    
+    .turntable_box .b {
+        position: absolute;
+        top: 29.8%;
+        left: 32.5%;
+        height: 40%;
+        width: auto;
+        cursor: pointer;
+        -webkit-user-select: none;
+    }
+    
+    .alert {
+        width: 100%;
+        height: 13.34rem;
+        z-index: 999;
+        position: fixed;
+        left: 0;
+        top: 0;
+        display: none;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="winner_box">
+            <div class="winner_show">
+                <ul></ul>
+            </div>
+        </div>
+        <div class="container clearfix" style="height: 24.68rem;">
+            <div class="turntable_box"><img class="r KinerLotteryContent" src="images/products_pic2.png" alt=""><img class="b start KinerLotteryBtn" src="images/products_quan.png" alt="">
+            </div>
+            <div class="slide_list_box" style="padding-bottom: .4rem;">
+                <dl class="slide_show dl_product_show clearfix">
+                    <dd>
+                        <a href="#" class="setUrlLink"><span class="avatar"><img src="images/look_wu1.png" alt=""></span>
+                                <h3 class="clearfix">十三亿少女都爱我</h3>
+                                </a>
+                        <div class="info">
+                            <img src="images/show_1.png" alt="">
+                            <p>抢到了自己喜欢的，美滋滋</p>
+                        </div>
+                    </dd>
+                    <dd>
+                        <a href="#" class="setUrlLink"><span class="avatar"><img src="images/look_wu2.png" alt=""></span>
+                                <h3 class="clearfix">爱夺宝真是太好了</h3>
+                                </a>
+                        <div class="info">
+                            <img src="images/show_2.png" alt="">
+                            <p>上次刚中，这次又中了，我的运气都飞到夺宝上了，难怪还是单身（手动笑哭）！</p>
+                        </div>
+                    </dd>
+                    <dd>
+                        <a href="#" class="setUrlLink"><span class="avatar"><img src="images/look_wu3.png" alt=""></span>
+                                <h3 class="clearfix">红烧鱼烦得很啊</h3>
+                                </a>
+                        <div class="info">
+                            <img src="images/show_3.png" alt="">
+                            <p>我仔细想了想，可能是发财梦做多了，所以中的都是金条，哈哈</p>
+                        </div>
+                    </dd>
+                    <dd>
+                        <a href="#" class="setUrlLink"><span class="avatar"><img src="images/look_wu4.png" alt=""></span>
+                                <h3 class="clearfix">红酒瓶</h3>
+                                </a>
+                        <div class="info">
+                            <img src="images/show_4.png" alt="">
+                            <p>跟闺蜜打赌会中手机，没想到真的中了，太准了吧</p>
+                        </div>
+                    </dd>
+                    <dd>
+                        <a href="#" class="setUrlLink"><span class="avatar"><img src="images/look_wu5.png" alt=""></span>
+                                <h3 class="clearfix">老鼠家属情绪很稳定</h3>
+                                </a>
+                        <div class="info">
+                            <img src="images/show_5.png" alt="">
+                            <p>抢了好多次都中了，中手机的几率好高</p>
+                        </div>
+                    </dd>
+                    <dd>
+                        <a href="#" class="setUrlLink"><span class="avatar"><img src="images/look_wu6.png" alt=""></span>
+                                <h3 class="clearfix">从前有个和尚</h3>
+                                </a>
+                        <div class="info">
+                            <img src="images/show_6.png" alt="">
+                            <p>希望下次中台车，不过中个相机也不错咯</p>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                </dl>
+            </div>
+        </div>
+        <div class="footer">
+            <h2>抽奖规则：</h2>
+            <p>每人可获得一次转盘抽奖的机会中奖后将获得1元抢购该商品的机会，下载APP后可使用抢购机会。</p>
+        </div>
+        <img src="images/0.png" alt="" class="alert">
+        <img src="images/1.png" alt="" class="alert">
+        <img src="images/2.png" alt="" class="alert">
+        <img src="images/2.png" alt="" class="alert">
+        <img src="images/4.png" alt="" class="alert">
+        <img src="images/5.png" alt="" class="alert">
+    </div>
+    <script>
+    ! function(t, e, n) {
+        function i(t) {
+            this.opts = n.extend(!0, {}, r, t), this.doing = !1, this.init()
+        }
+        var r = {
+            rotateNum: 5,
+            body: "",
+            disabledHandler: function() {},
+            clickCallback: function() {},
+            KinerLotteryHandler: function(t) {}
+        };
+        i.prototype.setOpts = function(t) {
+            this.opts = n.extend(!0, {}, r, t), this.init()
+        }, i.prototype.init = function() {
+            var t = this;
+            this.defNum = 360 * this.opts.rotateNum, n("body").on("click", ".KinerLotteryBtn", function() {
+                if (n(this).hasClass("start") && !t.doing) t.opts.clickCallback.call(t);
+                else {
+                    var e = n(this).hasClass("no-start") ? "noStart" : n(this).hasClass("completed") ? "completed" : "illegal";
+                    t.opts.disabledHandler(e)
+                }
+            }), n(this.opts.body).find(".KinerLotteryContent").get(0).addEventListener("webkitTransitionEnd", function() {
+                t.doing = !1;
+                var e = parseInt(n(t.opts.body).attr("data-deg"));
+                0 == t.opts.direction ? n(t.opts.body).find(".KinerLotteryContent").css({
+                    "-webkit-transition": "none",
+                    transition: "none",
+                    "-webkit-transform": "rotate(" + e + "deg)",
+                    transform: "rotate(" + e + "deg)"
+                }) : n(t.opts.body).find(".KinerLotteryContent").css({
+                    "-webkit-transition": "none",
+                    transition: "none",
+                    "-webkit-transform": "rotate(" + -e + "deg)",
+                    transform: "rotate(" + -e + "deg)"
+                }), n(t.opts.body).attr("data-deg", e), t.opts.KinerLotteryHandler(e);
+            })
+        }, i.prototype.goKinerLottery = function(t) {
+            if (!this.doing) {
+                var e = t + this.defNum,
+                    i = 0 == this.opts.direction ? e : -e;
+                this.doing = !0, n(this.opts.body).find(".KinerLotteryBtn").addClass("doing"), n(this.opts.body).find(".KinerLotteryContent").css({
+                    "-webkit-transition": "all 5s",
+                    transition: "all 5s",
+                    "-webkit-transform": "rotate(" + i + "deg)",
+                    transform: "rotate(" + i + "deg)"
+                }), n(this.opts.body).attr("data-deg", t);
+            }
+        }, t.KinerLottery = i
+    }(window, document, $);
+
+    var el = document.createElement("fakeelement"),
+        t, transitionEnd, transitions = {
+            transition: "transitionend",
+            OTransition: "oTransitionEnd",
+            MozTransition: "transitionend",
+            WebkitTransition: "webkitTransitionEnd"
+        };
+    for (t in transitions) void 0 !== el.style[t] && (transitionEnd = transitions[t]);
+    $(function() {
+        $(".rule_box span").click(function() {
+            $(".com_pop_rule").show()
+        }), $(".com_pop_box .close").click(function() {
+            $(this).parent().hide()
+        }), $(".setUrlLink").click(function() {
+            window.navigator.userAgent.toLowerCase().match(/alipay/i) && common.isAndroid() && ($(this).removeAttr("target"), $(this).removeAttr("href"), $(".wechat_tip_android").show())
+        }), $(".wechat_tip_android,.wechat_tip_ios").click(function() {
+            $(this).hide()
+        });
+        var t = "",
+            e = ["Mr Rabbit", "莫莫小坏蛋", "永远怀念黄家驹", "君莫離", "xuzhenxing200", "丨汧心忄夬泺", "双鱼座de事", "彡Monster乀力lason", "小子你中奖了", "新 愁。", "喝可乐也会醉", "既然中奖威威", "新人爆照", "亚当or夏娃", "新人驾到", "他的1874", "鄢松v587", "他们都换ID", "动霸tua中", "独一无2的我", "天骐sytp", "再不中咋办", "亏的没钱了", "暴躁的矮子", "败给财神了", "把我夺哭了", "凹凸Men", "心動不如行動", "丨丨中出丨丨", "轩缘2016"],
+            n = ["路虎揽胜", "iPhone7", "移动充值卡", "佳能EOS 700D", "金条500克"];
+        $.each(e, function(e, i) {
+                var r = Math.floor(5 * Math.random());
+                t += "<li>" + " 恭喜 " + i + " 抽中<em>" + n[r] + "</em></li>"
+            }),
+            $(".winner_show ul").html(t), setInterval(function() {
+                var t = $(".winner_show li").height();
+                $(".winner_show ul").attr("style", "-webkit-transform:translate3d(0,-" + t + "px,0) translateZ(0);transform:translate3d(0,-" + t + "px,0) translateZ(0);-webkit-transition:all 500ms;transition:all 500ms;");
+                var e = function() {
+                    $(".winner_show ul")[0].removeEventListener(transitionEnd, e), $(".winner_show ul").attr("style", "-webkit-transform:translate3d(0,0,0) translateZ(0);transform:translate3d(0,0,0) translateZ(0);");
+                    var t = $(".winner_show li:first-child");
+                    $(".winner_show ul").append(t)
+                };
+                $(".winner_show ul")[0].addEventListener(transitionEnd, e)
+            }, 2e3),
+            $(".slide_list_box").css("height", 3.5 * $(".slide_show dd:first-child").height()), setInterval(function() {
+                var t = $(".slide_show dd:first-child").height() + parseInt($(".slide_show dd:first-child").css("margin-bottom"));
+                $(".slide_show").attr("style", "-webkit-transform:translate3d(0,-" + t + "px,0) translateZ(0);transform:translate3d(0,-" + t + "px,0) translateZ(0);-webkit-transition:all 1000ms;transition:all 1000ms;");
+                var e = function() {
+                    $(".slide_show")[0].removeEventListener(transitionEnd, e), $(".slide_show").attr("style", "-webkit-transform:translate3d(0,0,0) translateZ(0);transform:translate3d(0,0,0) translateZ(0);");
+                    var t = $(".slide_show dd:first-child");
+                    $(".slide_show").append(t)
+                };
+                $(".slide_show")[0].addEventListener(transitionEnd, e)
+            }, 3e3)
+    });
+    var load = {
+            rotateFn: function(t) {
+                var e = {};
+                switch (t) {
+                    case 60:
+                        e.Image = "./images/che_6.png", e.itemT = "一元买HomePod音箱";
+                        break;
+                    case 120:
+                        e.Image = "./images/che_5.png", e.itemT = "一元买iPad Pro";
+                        break;
+                    case 180:
+                        e.Image = "./images/che_3.png", e.itemT = "一元买MacBook Pro";
+                        break;
+                    case 240:
+                        e.Image = "./images/che_4.png", e.itemT = "一元买iMac Pro";
+                        break;
+                    case 300:
+                        e.Image = "./images/che_2.png", e.itemT = "一元买iPhone7 Plus";
+                        break;
+                    case 0:
+                    default:
+                        e.Image = "./images/che_1.png", e.itemT = "一元买路虎"
+                }
+                return e
+            },
+            resetFun: function() {
+                $(".turntable_box .b").addClass("start"), $(".win_pop_box").hide()
+            },
+            rnd: function(t, e) {
+                var n = Math.floor(Math.random() * (e - t + 1) + t);
+                return n
+            }
+        },
+        KinerLottery = new KinerLottery({
+            rotateNum: 8,
+            body: ".turntable_box",
+            direction: 0,
+            clickCallback: function() {
+                var t = [0, 60, 120, 240, 300, 0],
+                    e = load.rnd(0, t.length - 1);
+                this.goKinerLottery(t[e])
+
+            },
+            KinerLotteryHandler: function(t) {
+                var e = load.rotateFn(t);
+                var num = t / 60;
+                console.log(num);
+                $(".alert").eq(num).show();
+            }
+        });
+    $(".com_pop_winner").click(function() {
+        console.log('跳转我们的下载地址');
+    });
+    $('.alert').each(function(i, e) {
+        $(this).click(function() {
+            console.log('弹框领取');
+        })
+    });
+    </script>
+</body>
+
+</html>
