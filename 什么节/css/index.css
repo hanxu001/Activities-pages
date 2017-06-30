@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    position: relative;
+    width: 100%;
+    height: 17.71rem;
+    background-image: url(../images/bg2.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0.54rem;
+    border: 1px solid #000;
+}
+
+.header-txbg {
+    width: 0.4rem;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    border-radius: 0.1rem;
+    text-align: center;
+    background-color: #42b767;
+    float: left;
+    margin-top: 0.07rem;
+}
+
+.header-txbg1 {
+    margin-left: 3.6rem;
+}
+
+.header-txbg2 {
+    margin-left: 0.36rem;
+}
+
+.header-txbg3 {
+    margin-left: 0.24rem;
+}
+
+.header-txbg4 {
+    margin-left: 0.2rem;
+}
+
+.header-text {
+    font-size: 0.28rem;
+    color: #fff;
+}
+
+.recharge {
+    position: absolute;
+    left: 0.3rem;
+    top: 5.5rem;
+    width: 6.9rem;
+    height: 2rem;
+    /*border: 1px solid #000;*/
+}
+
+.recharge1 {
+    top: 8rem;
+}
+
+.recharge2 {
+    top: 10.7rem;
+}
+
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0.6rem;
+    width: 100%;
+    /*border: 1px solid #000;*/
+}
+
+.footer-text {
+    padding: 0 0.26rem;
+    font-size: 0.26rem;
+    color: #55c19d;
+    margin-top: 0.12rem;
+}
+
+
