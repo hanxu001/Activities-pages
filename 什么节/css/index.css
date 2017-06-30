@@ -86,4 +86,11 @@
     margin-top: 0.12rem;
 }
 
-
+.residue{
+    font-size: .36rem;
+    color: #fd5e3b;
+    position: absolute;
+    left: 0;
+    top: 4.68rem;
+    padding-left: .52rem;
+}
