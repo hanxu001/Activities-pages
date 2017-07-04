@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>限时福利</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="css/apple.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <p>剩余时间<span id="header-text"></span></p>
+        </div>
+        <p class="residue">剩余次数：1</p>
+        <p class="text1">恭喜您被抽中为幸运用户，充值即送50</p>
+        <p class="text2">充值完成够请在个人中心查看自己的余额</p>
+        <div class="btn" id="btn">立即充值</div>
+        <div class="rule-title clearfix">
+            <div class="l"><img src="images/left.png" alt=""></div>
+            <div class="r"><img src="images/right.png" alt=""></div>
+            <span>规则说明</span>
+        </div>
+        <div class="rule-con">
+            系统随机抽取玩家为幸运用户，在限定时间内完成充值，即可获得充值奖励，超出限定时间后 充值将不再赠送奖励
+        </div>
+    </div>
+    <script>
+    //倒计时
+    function ShowCountDown(year, month, day, divname) {
+        var now = new Date();
+        var endDate = new Date(year, month - 1, day);
+        var leftTime = endDate.getTime() - now.getTime();
+        var leftsecond = parseInt(leftTime / 1000);
+        var day1 = Math.floor(leftsecond / (60 * 60 * 24));
+        var hour = Math.floor((leftsecond - day1 * 24 * 60 * 60) / 3600);
+        var minute = Math.floor((leftsecond - day1 * 24 * 60 * 60 - hour * 3600) / 60);
+        var second = Math.floor(leftsecond - day1 * 24 * 60 * 60 - hour * 3600 - minute * 60);
+        var cc = document.getElementById(divname);
+        cc.innerHTML = day1 + "天" + hour + "时" + minute + "分" + second + "秒";
+    }
+    window.setInterval(function() {
+        ShowCountDown(2017, 7, 8, 'header-text');
+    }, 1000);
+    // 立即充值
+    $('#btn').click(function(){
+
+    });
+    </script>
+</body>
+
+</html>
