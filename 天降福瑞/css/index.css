@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'PingFang SC Medium';
+}
+
+.clearfix:after {
+    content: '';
+    clear: both;
+}
+
+.main {
+    width: 100%;
+    height: 12.06rem;
+    background-image: url(../images/bg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.header {
+    width: 100%;
+    height: 0.6rem;
+    line-height: .6rem;
+    text-align: center;
+    background-color: #ffd4bc;
+    color: #762318;
+    font-size: .32rem;
+}
+
+.residue {
+    width: 3.8rem;
+    height: .72rem;
+    background-image: url(../images/bg_num.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    line-height: .72rem;
+    text-align: center;
+    font-size: .36rem;
+    color: #ffff78;
+    margin-top: 3.8rem;
+    margin-left: 1.85rem;
+}
+
+.text1 {
+    font-size: .34rem;
+    color: #a56559;
+    margin-top: .3rem;
+    padding: 0 .4rem;
+    text-align: center;
+}
+
+.red-pack{
+    /*border: 1px solid #000;*/
+    margin-top: .72rem;
+}
+.red-pack img{
+    width: 1.84rem;
+    height: 2.02rem;
+    float: left;
+    margin-left: .495rem;
+}
+.rule-title {
+    margin-top: 1.28rem;
+    height: .5rem;
+    line-height: .5rem;
+    padding: 0 .5rem;
+    text-align: center;
+}
+
+.rule-title>.l {
+    float: left;
+    width: 2.38rem;
+    height: .5rem;
+}
+
+.rule-title>.r {
+    float: right;
+    width: 2.38rem;
+    height: .5rem;
+}
+
+.rule-title>.l>img,
+.rule-title>.r>img {
+    width: 2.38rem;
+    height: .22rem;
+}
+
+.rule-title>span {
+    font-size: .36rem;
+    color: #762318;
+}
+
+.rule-con {
+    margin-top: .3rem;
+}
+.rule-con p{
+    padding: 0 .3rem;
+    font-size: .28rem;
+    color: #762318;
+}
+.shadow{
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.6);
+    
+}
+.alert_default{
+    position: absolute;
+    top: 3.44rem;
+    left: 0;
+    width: 7.5rem;
+    height: 6rem;
+    background: url(../images/red_alert.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.alert_default>.title{
+    width: 100%;
+    text-align: center;
+    margin-top: 3rem;
+    font-size: .36rem;
+    color: #ffe64d;
+    font-weight: bold;
+}
+.alert_default>.text{
+   width: 100%;
+    text-align: center;
+    font-size: .36rem;
+    color: #ffe64d;
+    font-weight: bold;
+}
+.alert_default>.btn{
+    width: 1.86rem;
+    height: .66rem;
+    text-align: center;
+    line-height: .66rem;
+    font-size: .42rem;
+    color: #fa5457;
+    background-color: #ffe64d;
+    border-radius: .33rem;
+    margin-top: .6rem;
+    display: inline-block;
+}
+.alert_open{
+    position: absolute;
+    top: 3.44rem;
+    left: 0;
+    width: 7.5rem;
+    height: 6rem;
+}
