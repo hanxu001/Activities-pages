@@ -1,0 +1,512 @@
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: .24rem;
+}
+
+.check_banner {
+    height: 3.52rem;
+    background: rgb(252, 55, 80);
+    color: #fff;
+}
+
+.check_banner2 {
+    background-image: url(../images/qiandao/banner2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 1.64rem;
+    margin-top: -1.64rem;
+}
+
+.check_banner2_up {
+    text-align: center;
+    padding-top: 0.7rem;
+}
+
+.check_banner2_img {
+    width: 0.2rem;
+    height: 0.23rem;
+}
+
+.check_banner2_text {
+    text-align: center;
+    font-size: 0.28rem;
+    color: #fff;
+}
+
+.check_title {
+    text-align: center;
+    padding: .10rem 0;
+}
+
+.check_content {
+    display: flex;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: .10rem;
+}
+
+.check_content_left,
+.check_content_right {
+    flex: 1;
+    font-size: 0.28rem;
+}
+
+.check_content_middle {
+    flex: 2;
+}
+
+.check_middle_detail {
+    width: 2.4rem;
+    height: 2.4rem;
+    margin: 0 auto;
+    background: url(../images/qiandao/btn.png) no-repeat;
+    background-size: 2.4rem 2.4rem;
+    position: relative;
+}
+
+.is_check,
+.check_day {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    color: #ff334b;
+}
+
+.is_check {
+    top: .64rem;
+    font-size: .32rem;
+}
+
+.check_day {
+    top: 1.4rem;
+    font-size: .24rem;
+}
+
+.check_remind {
+    font-size: .12rem;
+    position: absolute;
+    bottom: -.43rem;
+}
+
+.check_content_right {
+    position: relative;
+    text-align: right;
+}
+
+.check_content_right::before {
+    position: absolute;
+    content: '';
+    width: .3rem;
+    height: .3rem;
+    background: url(../images/qiandao/question.png) no-repeat;
+    background-size: 100% 100%;
+    top: 0.05rem;
+    left: .6rem;
+}
+
+.number_days {
+    background-color: #fff;
+    padding: .10rem 0;
+}
+
+.number_days_title {
+    width: 4.05rem;
+    height: 1.14rem;
+    margin: 0 auto;
+    background: url(../images/qiandao/jlj.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.number_days_content {
+    margin-top: .1rem;
+}
+
+._days_content_num {
+    padding: .1rem .26rem;
+    float: left;
+}
+
+._days_content_num p {
+    font-size: .36rem;
+    color: #ff334b;
+}
+._days_content_num ._days_content_footer {
+    font-size: .26rem;
+    color: #00b2fe;
+    margin-top: .06rem;
+}
+._days_content_scratch {
+    float: right;
+    margin-right: .26rem;
+    width: 3.4rem;
+    height: 1.4rem;
+}
+
+._days_content_scratch .card {
+    font-size: .5rem;
+    color: #ff334b;
+    height: 1.4rem;
+    line-height: 1.4rem;
+    text-align: center;
+    font-weight: bold;
+    background-image: url(../images/qiandao/bg_scratch.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+/*box*/
+
+.box {
+    margin-top: .05rem;
+}
+
+.DateBox {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: .10rem 2%;
+    color: #666;
+}
+
+.box input {
+    border: none;
+    padding: 0;
+}
+
+.box {
+    width: 100%;
+    background-color: #fff;
+}
+
+.week {
+    width: 100%;
+    overflow: hidden;
+    line-height: .49rem;
+}
+
+.week-in {
+    height: .49rem;
+    float: left;
+    width: 14.2%;
+    text-align: center;
+    color: #4d4d4d;
+    font-size: 0.36rem;
+}
+
+.dayBox {
+    overflow: hidden;
+}
+
+.day_div {
+    float: left;
+    height: .80rem;
+    line-height: 0.8rem;
+    width: 14.2%;
+    text-align: center;
+    /*border: 0.01rem solid #000;*/
+}
+
+.day {
+    font: .28rem;
+    color: #808080;
+    position: relative;
+    width: .40rem;
+    height: .40rem;
+    line-height: .40rem;
+    text-align: center;
+    display: inline-block;
+}
+
+.control {
+    text-align: center;
+    border-bottom: .02rem dashed #f0f0f0;
+    padding: .26rem 0;
+}
+
+.control:before {
+    content: "<  ";
+    font-size: .36rem;
+    color: #c2c2c2;
+}
+
+.control:after {
+    content: "  >";
+    font-size: .36rem;
+    color: #c2c2c2;
+}
+
+.control span {
+    color: #666;
+    font-size: 0.36rem;
+}
+
+.dayBox .day.yet {
+    border-radius: 50%;
+    border: .02rem solid #ff334b;
+}
+
+.dayBox .day.current {
+    border-radius: 50%;
+    background-color: #ff334b;
+    color: #fff;
+}
+
+.dayBox .day:last-child::before {
+    background: none;
+}
+
+.pup_up,
+.instructions {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: none;
+    z-index: 3;
+}
+
+.pup_detail {
+    width: 5rem;
+    /*height: 5rem;*/
+    position: absolute;
+    background: #fff;
+    top: 50%;
+    left: 50%;
+    color: #666;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    -moz-transform: translate3d(-50%, -50%, 0);
+    -ms-transform: translate3d(-50%, -50%, 0);
+    -o-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+    -webkit-border-radius: .15rem;
+    -moz-border-radius: .15rem;
+    border-radius: .15rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: .10rem;
+    padding-bottom: .6rem;
+}
+
+.pup_detail p {
+    font-size: 0.4rem;
+    text-align: center;
+    color: #4d4d4d;
+    margin-top: 0.3rem;
+}
+
+.pup_detail img {
+    width: 4.6rem;
+    height: 2.8rem;
+}
+
+.close_detail {
+    position: absolute;
+    padding: .10rem;
+    width: .3rem;
+    height: .3rem;
+    top: 0rem;
+    right: 0.1rem;
+    background: url(../images/qiandao/close.png) no-repeat center center;
+    background-size: .3rem .3rem;
+    text-align: center;
+}
+
+.pup_title {
+    /* margin: .20rem auto .10rem auto;*/
+    color: rgb(249, 0, 48);
+    text-align: center;
+}
+
+.pup_text {
+    font-size: .16rem;
+    text-align: center;
+    color: #666;
+}
+
+.go_share {
+    position: absolute;
+    width: 1.60rem;
+    bottom: .10rem;
+    height: .4rem;
+    line-height: .4rem;
+    left: 50%;
+    background-color: rgb(249, 0, 48);
+    -webkit-border-radius: .30rem;
+    -moz-border-radius: .30rem;
+    border-radius: .30rem;
+    text-align: center;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.instructions_detail {
+    width: 3.4rem;
+    height: 4.6rem;
+    position: absolute;
+    background: #fff;
+    top: 50%;
+    left: 50%;
+    color: #666;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    -moz-transform: translate3d(-50%, -50%, 0);
+    -ms-transform: translate3d(-50%, -50%, 0);
+    -o-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+    -webkit-border-radius: .15rem;
+    -moz-border-radius: .15rem;
+    border-radius: .15rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: .10rem;
+}
+
+.instructions_detail .pup_text {
+    text-align: left;
+}
+
+
+/*刮奖区域*/
+
+#scratch {
+    position: relative;
+}
+
+#cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#card {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/*新版弹框*/
+
+.alert_box {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    display: none;
+}
+
+.alert_con {
+    position: absolute;
+    left: 0.53rem;
+    top: 4rem;
+    width: 6.44rem;
+    background-color: #fff;
+    border-radius: .2rem;
+    padding-bottom: .5rem;
+}
+
+.alert_con>img {
+    position: absolute;
+    right: 0;
+    top: -.5rem;
+    width: .34rem;
+    height: .34rem;
+}
+
+.alert_con>h2 {
+    font-size: .46rem;
+    color: #ff334b;
+    text-align: center;
+    padding: .44rem 0;
+}
+
+.alert_con>p {
+    font-size: .3rem;
+    color: #4d4d4d;
+    padding: 0 .2rem;
+    margin-top: .12rem;
+}
+
+.alert_con>p>img {
+    display: inline-block;
+    width: .26rem;
+    height: .38rem;
+    vertical-align: middle;
+}
+
+.alert_integral {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /*background-color: rgba(0, 0, 0, .5);*/
+    display: none;
+}
+
+.alert_integral img {
+    position: absolute;
+    left: 2.34rem;
+    top: 6rem;
+    width: 2.82rem;
+    height: 2.28rem;
+}
+
+/*number_days*/
+.number_days
+{
+    background-color: #fff;
+    padding:10px 0;
+}
+.number_days_title
+{
+    width:186px;
+    height:45px;
+    margin:0 auto;
+    background: url(../images/qdhl.png) no-repeat center center;
+    background-size:186px 45px;
+}
+.number_days_content ul
+{
+    display: flex;
+}
+.number_days_content ul li
+{
+    flex:1;
+    text-align: center;
+    position: relative;
+}
+.seven_day_pic,
+.fifteen_day_pic,
+.thirty_day_pic
+{
+    width:100px;
+    height:100px;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+    background: url(../images/noCheck.png)no-repeat center center;
+    background-size: 100px 100px;
+    margin:20px auto 10px auto;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index:1;
+}
