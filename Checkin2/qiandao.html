@@ -52,24 +52,14 @@
         </div>
         <p class="check_banner2_text">点击按钮完成今天签到</p>
     </div>
-    <!-- <div class="number_days">
-        <div class="number_days_content clearfix">
-            <div class="_days_content_num">
-                <p>鼓励金<span>￥</span><span style="font-size: .5rem">11.58</span></p>
-                <p class="_days_content_footer" id="check_detail">查看明细>></p>
-            </div>
-            <div class="_days_content_scratch" id="scratch">
-                <div class="card" id="card"><span style="font-size: .3rem">￥</span>11.58</div>
-            </div>
-        </div>
-    </div> -->
     <div class="number_days">
-        <div class="number_days_title"></div>
+        <div class="number_days_title">
+            <img src="images/qiandao/jlj.png" alt="">
+        </div>
         <div class="number_days_content">
             <ul>
                 <li>
                     <div class="seven_day_pic">
-                            <p>积分*2</p>
                     </div>
                     <div class="seven_day_title">
                         <span>累计7天</span>
@@ -77,8 +67,6 @@
                 </li>
                 <li>
                     <div class="fifteen_day_pic">
-                            <p class="mt_change">积分*3</p>
-                            <p>2元红包</p>
                     </div>
                     <div class="fifteen_day_title">
                         <span>累计15天</span>
@@ -86,9 +74,6 @@
                 </li>
                 <li>
                     <div class="thirty_day_pic">
-                            <p>积分*3</p>
-                            <p>5元红包</p>
-                            <p>5金币</p>
                     </div>
                     <div class="thirty_day_title">
                         <span>累计30天</span>
@@ -211,7 +196,7 @@
     </div>
     <div class="alert_box" id="alert_box">
         <div class="alert_con">
-            <img src="images/qiandao/X.png" alt="" id="close_x">
+            <img src="images/qiandao/X.png" alt="" class="close_x">
             <h2>说明</h2>
             <p><img src="images/qiandao/icon.png" alt="">用户每天可签到一次，获得50签到积分；</p>
             <p><img src="images/qiandao/icon.png" alt="">签到积分可用于兑换红包，大转盘以及砸金蛋等活动消耗；</p>
@@ -223,9 +208,33 @@
     <div class="alert_integral" id="alert_integral">
         <img src="images/qiandao/integral.png" alt="">
     </div>
+    <div class="alert_add" id="alert_add7">
+        <div class="add_con">
+            <img src="images/qiandao/close.png" alt="" class="close_x">
+            <p>赠币+2</p>
+            <p>积分+50</p>
+            <img src="images/qiandao/gift_bg.png" alt="" class="gift_bg">
+        </div>
+    </div>
+    <div class="alert_add" id="alert_add15">
+        <div class="add_con">
+            <img src="images/qiandao/close.png" alt="" class="close_x">
+            <p>赠币+2</p>
+            <p>积分+50</p>
+            <img src="images/qiandao/gift_bg.png" alt="" class="gift_bg">
+        </div>
+    </div>
+    <div class="alert_add" id="alert_add30">
+        <div class="add_con">
+            <img src="images/qiandao/close.png" alt="" class="close_x">
+            <p>赠币+2</p>
+            <p>积分+50</p>
+            <img src="images/qiandao/gift_bg.png" alt="" class="gift_bg">
+        </div>
+    </div>
     <script>
-    //每天签到
-    $('.check_middle_detail').click(function() {
+    //签到
+    $('.check_middle_detail').one('click', function() {
         $("#alert_integral").fadeIn("slow");
 
         function show() {
@@ -237,23 +246,32 @@
         var myDate = new Date();
         var day = myDate.getDate() - 1;
         $(".dayBox .day").eq(day).addClass("yet");
-
     });
     //说明
     $("#explain").click(function() {
         $("#alert_box").fadeIn();
-        $("#close_x").click(function() {
-            $("#alert_box").fadeOut();
-        });
     });
-    //返回上一级页面
-    $('.header-left').on('click', function() {
-        history.go(-1);
+    // x号关闭
+    $(".close_x").click(function() {
+        $("#alert_box").fadeOut();
+        $(".alert_add").fadeOut();
     });
-    // 跳转查看明细页面
-    $('#check_detail').click(function() {
-
-    })
+    // 礼包领取
+    $(".number_days_content .seven_day_pic").one('click', function() {
+        $("#alert_add7").fadeIn();
+        $(".seven_day_pic").css('background-image', 'url(images/qiandao/gift2.png)');
+        $(".seven_day_pic").css('background-size', '1.46rem 1.11rem');
+    });
+    $(".number_days_content .fifteen_day_pic").one('click', function() {
+        $("#alert_add15").fadeIn();
+        $(".fifteen_day_pic").css('background-image', 'url(images/qiandao/gift2.png)');
+        $(".fifteen_day_pic").css('background-size', '1.46rem 1.11rem');
+    });
+    $(".number_days_content .thirty_day_pic").one('click', function() {
+        $("#alert_add30").fadeIn();
+        $(".thirty_day_pic").css('background-image', 'url(images/qiandao/gift2.png)');
+        $(".thirty_day_pic").css('background-size', '1.46rem 1.11rem');
+    });
     </script>
     <script src="js/date.js"></script>
 </body>

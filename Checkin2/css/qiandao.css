@@ -116,11 +116,16 @@ a {
 }
 
 .number_days_title {
-    width: 4.05rem;
-    height: 1.14rem;
-    margin: 0 auto;
-    background: url(../images/qiandao/jlj.png) no-repeat center center;
-    background-size: 100% 100%;
+    height: 1.05rem;
+    width: 7.5rem;
+    text-align: center;
+    /*border: 1px solid #000;*/
+}
+
+.number_days_title>img {
+    width: 5.22rem;
+    height: 1.05rem;
+    display: inline-block;
 }
 
 .number_days_content {
@@ -136,11 +141,13 @@ a {
     font-size: .36rem;
     color: #ff334b;
 }
+
 ._days_content_num ._days_content_footer {
     font-size: .26rem;
     color: #00b2fe;
     margin-top: .06rem;
 }
+
 ._days_content_scratch {
     float: right;
     margin-right: .26rem;
@@ -159,6 +166,9 @@ a {
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
+
+
+
 
 /*box*/
 
@@ -378,6 +388,9 @@ a {
 }
 
 
+
+
+
 /*刮奖区域*/
 
 #scratch {
@@ -398,6 +411,9 @@ a {
 }
 
 
+
+
+
 /*新版弹框*/
 
 .alert_box {
@@ -408,6 +424,7 @@ a {
     height: 100%;
     background-color: rgba(0, 0, 0, .5);
     display: none;
+    z-index: 999;
 }
 
 .alert_con {
@@ -467,46 +484,77 @@ a {
     height: 2.28rem;
 }
 
+
+
+
 /*number_days*/
-.number_days
-{
-    background-color: #fff;
-    padding:10px 0;
-}
-.number_days_title
-{
-    width:186px;
-    height:45px;
-    margin:0 auto;
-    background: url(../images/qdhl.png) no-repeat center center;
-    background-size:186px 45px;
-}
-.number_days_content ul
-{
+
+.number_days_content ul {
     display: flex;
 }
-.number_days_content ul li
-{
-    flex:1;
+
+.number_days_content ul li {
+    flex: 1;
     text-align: center;
     position: relative;
 }
+
 .seven_day_pic,
 .fifteen_day_pic,
-.thirty_day_pic
-{
-    width:100px;
-    height:100px;
-    -webkit-border-radius:50%;
-    -moz-border-radius:50%;
-    border-radius:50%;
-    background: url(../images/noCheck.png)no-repeat center center;
-    background-size: 100px 100px;
-    margin:20px auto 10px auto;
+.thirty_day_pic {
+    width: .96rem;
+    height: 1.2rem;
+    background: url(../images/qiandao/noChecks.png)no-repeat center center;
+    background-size: 100% 100%;
+    margin: .20rem auto .1rem auto;
     color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: relative;
-    z-index:1;
+    z-index: 1;
+}
+
+.alert_add {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    display: none;
+    z-index: 999;
+}
+
+.add_con {
+    position: absolute;
+    left: 1.25rem;
+    top: 4rem;
+    width: 5rem;
+    background-color: #fff;
+    border-radius: .2rem;
+    padding-bottom: .5rem;
+    text-align: center;
+    padding-top: .5rem;
+}
+
+.add_con p {
+    font-size: .4rem;
+    color: #4d4d4d;
+    margin-top: .3rem;
+}
+
+.add_con .close_x {
+    position: absolute;
+    right: .2rem;
+    top: .2rem;
+    width: .34rem;
+    height: .34rem;
+}
+
+.add_con .gift_bg {
+    display: inline-block;
+    width: 4.296rem;
+    height: 2.272rem;
+    margin-top: .3rem;
 }
