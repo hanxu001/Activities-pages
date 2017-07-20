@@ -110,27 +110,7 @@ a {
     left: .6rem;
 }
 
-.number_days {
-    background-color: #fff;
-    padding: .10rem 0;
-}
 
-.number_days_title {
-    height: 1.05rem;
-    width: 7.5rem;
-    text-align: center;
-    /*border: 1px solid #000;*/
-}
-
-.number_days_title>img {
-    width: 5.22rem;
-    height: 1.05rem;
-    display: inline-block;
-}
-
-.number_days_content {
-    margin-top: .1rem;
-}
 
 ._days_content_num {
     padding: .1rem .26rem;
@@ -166,6 +146,7 @@ a {
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
+
 
 
 
@@ -391,6 +372,7 @@ a {
 
 
 
+
 /*刮奖区域*/
 
 #scratch {
@@ -409,6 +391,7 @@ a {
     -ms-user-select: none;
     user-select: none;
 }
+
 
 
 
@@ -487,7 +470,28 @@ a {
 
 
 
-/*number_days*/
+/*add*/
+
+.number_days {
+    background-color: #fff;
+    padding: .10rem 0;
+}
+
+.number_days_title {
+    height: 1.05rem;
+    width: 7.5rem;
+    text-align: center;
+}
+
+.number_days_title>img {
+    width: 5.22rem;
+    height: 1.05rem;
+    display: inline-block;
+}
+
+.number_days_content {
+    margin-top: .1rem;
+}
 
 .number_days_content ul {
     display: flex;
