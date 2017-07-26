@@ -33,12 +33,12 @@
             <p>3.开启获得奖励后请在个人中心查看余额，或者在我的红包内查看自己的红包。</p>
         </div>
         <div class="shadow" style="display: none;">
-            <div class="alert_default">
+            <div class="alert_default" style="display: none;">
                 <p class="title">恭喜您获得</p>
                 <p class="text">满10减2红包</p>
                 <p class="btn">确定</p>
             </div>
-            <img src="images/red_alert.gif" alt="" class="alert_open" style="display: none;">
+            <img src="images/red_alert.gif" alt="" class="alert_open">
         </div>
     </div>
     <script>
@@ -83,10 +83,13 @@
     // 红包
     $('.red-pack').find('img').click(function() {
         $('.shadow').show();
+        var ta = setTimeout(function(){
+            $('.alert_open').hide();
+            $('.alert_default').show();
+        },1400)
     });
     $('.alert_default').click(function() {
-        $('.alert_default').hide();
-        $('.alert_open').show();
+        $('.shadow').hide();
     })
     </script>
 </body>
