@@ -82,7 +82,7 @@
         })
         $('.alert-red-close').click(function() {
             $('.alert-red-close').hide();
-            $('.alert-red-gif').show();
+            $('.alert-red-gif').show().attr('src','images/red2.gif');
             clearTimeout(t);
             var t= setTimeout(function() {
                 $('.alert-red-gif').hide();
