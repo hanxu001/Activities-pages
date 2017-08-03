@@ -83,7 +83,8 @@
         $('.alert-red-close').click(function() {
             $('.alert-red-close').hide();
             $('.alert-red-gif').show();
-            setTimeout(function() {
+            clearTimeout(t);
+            var t= setTimeout(function() {
                 $('.alert-red-gif').hide();
                 $('.alert-red-open').show();
             }, 5000)
