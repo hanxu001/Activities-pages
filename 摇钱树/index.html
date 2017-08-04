@@ -22,8 +22,13 @@
 </head>
 
 <body>
+    <div class="alert-first">
+        <div class="next"></div>
+    </div>
+    <div class="header">
+        <p>结束倒计时:<span id="header-text"></span></p>
+    </div>
     <div class="bg">
-        <!-- <div class="test"></div> -->
         <img src="images/icon_rules.png" class="icon-rules">
         <p class="btn-l">剩余次数：<span>0次</span></p>
         <p class="btn-r">中奖记录</p>
@@ -52,13 +57,13 @@
         </div>
         <div class="alert-red">
             <img src="images/red_close.png" class="alert-red-close">
-            <img src="images/red.gif" class="alert-red-gif">
             <div class="alert-red-open">
                 <h2>恭喜您获得</h2>
                 <h2>“神秘大礼包”</h2>
                 <p class="btn-alert">领取</p>
             </div>
         </div>
+        <img src="images/circle.png" class="circle">
     </div>
     <script type="text/javascript">
     // 初始化
@@ -67,6 +72,26 @@
     $('.alert-red-close').hide();
     $('.alert-red-gif').hide();
     $('.alert-red-open').hide();
+    $('.circle').hide();
+    //倒计时
+    (function() {
+        function ShowCountDown(year, month, day, divname) {
+            var now = new Date();
+            var endDate = new Date(year, month - 1, day);
+            var leftTime = endDate.getTime() - now.getTime();
+            var leftsecond = parseInt(leftTime / 1000);
+            var day1 = Math.floor(leftsecond / (60 * 60 * 24));
+            var hour = Math.floor((leftsecond - day1 * 24 * 60 * 60) / 3600);
+            var minute = Math.floor((leftsecond - day1 * 24 * 60 * 60 - hour * 3600) / 60);
+            var second = Math.floor(leftsecond - day1 * 24 * 60 * 60 - hour * 3600 - minute * 60);
+            var cc = document.getElementById(divname);
+            cc.innerHTML = day1 + "天" + hour + "时" + minute + "分" + second + "秒";
+            // cc.innerHTML = hour + ":" + minute + ":" + second;
+        }
+        setInterval(function() {
+            ShowCountDown(2017, 8, 7, 'header-text');
+        }, 1000);
+    })();
     // 点击红包
     (function() {
         $('.red-close').each(function(i, e) {
@@ -77,23 +102,23 @@
                     $('.alert-red').show();
                     $('.alert-red-close').show();
                     $('.red-close').eq(i).hide().removeClass('cur');
-                }, 4000)
+                }, 3000)
             })
         })
         $('.alert-red-close').click(function() {
-            $('.alert-red-close').hide();
-            $('.alert-red-gif').show().attr('src','images/red2.gif');
-            clearTimeout(t);
-            var t= setTimeout(function() {
-                $('.alert-red-gif').hide();
+            $('.alert-red').css('background-color', 'rgba(0, 0, 0, .2)');
+            $('.circle').show().addClass('click');
+            setInterval(function() {
+                $('.alert-red-close').hide();
                 $('.alert-red-open').show();
-            }, 5000)
+                $('.circle').hide();
+                $('.alert-red').css('background-color', 'rgba(0, 0, 0, .5)');
+            }, 5000);
         });
         $('.alert-red-open').click(function() {
             console.log('后台你跳转到领取页面吧')
         });
     })();
-
     // 点击活动规则
     (function() {
         $('.icon-rules').click(function() {
@@ -108,9 +133,15 @@
     })();
     //中奖纪录
     (function() {
-       $('.btn-r').click(function() {
+        $('.btn-r').click(function() {
             console.log('后台你跳转到中奖纪录吧')
         });
+    })();
+    // 首屏-我知道了
+    (function() {
+        $('.next').click(function() {
+            $('.alert-first').hide()
+        })
     })();
     </script>
 </body>
