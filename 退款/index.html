@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>退款</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript">
+    (function(t) {
+        var doc = t.documentElement; //获取根元素的dom节点;
+
+        var curDeviceWidth = doc.clientWidth || window.innerWidth; //拿到当前设备的宽度
+
+        //动态的改变根元素字体大小：
+
+        doc.style.fontSize = curDeviceWidth * (50 / 375) + 'px';
+    })(document);
+    </script>
+</head>
+
+<body style="background-color: #fff;">
+    <div class="container">
+        <img src="images/icon.jpeg" class="icon">
+        <p class="title">我的余额</p>
+        <p class="money">￥2.77</p>
+        <form method="" action="" class="zcform">
+            <p>
+                <input type="text" id="num" name="num" value placeholder="请输入提现金额" maxlength="4" />
+            </p>
+            <p>
+                <input type="text" id="name" name="name" value placeholder="请输入您的姓名" />
+            </p>
+            <p>
+                <input type="text" id="Alipay" name="Alipay" value placeholder="请输入您的支付宝账号" />
+            </p>
+            <p>
+                <a href="#" class="btn">提交</a>
+            </p>
+        </form>
+        <div class="con">
+            <p>即日起，系统将进行升级维护调整，具体措施如下：</p>
+            <p>1.从8月7日12点开始，业务将进行系统升级维护调整</p>
+            <p>2.支持金币余额退款，可通过退款页面进行退款申请，申请完成后，将会在1~3个工作日内进行审理，且安排退款，请您耐心等待； 感谢您一直以来对我们的支持！
+            </p>
+        </div>
+    </div>
+    <div class="alert">
+        <div class="box">
+            <p class="inner"></p>
+        </div>
+    </div>
+    <p class="info-title">提现记录</p>
+    <script type="text/javascript">
+    $('.alert').hide();
+    $('.alert').click(function() {
+        $('.alert').hide();
+    });
+    var myNum = null;
+    var myName = null;
+    var myAlipay = null;
+
+    function checkNum(num) {
+        var re = new RegExp("^([1-9][0-9]*)+(.[0-9]{1,2})?$");
+        return re.test(num);
+    }
+
+    function checkName(name) {
+        var re = new RegExp("[\u4e00-\u9fa5]");
+        return re.test(name);
+    }
+
+    function checkEmail(Email) {
+        var re = new RegExp("[a-zA-Z0-9_-]+");
+        return re.test(Email);
+    }
+
+    function checkPhone(phone) {
+        var re = new RegExp("^\\d{11}$");
+        return re.test(phone);
+    }
+    $('.btn').click(function() {
+        myNum = $('input#num').val();
+        myName = $('input#name').val();
+        myAlipay = $('input#Alipay').val();
+        $('.alert').show();
+        if (!checkNum(myNum)) {
+            $('.inner').text('请输入正确金额');
+            return;
+        }
+        if (!checkName(myName)) {
+            $('.inner').text('请输入合法姓名');
+            return;
+        }
+        if (!checkEmail(myAlipay) && !checkPhone(myAlipay)) {
+            $('.inner').text('请输入合法支付宝账号');
+            return;
+        } else {
+            $('.inner').text('提交成功');
+            return;
+        }
+        console.log(myNum + myName + myAlipay);
+    })
+    </script>
+</body>
+
+</html>
