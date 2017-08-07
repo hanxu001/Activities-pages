@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript">
+    (function(t) {
+        var doc = t.documentElement; //获取根元素的dom节点;
+
+        var curDeviceWidth = doc.clientWidth || window.innerWidth; //拿到当前设备的宽度
+
+        //动态的改变根元素字体大小：
+
+        doc.style.fontSize = curDeviceWidth * (50 / 375) + 'px';
+    })(document);
+    </script>
+</head>
+
+<body>
+    <script type="text/javascript"></script>
+</body>
+
+</html>

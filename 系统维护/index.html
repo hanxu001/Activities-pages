@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>系统维护</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript">
+    (function(t) {
+        var doc = t.documentElement; //获取根元素的dom节点;
+
+        var curDeviceWidth = doc.clientWidth || window.innerWidth; //拿到当前设备的宽度
+
+        //动态的改变根元素字体大小：
+
+        doc.style.fontSize = curDeviceWidth * (50 / 375) + 'px';
+    })(document);
+    </script>
+</head>
+
+<body>
+    <div class="bg">
+        <img src="images/banner.png" alt="" class="banner">
+        <div class="content">
+            <h2>尊敬的用户：</h2>
+            <p>您好！</p>
+            <p>由于系统紧急维护，将于8月7日实施紧急系统升级。升级期间部分功能暂时无法使用。已经中奖的商品会正常 安排发货。</p>
+            <p>感谢您一直以来对我们的支持，如给您带来不便，敬请谅解！</p>
+        </div>
+    </div>
+    <script type="text/javascript"></script>
+</body>
+
+</html>
