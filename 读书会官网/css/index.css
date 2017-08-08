@@ -1,0 +1,300 @@
+/*#region 初始化*/
+
+html {
+    -webkit-text-size-adjust: none;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+    color: #656565;
+    font: 14px/1.5 "Microsoft Yahei", "SimHei", tahoma, arial;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+input,
+button,
+textarea,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+}
+
+input,
+textarea,
+button {
+    font-size: 14px;
+    font-weight: normal;
+    outline: none;
+}
+
+select {
+    font-size: 14px;
+    font-weight: normal;
+    outline: none;
+}
+
+input[type="button"],
+input[type="submit"],
+select,
+button {
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+th,
+var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+li {
+    list-style: none;
+}
+
+fieldset,
+img,
+a img,
+iframe {
+    border-width: 0;
+    border-style: none;
+}
+
+iframe {
+    overflow: hidden;
+}
+
+img {
+    -ms-interpolation-mode: bicubic;
+    vertical-align: middle;
+}
+
+textarea {
+    resize: vertical;
+    overflow-y: auto;
+}
+
+a {
+    text-decoration: none;
+    background: url(about:blank);
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+hr {
+    height: 0;
+}
+
+label {
+    cursor: pointer;
+}
+
+.vm {
+    display: inline-block;
+    height: 100%;
+    width: 1px;
+    margin-left: -1px;
+    vertical-align: middle;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: ".";
+    clear: both;
+    line-height: 0;
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+/*con*/
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110px;
+    z-index: 10;
+    min-width: 1280px;
+    background-color: #fff;
+}
+.header-inner{
+    width: 60%;
+    margin: 0 auto;
+}
+.header .logo {
+    display: block;
+    width: 110px;
+    height: 110px;
+    float: left;
+    background: url(../images/logo.png) no-repeat center center;
+}
+.header .title{
+    font-size: 46px;
+    color: #491127;
+    height: 110px;
+    line-height: 110px;
+}
+
+.main{
+    position: relative;
+    max-width: 1920px;
+    min-width: 1280px;
+    height: 650px;
+    margin: 0 auto;
+    margin-top: 110px;
+    overflow: hidden;
+    background-image: url(../images/bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.main .btn{
+    /*border: 1px solid #000;*/
+    margin-top: 337px;
+    margin-left: 42%;
+}
+.main .btn-ios{
+    width: 240px;
+    height: 60px;
+    background-color: #2babf2; 
+    text-align: center;
+    line-height: 60px;
+    border-radius: 5px;
+    /*margin-top: 50px;*/
+}
+.main .btn-android{
+    width: 240px;
+    height: 60px;
+    background-color: #70cd0f; 
+    text-align: center;
+    line-height: 60px;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+.main .btn img{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    vertical-align: center;
+}
+.main .btn p{
+    display: inline-block;
+    font-size: 16px;
+    color: #fff;
+}
