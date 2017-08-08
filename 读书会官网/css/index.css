@@ -224,7 +224,7 @@ section {
     overflow: hidden;
 }
 /*con*/
-.header{
+.header {
     position: fixed;
     top: 0;
     left: 0;
@@ -234,10 +234,12 @@ section {
     min-width: 1280px;
     background-color: #fff;
 }
-.header-inner{
+
+.header-inner {
     width: 60%;
     margin: 0 auto;
 }
+
 .header .logo {
     display: block;
     width: 110px;
@@ -245,14 +247,15 @@ section {
     float: left;
     background: url(../images/logo.png) no-repeat center center;
 }
-.header .title{
+
+.header .title {
     font-size: 46px;
     color: #491127;
     height: 110px;
     line-height: 110px;
 }
 
-.main{
+.main {
     position: relative;
     max-width: 1920px;
     min-width: 1280px;
@@ -264,36 +267,41 @@ section {
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
-.main .btn{
+
+.main .btn {
     /*border: 1px solid #000;*/
     margin-top: 337px;
     margin-left: 42%;
 }
-.main .btn-ios{
+
+.main .btn-ios {
     width: 240px;
     height: 60px;
-    background-color: #2babf2; 
+    background-color: #2babf2;
     text-align: center;
     line-height: 60px;
     border-radius: 5px;
     /*margin-top: 50px;*/
 }
-.main .btn-android{
+
+.main .btn-android {
     width: 240px;
     height: 60px;
-    background-color: #70cd0f; 
+    background-color: #70cd0f;
     text-align: center;
     line-height: 60px;
     border-radius: 5px;
     margin-top: 50px;
 }
-.main .btn img{
+
+.main .btn img {
     display: inline-block;
     width: 30px;
     height: 30px;
     vertical-align: center;
 }
-.main .btn p{
+
+.main .btn p {
     display: inline-block;
     font-size: 16px;
     color: #fff;
