@@ -166,40 +166,21 @@ input:focus {
     color: #808080;
 }
 /*add*/
-.info-title{
-    position: absolute;
-    right: 0;
-    top: 0;
-    font-size: .3rem;
-    color: red;
-    /*border: 1px solid #000;*/
-    padding: .1rem .3rem;
-}
-.info-list{
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 7.5rem;
-    height: 13.34rem;
-    z-index: 999;
-    background-color: #fff;
-}
-.info-item{
+.state{
     display: flex;
-    flex-direction: row;
-    padding: .2rem .4rem;
-    justify-content: space-between;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
     -ms-align-items: center;
     align-items: center;
-    border-bottom: .01rem solid #ccc;
+    justify-content: center;
+    height: 1.2rem;
     /*border: 1px solid #000;*/
 }
-.info-item .state{
-    color: #000;
-}
-.info-item .time{
-    color: #808080;
-}
-.info-item .money{
-    color: red;
+.state p{
+    font-size: .34rem;
+    color: #222;
+    margin-top: .1rem;
 }
