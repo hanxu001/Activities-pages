@@ -67,7 +67,12 @@
 .myNum{
 	font-size: .36rem;
 	color: #666;
-	margin: 0 .4rem;
+	margin: 0 .3rem;
+	display: inline-block;
+	/*border: 1px solid #000;*/
+	width: .5rem;
+	height: .5rem;
+	text-align: center;
 }
 .section3 div img{
 	width: .5rem;

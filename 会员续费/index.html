@@ -11,7 +11,7 @@
     <script type="text/javascript">
     (function(t) {
         var doc = t.documentElement;
-        var curDeviceWidth = doc.clientWidth || window.innerWidth; 
+        var curDeviceWidth = doc.clientWidth || window.innerWidth;
         doc.style.fontSize = curDeviceWidth * (50 / 375) + 'px';
     })(document);
     </script>
@@ -27,9 +27,9 @@
             <div class="section1">
                 <p class="text1">时长（年）</p>
                 <div>
-                    <img src="images/reduce.png">
+                    <img src="images/reduce.png" class="reduce">
                     <span class="myNum">1</span>
-                    <img src="images/add.png">
+                    <img src="images/add.png" class="add">
                 </div>
             </div>
             <div class="section2">
@@ -41,14 +41,14 @@
                     <img src="images/Alipay.png">
                     <p class="text1">支付宝支付</p>
                 </div>
-                <img src="images/default.png" alt="">
+                <img src="images/default.png" alt="" class="default">
             </div>
             <div class="section3">
                 <div>
                     <img src="images/WeChat.png">
                     <p class="text1">微信支付</p>
                 </div>
-                <img src="images/default.png" alt="">
+                <img src="images/default.png" alt="" class="default">
             </div>
             <div class="button">
                 <p>会员续费</p>
@@ -68,7 +68,33 @@
             </div>
         </div>
     </div>
-    <script type="text/javascript"></script>
+    <script type="text/javascript">
+    (function() {
+        var num = 1;
+        $('.reduce').click(function() {
+            num--;
+            if (num < 1) {
+                num = 1;
+            }
+            $('.myNum').text(num);
+        })
+        $('.add').click(function() {
+            num++;
+            $('.myNum').text(num);
+        })
+    })();
+
+    (function() {
+        $('.section3').each(function(i, e) {
+            $(this).click(function() {
+                $('.default').each(function() {
+                    $(this).attr('src', 'images/default.png');
+                });
+                $('.default').eq(i).attr('src', 'images/choose.png');
+            });
+        })
+    })();
+    </script>
 </body>
 
 </html>
