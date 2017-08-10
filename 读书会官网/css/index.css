@@ -1,7 +1,12 @@
 /*#region 初始化*/
 
-html {
+html,body {
     -webkit-text-size-adjust: none;
+    
+}
+body{
+   width: 1920px;
+    margin: 0 auto; 
 }
 
 body,
@@ -223,7 +228,10 @@ section {
     height: 0;
     overflow: hidden;
 }
+
+
 /*con*/
+
 .header {
     position: fixed;
     top: 0;
@@ -231,7 +239,7 @@ section {
     width: 100%;
     height: 110px;
     z-index: 10;
-    min-width: 1280px;
+    width: 1920px;
     background-color: #fff;
 }
 
@@ -257,8 +265,7 @@ section {
 
 .main {
     position: relative;
-    max-width: 1920px;
-    min-width: 1280px;
+    width: 1920px;
     height: 650px;
     margin: 0 auto;
     margin-top: 110px;
@@ -268,10 +275,28 @@ section {
     background-size: 100% 100%;
 }
 
+.main .demo {
+    width: 263px;
+    height: 556px;
+    float: left;
+    margin-left: 22%;
+    margin-top: 47px;
+}
+
 .main .btn {
-    /*border: 1px solid #000;*/
-    margin-top: 337px;
-    margin-left: 42%;
+    float: left;
+    margin-left: 6.5%;
+}
+
+.main .btn h1 {
+    font-size: 100px;
+    color: #491127;
+    margin-top: 85px;
+}
+
+.main .btn h3 {
+    font-size: 26px;
+    color: #491127;
 }
 
 .main .btn-ios {
@@ -281,7 +306,7 @@ section {
     text-align: center;
     line-height: 60px;
     border-radius: 5px;
-    /*margin-top: 50px;*/
+    margin-top: 130px;
 }
 
 .main .btn-android {
@@ -305,4 +330,30 @@ section {
     display: inline-block;
     font-size: 16px;
     color: #fff;
+}
+
+.footer {
+    width: 1207px;
+    margin: 0 auto;
+    padding: 74px 0 50px 0;
+}
+
+.footer h2 {
+    font-size: 30px;
+    color: #666;
+    text-align: center;
+}
+
+.footer .cons {
+    font-size: 16px;
+    color: #6e6e6e;
+    margin-top: 40px;
+    line-height: 22px;
+}
+
+.footer .info {
+    font-size: 14px;
+    margin-top: 46px;
+    color: #666;
+    text-align: center;
 }
