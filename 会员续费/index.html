@@ -34,7 +34,7 @@
             </div>
             <div class="section2">
                 <p class="text1">合计</p>
-                <p class="text1">365.0</p>
+                <p class="text1 myMoney">365</p>
             </div>
             <div class="section3 cur" data-id="0">
                 <div>
@@ -78,10 +78,15 @@
                 num = 1;
             }
             $('.myNum').text(num);
+            $('.myMoney').text(num*365);
         })
         $('.add').click(function() {
             num++;
+            if (num > 3) {
+                num = 3;
+            }
             $('.myNum').text(num);
+            $('.myMoney').text(num*365);
         })
         $('.section3').each(function(i, e) {
             $(this).click(function() {
