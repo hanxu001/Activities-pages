@@ -36,19 +36,19 @@
                 <p class="text1">合计</p>
                 <p class="text1">365.0</p>
             </div>
-            <div class="section3">
+            <div class="section3 cur" data-id="0">
                 <div>
                     <img src="images/Alipay.png">
                     <p class="text1">支付宝支付</p>
                 </div>
-                <img src="images/default.png" alt="" class="default">
+                <p class="default"></p>
             </div>
-            <div class="section3">
+            <div class="section3" data-id="1">
                 <div>
                     <img src="images/WeChat.png">
                     <p class="text1">微信支付</p>
                 </div>
-                <img src="images/default.png" alt="" class="default">
+                <p class="default"></p>
             </div>
             <div class="button">
                 <p>会员续费</p>
@@ -71,6 +71,7 @@
     <script type="text/javascript">
     $(function() {
         var num = 1;
+        var saber ='';
         $('.reduce').click(function() {
             num--;
             if (num < 1) {
@@ -84,12 +85,18 @@
         })
         $('.section3').each(function(i, e) {
             $(this).click(function() {
-                $('.default').each(function() {
-                    $(this).attr('src', 'images/default.png');
-                });
-                $('.default').eq(i).attr('src', 'images/choose.png');
+                $(this).addClass('cur').siblings().removeClass('cur');
+                $(this).data('id',i);
             });
+
         })
+        $('.button').click(function(saber){
+            if(saber){
+                console.log(saber)
+            }
+        })
+
+        
     });
     </script>
 </body>
