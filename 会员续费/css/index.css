@@ -36,6 +36,7 @@
 	margin-top: .35rem;
 	padding: 0 .3rem;
 	padding-bottom: .4rem;
+	clip: 
 }
 .section1, .section2, .section3{
 	height: 1rem;
@@ -84,7 +85,7 @@
 	height: .8rem;
 	background-color: #fcb50b;
 	border-radius: .08rem;
-	margin-left: .15rem;
+	/*margin-left: .15rem;*/
 }
 .button p{
 	font-size: .36rem;

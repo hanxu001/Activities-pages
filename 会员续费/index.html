@@ -50,8 +50,12 @@
                 </div>
                 <p class="default"></p>
             </div>
-            <div class="button">
-                <p>会员续费</p>
+            <div style="display: flex;flex-direction: row;align-items: center;justify-content: space-between;margin: 0 -.6rem;"> 
+                <p style="width: .6rem;height: .6rem;border-radius: 50%;z-index: 10;background-color: #f6f6f6"></p>
+                <div class="button">
+                    <p>会员续费</p>
+                </div>
+                <p style="width: .6rem;height: .6rem;border-radius: 50%;z-index: 10;background-color: #f6f6f6"></p>
             </div>
             <p class="text1" style="margin-top: .5rem">会员权益:</p>
             <div class="article">
@@ -71,14 +75,14 @@
     <script type="text/javascript">
     $(function() {
         var num = 1;
-        var saber ='';
+        var saber = '';
         $('.reduce').click(function() {
             num--;
             if (num < 1) {
                 num = 1;
             }
             $('.myNum').text(num);
-            $('.myMoney').text(num*365);
+            $('.myMoney').text(num * 365);
         })
         $('.add').click(function() {
             num++;
@@ -86,22 +90,22 @@
                 num = 3;
             }
             $('.myNum').text(num);
-            $('.myMoney').text(num*365);
+            $('.myMoney').text(num * 365);
         })
         $('.section3').each(function(i, e) {
             $(this).click(function() {
                 $(this).addClass('cur').siblings().removeClass('cur');
-                $(this).data('id',i);
+                $(this).data('id', i);
             });
 
         })
-        $('.button').click(function(saber){
-            if(saber){
+        $('.button').click(function(saber) {
+            if (saber) {
                 console.log(saber)
             }
         })
 
-        
+
     });
     </script>
 </body>
