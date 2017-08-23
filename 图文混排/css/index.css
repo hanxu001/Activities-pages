@@ -6,7 +6,27 @@
 	width: 6.9rem;
 	margin: 0 auto;
 }
-
+.row{
+	display: flex;
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	-o-flex-direction: row;
+	flex-direction: row;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: flex-start;
+}
+.row .head-icon{
+	width: .66rem;
+	height: .66rem;
+	border-radius: 50%;
+	margin-right: .3rem;
+}
+.row .head-info{
+	font-size: .26rem;
+	color: #333;
+}
 .section{
 	margin-top: .3rem;
 }
@@ -81,4 +101,8 @@
 	font-size: .26rem;
 	color: #333;
 	line-height: 1.6em;
+}
+.section .banner{
+	width: 6.9rem;
+	height: 2.6rem;
 }
