@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>图文混排</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript">
+    (function(t) {
+        var doc = t.documentElement;
+        var curDeviceWidth = doc.clientWidth || window.innerWidth;
+        doc.style.fontSize = curDeviceWidth * (50 / 375) + 'px';
+    })(document);
+    </script>
+</head>
+
+<body style="background-color: #fff;">
+    <div class="container">
+        <div class="section">
+            <div class="title2">
+                <div>
+                    <h2>魏晋风华</h2>
+                    <p>本内容为试听版本</p>
+                </div>
+                <input type="button" name="login" id="login" value="登录">
+            </div>
+            <img src="bg.png" alt="" class="banner">
+        </div>
+        <div class="row">
+            <img src="bg.png" alt="" class="head-icon">
+            <p class="head-info">戴军读书会</p>
+        </div>
+        <div class="section">
+            <div class="title">
+                <p></p>
+                <h2>2017年第27本书</h2>
+            </div>
+            <div class="mixed">
+                <img src="bg.png" alt="" class="book">
+                <div>
+                    <p>书名：《极致：互联网时代的产品设计》</p>
+                    <p>作者：【美】戴维·罗斯</p>
+                    <p>出版社：中信出版社</p>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="title">
+                <p></p>
+                <h2>荐语</h2>
+            </div>
+            <div class="pure">
+                <p>就怕孩子输在起跑线？</p>
+                <p>拼死拼活买学区房？</p>
+                <p>累死累活送才艺班？</p>
+                <p>那些都是身外之物，你才是孩子成长的最大变量！</p>
+                <p>把握不好0-7岁关键期，孩子一生事倍功半。</p>
+                <p>啥都往嘴里塞？专踩不平的地方？撒谎？被欺负？</p>
+            </div>
+        </div>
+        <!-- add start-->
+        <div class="footer">
+            <div class="inner">
+                <div class="f-top">
+                    <h2>戴军读书会</h2>
+                    <p>跟戴军一起成为有温度、懂情趣、会思考的人。</p>
+                    <h3>点击下载，可立即尊享5天VIP会员体验哦~</h3>
+                    <img src="images/slice2.png" class="slice2">
+                </div>
+                <div class="f-bottom">
+                    <div>
+                        <img src="images/logo.png" alt="" class="logo">
+                        <h2>戴军读书会</h2>
+                    </div>
+                    <div>
+                        <div class="item ios">
+                            <img src="images/ios.png">
+                            <h3>iPhone版</h3>
+                        </div>
+                        <div class="item android" style="background-color: #6ECF00;">
+                            <img src="images/android.png">
+                            <h3>Android版</h3>
+                        </div>
+                    </div>
+                    <img src="images/slice1.png" class="slice1">
+                </div>
+            </div>
+        </div>
+        <!-- add end-->
+    </div>
+    <script type="text/javascript">
+    $(function() {
+        // 初始化
+        $('.f-top').hide();
+        // footer点击事件
+        $('.slice1').click(function() {
+            $('.slice1').hide();
+            $('.f-top').show();
+        });
+        $('.slice2').click(function() {
+            $('.slice1').show();
+            $('.f-top').hide();
+        });
+        // 登录
+        $('#login').click(function() {
+            console.log('login')
+        });
+        // 下载
+        $('.ios').click(function() {
+            console.log('ios')
+        });
+        $('.android').click(function() {
+            console.log('android')
+        });
+    });
+    </script>
+</body>
+
+</html>
