@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>关于我们</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript">
+    (function(t) {
+        var doc = t.documentElement;
+        var curDeviceWidth = doc.clientWidth || window.innerWidth;
+        doc.style.fontSize = curDeviceWidth * (50 / 375) + 'px';
+    })(document);
+    </script>
+</head>
+
+<body style="background-color: #fff;">
+    <div class="container">
+        <img src="images/logo.png" alt="" class="logo">
+        <img src="images/banner.png" alt="" class="banner">
+        <p class="text" style="margin-top: .8rem;text-indent: 2em;">新鲜有态度的阅读精化分享平台，跟戴军老师一起读 好书，成为更好的自己。有趣不高冷，专业不盲从，感谢 爱读书的你，在茫茫人海与我们相遇！ 
+        </p>
+        <p class="text">戴军读书会，与诸位爱书人，一起读好书，行趣事。</p>
+    </div>
+    <script type="text/javascript">
+    $(function() {
+        var num = 1;
+        var saber = '';
+        $('.reduce').click(function() {
+            num--;
+            if (num < 1) {
+                num = 1;
+            }
+            $('.myNum').text(num);
+            $('.myMoney').text(num * 365);
+        })
+        $('.add').click(function() {
+            num++;
+            if (num > 3) {
+                num = 3;
+            }
+            $('.myNum').text(num);
+            $('.myMoney').text(num * 365);
+        })
+        $('.section3').each(function(i, e) {
+            $(this).click(function() {
+                $(this).addClass('cur').siblings().removeClass('cur');
+                $(this).data('id', i);
+            });
+
+        })
+        $('.button').click(function(saber) {
+            if (saber) {
+                console.log(saber)
+            }
+        })
+
+
+    });
+    </script>
+</body>
+
+</html>

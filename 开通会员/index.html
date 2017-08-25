@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>开通会员</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript">
+    (function(t) {
+        var doc = t.documentElement;
+        var curDeviceWidth = doc.clientWidth || window.innerWidth;
+        doc.style.fontSize = curDeviceWidth * (50 / 375) + 'px';
+    })(document);
+    </script>
+</head>
+
+<body style="background-color: #f6f6f6;">
+    <div class="container">
+        <div class="banner">
+            <p class="text1">读书让我更美腻</p>
+            <p class="text2" style="margin-top: .46rem">立即购买可为当前用户开通会员</p>
+        </div>
+        <div class="content">
+            <div class="section1">
+                <p class="text1">时长（年）</p>
+                <div>
+                    <img src="images/reduce.png" class="reduce">
+                    <span class="myNum">1</span>
+                    <img src="images/add.png" class="add">
+                </div>
+            </div>
+            <div class="section2">
+                <p class="text1">合计</p>
+                <p class="text1 myMoney">365</p>
+            </div>
+            <div class="section3 cur" data-id="0">
+                <div>
+                    <img src="images/Alipay.png">
+                    <p class="text1">支付宝支付</p>
+                </div>
+                <p class="default"></p>
+            </div>
+            <div class="section3" data-id="1">
+                <div>
+                    <img src="images/WeChat.png">
+                    <p class="text1">微信支付</p>
+                </div>
+                <p class="default"></p>
+            </div>
+            <div style="display: flex;flex-direction: row;align-items: center;justify-content: space-between;margin: 0 -.6rem;"> 
+                <p style="width: .6rem;height: .6rem;border-radius: 50%;z-index: 10;background-color: #f6f6f6"></p>
+                <div class="button">
+                    <p>会员续费</p>
+                </div>
+                <p style="width: .6rem;height: .6rem;border-radius: 50%;z-index: 10;background-color: #f6f6f6"></p>
+            </div>
+            <p class="text1" style="margin-top: .5rem">会员权益:</p>
+            <div class="article">
+                <h2>1.精华解读</h2>
+                <p>每年五十本优质新书图文、音频、视频解读（非电子书原著）</p>
+            </div>
+            <div class="article">
+                <h2>2.畅享无阻</h2>
+                <p>APP往期会员专享内容自动解锁</p>
+            </div>
+            <div class="article">
+                <h2>3.乐享积分</h2>
+                <p>多方式获取积分，丰富礼品开心兑换</p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    $(function() {
+        var num = 1;
+        var saber = '';
+        $('.reduce').click(function() {
+            num--;
+            if (num < 1) {
+                num = 1;
+            }
+            $('.myNum').text(num);
+            $('.myMoney').text(num * 365);
+        })
+        $('.add').click(function() {
+            num++;
+            if (num > 3) {
+                num = 3;
+            }
+            $('.myNum').text(num);
+            $('.myMoney').text(num * 365);
+        })
+        $('.section3').each(function(i, e) {
+            $(this).click(function() {
+                $(this).addClass('cur').siblings().removeClass('cur');
+                $(this).data('id', i);
+            });
+
+        })
+        $('.button').click(function(saber) {
+            if (saber) {
+                console.log(saber)
+            }
+        })
+
+
+    });
+    </script>
+</body>
+
+</html>

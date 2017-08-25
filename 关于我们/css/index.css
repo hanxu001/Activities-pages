@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html,body{
+	font-size: .2rem;
+	color: #000;
+}
+.container{
+	width: 6.6rem;
+	margin: 0 auto;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: flex-start;
+}
+.container .logo{
+	width: 1.88rem;
+	height: 1.88rem;
+	margin-top: .88rem;
+}
+.container .banner{
+	width: 1.8rem;
+	height: .37rem;
+	margin-top: .8rem;
+}
+.container p{
+	font-size: .26rem;
+	color: #666;
+	line-height: .42rem;
+	width: 6.6rem;
+}

@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container{
+	width: 6.9rem;
+	margin: 0 auto;
+}
+.banner{
+	width: 6.9rem;
+	height: 1.8rem;
+	background-image: url(../images/banner.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	margin-top: .3rem;
+}
+.text1{
+	font-size: .34rem;
+	color: #333;
+}
+.text2{
+	font-size: .26rem;
+	color: #666;
+}
+.content{
+	background-color: #fff;
+	margin-top: .35rem;
+	padding: 0 .3rem;
+	padding-bottom: .4rem;
+	clip: 
+}
+.section1, .section2, .section3{
+	height: 1rem;
+	display: flex;
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	-o-flex-direction: row;
+	flex-direction: row;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-between;
+}
+.section1 div ,.section3 div{
+	display: flex;
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	-o-flex-direction: row;
+	flex-direction: row;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+}
+.section1 div img, .section3>img{
+	width: .42rem;
+	height: .42rem;
+}
+.myNum{
+	font-size: .36rem;
+	color: #666;
+	margin: 0 .3rem;
+	display: inline-block;
+	/*border: 1px solid #000;*/
+	width: .5rem;
+	height: .5rem;
+	text-align: center;
+}
+.section3 div img{
+	width: .5rem;
+	height: .5rem;
+	margin-right: .34rem;
+}
+.button{
+	width: 6rem;
+	height: .8rem;
+	background-color: #fcb50b;
+	border-radius: .08rem;
+	/*margin-left: .15rem;*/
+}
+.button p{
+	font-size: .36rem;
+	color: #fff;
+	height: .8rem;
+	line-height: .8rem;
+	text-align: center;
+}
+.article h2{
+	font-size: .28rem;
+	color: #666;
+	margin-top: .2rem;
+}
+.article p{
+	font-size: .2rem;
+	color: #999;
+	margin-top: .2rem;
+}
+.section3 .default{
+	width: .42rem;
+	height: .42rem;
+	background-image: url(../images/default.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.cur .default{
+	background-image: url(../images/choose.png);
+}
