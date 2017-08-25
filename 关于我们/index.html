@@ -24,41 +24,11 @@
         <p class="text" style="margin-top: .8rem;text-indent: 2em;">新鲜有态度的阅读精化分享平台，跟戴军老师一起读 好书，成为更好的自己。有趣不高冷，专业不盲从，感谢 爱读书的你，在茫茫人海与我们相遇！ 
         </p>
         <p class="text">戴军读书会，与诸位爱书人，一起读好书，行趣事。</p>
+        <p class="text2">当前版本号：v1.1.1</p>
     </div>
     <script type="text/javascript">
     $(function() {
-        var num = 1;
-        var saber = '';
-        $('.reduce').click(function() {
-            num--;
-            if (num < 1) {
-                num = 1;
-            }
-            $('.myNum').text(num);
-            $('.myMoney').text(num * 365);
-        })
-        $('.add').click(function() {
-            num++;
-            if (num > 3) {
-                num = 3;
-            }
-            $('.myNum').text(num);
-            $('.myMoney').text(num * 365);
-        })
-        $('.section3').each(function(i, e) {
-            $(this).click(function() {
-                $(this).addClass('cur').siblings().removeClass('cur');
-                $(this).data('id', i);
-            });
-
-        })
-        $('.button').click(function(saber) {
-            if (saber) {
-                console.log(saber)
-            }
-        })
-
-
+      
     });
     </script>
 </body>
