@@ -6,14 +6,22 @@
     <title>HTML5 Canvas粒子效果文字动画特效DEMO演示</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+    <link rel="stylesheet" href="css/animate.css">
     <style type="text/css">
     .help,
     .ui-input {
         display: none;
     }
 
+    html {
+        -webkit-text-size-adjust: none;
+        min-width: 1280px;
+    }
+
+
     .main {
         width: 100%;
+        /*height: 1080px;*/
         position: absolute;
         left: 0;
         top: 0;
@@ -28,9 +36,6 @@
         letter-spacing: 10px;
     }
 
-    .main h1:nth-child(1) {
-        padding-top: 260px;
-    }
 
     .main h4 {
         font-size: 24px;
@@ -58,6 +63,20 @@
         margin-top: 32px;
         text-align: center;
     }
+    /*add*/
+
+    .row {
+        display: flex;
+        -webkit-flex-direction: row;
+        -moz-flex-direction: row;
+        -ms-flex-direction: row;
+        -o-flex-direction: row;
+        flex-direction: row;
+        justify-content: center;
+        -ms-align-items: center;
+        align-items: center;
+    }
+    /*add*/
     </style>
     <script type="text/javascript" src="js/jquery.min.js"></script>
 </head>
@@ -109,15 +128,42 @@
         </div>
     </div>
     <div class="main" id="main">
-        <h1>专注区块链</h1>
-        <h1>私募，投资，ICO</h1>
-        <h4>码农资本：coder.capital</h4>
-        <div class="qrbox">
-            <img src="images/QRcode.png" class="qrcode">
+        <div class="row">
+            <div class="wow bounceInDown">
+                <h1 style="padding-top: 260px;">专注区块链</h1></div>
         </div>
-        <p>扫描二维码，了解更多</p>
+        <div class="row">
+            <div class="wow rollIn" data-wow-delay="0.5s">
+                <h1>私募，</h1></div>
+            <div class="wow pulse" data-wow-iteration="5" data-wow-duration="0.15s">
+                <h1>投资，</h1></div>
+            <div class="wow bounceInRight">
+                <h1>ICO</h1></div>
+        </div>
+        <div class="row">
+            <div class="wow flipInX">
+                <h4>码农资本：coder.capital</h4></div>
+        </div>
+        <div class="row">
+            <div class="wow bounceInUp ">
+                <div class="qrbox">
+                    <img src="images/QRcode.png" class="qrcode">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="wow bounceInRight " data-wow-delay="1.5s">
+                <p>扫描二维码了解更多</p>
+            </div>
+        </div>
     </div>
     <script src="js/index.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+    if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))) {
+        new WOW().init();
+    };
+    </script>
 </body>
 
 </html>

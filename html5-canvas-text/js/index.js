@@ -24,7 +24,7 @@ var S = {
     if (i !== -1) {
       S.UI.simulate(decodeURI(action).substring(i + 3));
     } else {
-      S.UI.simulate('专注区块链|私募|投资|ICO|码农资本|coder.capital||');
+      S.UI.simulate('专注区块链|私募|投资|ICO||');
     }
 
     S.Drawing.loop(function () {
@@ -723,6 +723,6 @@ S.init();
 // add
 setTimeout(function(){
   $('.main').show();
-},15000)
+},10000)
 
 
