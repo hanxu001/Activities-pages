@@ -49,13 +49,13 @@
     .qrbox {
         width: 100%;
         text-align: center;
+        margin-top: 68px;
     }
 
     .qrcode {
         display: inline-block;
         width: 145px;
         height: 149px;
-        margin-top: 68px;
     }
 
     .main p {
@@ -80,6 +80,10 @@
     .canvas{
         width: 100%;
         height: 1080px;
+    }
+    #table1{
+        border: 4px solid #000;
+        padding: -2px;
     }
     /*add*/
     </style>
@@ -106,7 +110,7 @@
         </div>
         <div class="row">
             <div class="wow bounceInUp ">
-                <div class="qrbox">
+                <div class="qrbox" id="table1">
                     <img src="images/QRcode.png" class="qrcode">
                 </div>
             </div>
@@ -168,6 +172,16 @@
     if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))) {
         new WOW().init();
     };
+    var i = 0;
+    var Color = new Array("#0000FF", "#99FF00", "#660033", "#CC66CC", "#FFFF33");
+
+    function pp() {
+        if (i > Color.length - 1) { i = 0 }
+        table1.style.borderColor = Color[i];
+        i = i + 1;
+        setTimeout("pp()", 100);
+    }
+    pp();
     </script>
 </body>
 
