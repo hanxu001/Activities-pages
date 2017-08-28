@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 Canvas粒子效果文字动画特效DEMO演示</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+    <style type="text/css">
+    .help,
+    .ui-input {
+        display: none;
+    }
+
+    .main {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 999;
+        display: none;
+    }
+
+    .main h1 {
+        font-size: 80px;
+        color: #fff;
+        text-align: center;
+        letter-spacing: 10px;
+    }
+
+    .main h1:nth-child(1) {
+        padding-top: 260px;
+    }
+
+    .main h4 {
+        font-size: 24px;
+        color: #fff;
+        opacity: .7;
+        text-align: center;
+        margin-top: 72px;
+    }
+
+    .qrbox {
+        width: 100%;
+        text-align: center;
+    }
+
+    .qrcode {
+        display: inline-block;
+        width: 145px;
+        height: 149px;
+        margin-top: 68px;
+    }
+
+    .main p {
+        font-size: 20px;
+        color: #fff;
+        margin-top: 32px;
+        text-align: center;
+    }
+    </style>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+
+<body>
+    <div style="text-align:center;clear:both;position:absolute;top:0;left:260px">
+    </div>
+    <canvas class="canvas"></canvas>
+    <div class="help">?</div>
+    <div class="ui">
+        <input class="ui-input" type="text" />
+        <span class="ui-return">↵</span>
+    </div>
+    <div class="overlay">
+        <div class="tabs">
+            <div class="tabs-labels"><span class="tabs-label">Commands</span><span class="tabs-label">Info</span><span class="tabs-label">Share</span></div>
+            <div class="tabs-panels">
+                <ul class="tabs-panel commands">
+                    <li class="commands-item"><span class="commands-item-title">Text</span><span class="commands-item-info" data-demo="Hello :)">Type anything</span><span class="commands-item-action">Demo</span></li>
+                    <li class="commands-item"><span class="commands-item-title">Countdown</span><span class="commands-item-info" data-demo="#countdown 10">#countdown<span class="commands-item-mode">number</span></span><span class="commands-item-action">Demo</span></li>
+                    <li class="commands-item"><span class="commands-item-title">Time</span><span class="commands-item-info" data-demo="#time">#time</span><span class="commands-item-action">Demo</span></li>
+                    <li class="commands-item"><span class="commands-item-title">Rectangle</span><span class="commands-item-info" data-demo="#rectangle 30x15">#rectangle<span class="commands-item-mode">width x height</span></span><span class="commands-item-action">Demo</span></li>
+                    <li class="commands-item"><span class="commands-item-title">Circle</span><span class="commands-item-info" data-demo="#circle 25">#circle<span class="commands-item-mode">diameter</span></span><span class="commands-item-action">Demo</span></li>
+                    <li class="commands-item commands-item--gap"><span class="commands-item-title">Animate</span><span class="commands-item-info" data-demo="The time is|#time|#countdown 3|#icon thumbs-up"><span class="commands-item-mode">command1</span>&nbsp;|<span class="commands-item-mode">command2</span></span><span class="commands-item-action">Demo</span></li>
+                </ul>
+                <div class="tabs-panel ui-details">
+                    <div class="ui-details-content">
+                        <h1>Shape Shifter</h1>
+                        <p>
+                            An experiment by <a href="//www.kennethcachia.com" target="_blank">Kenneth Cachia<a/>.<br/>
+            <a href="//fortawesome.github.io/Font-Awesome/#icons-new" target="_blank">Font Awesome</a> is being used to render all #icons.
+                        </p>
+                        <br/>
+                        <p>Visit <a href="http://www.kennethcachia.com/shape-shifter/?a=#icon thumbs-up" target="_blank">Shape Shifter</a> to use icons.</p>
+                    </div>
+                </div>
+                <div class="tabs-panel ui-share">
+                    <div class="ui-share-content">
+                        <h1>Sharing</h1>
+                        <p>Simply add <em>?a=</em> to the current URL to share any static or animated text. Examples:</p>
+                        <p>
+                            <a href="http://www.kennethcachia.com/shape-shifter?a=Hello" target="_blank">www.kennethcachia.com/shape-shifter?a=Hello</a>
+                            <br/>
+                            <a href="http://www.kennethcachia.com/shape-shifter?a=Hello|#countdown 3" target="_blank">www.kennethcachia.com/shape-shifter?a=Hello|#countdown 3</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main" id="main">
+        <h1>专注区块链</h1>
+        <h1>私募，投资，ICO</h1>
+        <h4>码农资本：coder.capital</h4>
+        <div class="qrbox">
+            <img src="images/QRcode.png" class="qrcode">
+        </div>
+        <p>扫描二维码，了解更多</p>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
