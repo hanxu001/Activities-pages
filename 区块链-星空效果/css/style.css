@@ -1,0 +1,3145 @@
+html {
+    color: #000;
+    background: #FFF
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+select,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+fieldset,
+img {
+    border: 0
+}
+
+address,
+button,
+caption,
+cite,
+code,
+dfn,
+em,
+input,
+optgroup,
+option,
+select,
+strong,
+textarea,
+th,
+var {
+    font: inherit
+}
+
+del,
+ins {
+    text-decoration: none
+}
+
+li {
+    list-style: none
+}
+
+caption,
+th {
+    text-align: left
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal
+}
+
+q:before,
+q:after {
+    content: ''
+}
+
+abbr,
+acronym {
+    border: 0;
+    font-variant: normal
+}
+
+sup {
+    vertical-align: baseline
+}
+
+sub {
+    vertical-align: baseline
+}
+
+legend {
+    color: #000
+}
+
+.cf:before,
+.cf:after {
+    content: "";
+    display: table
+}
+
+.cf:after {
+    clear: both
+}
+
+.cf {
+    zoom: 1
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    background: #000;
+    font-family: 'Trade Gothic W01', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 200;
+    font-size: 12px;
+    color: #fff;
+    overflow: hidden
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer
+}
+
+.table {
+    display: table
+}
+
+.cell {
+    display: table-cell
+}
+
+.row {
+    display: table-row
+}
+
+._body {
+    position: relative
+}
+
+canvas,
+._popup *,
+.toggle,
+.controlsNav * {
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none
+}
+
+@font-face {
+    font-family: 'icon';
+    src: url('../fonts/icon.eot?-r1iari');
+    src: url('../fonts/icon.eot?#iefix-r1iari') format('embedded-opentype'), url('../fonts/icon.woff?-r1iari') format('woff'), url('../fonts/icon.ttf?-r1iari') format('truetype'), url('../fonts/icon.svg?-r1iari#icon') format('svg');
+    font-weight: normal;
+    font-style: normal
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    font-family: 'icon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.icon-pause:before {
+    content: "\30"
+}
+
+.icon-play-arrow:before {
+    content: "\31"
+}
+
+.icon-uni30:before {
+    content: "\32"
+}
+
+.icon-uni37:before {
+    content: "\37"
+}
+
+.icon-uni38:before {
+    content: "\33"
+}
+
+.icon-uni39:before {
+    content: "\34"
+}
+
+.icon-volume-mute:before {
+    content: "\35"
+}
+
+.icon-volume-medium:before {
+    content: "\36"
+}
+
+.icon {
+    font-family: 'icon'!important
+}
+
+.default {
+    cursor: default
+}
+
+iframe {
+    frameborder: 0;
+    border: none
+}
+
+.false {
+    cursor: default!important
+}
+
+.wrapper {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    overflow: hidden
+}
+
+.i body {
+    -webkit-perspective: 1000px;
+    -o-perspective: 1000;
+    -ms-perspective: 1000;
+    perspective: 1000
+}
+
+.toggleWrap {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity 0.5s
+}
+
+.sub .toggleWrap {
+    opacity: 1!important
+}
+
+.toggleWrap span {
+    display: block;
+    width: 18px;
+    height: 2px;
+    background: #fff;
+    transition: all 0.3s
+}
+
+.toggleWrap span.toggle2 {
+    margin: 5px 0
+}
+
+.toggle {
+    padding: 51px 50px;
+    cursor: pointer
+}
+
+.hidejp {
+    display: none!important
+}
+
+.hideen {
+    display: block!important
+}
+
+.jp .hidejp {
+    display: block!important
+}
+
+.jp .hideen {
+    display: none!important
+}
+
+.changelang {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999
+}
+
+.changelang span {
+    display: block;
+    height: 118px;
+    width: 118px;
+    text-align: center;
+    line-height: 118px
+}
+
+.changelang span a {
+    display: inline-block;
+    color: #fff;
+    padding: 0 2px;
+    font-size: 11px
+}
+
+.en .cahngeen {
+    opacity: 0.4
+}
+
+.en .cahngejp {
+    opacity: 1;
+    font-weight: 400
+}
+
+.jp .cahngeen {
+    opacity: 1;
+    font-weight: 400
+}
+
+.jp .cahngejp {
+    opacity: 0.4
+}
+
+.loader_ol * {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none
+}
+
+.tube {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    -webkit-perspective: 1000px;
+    -o-perspective: 1000;
+    -ms-perspective: 1000;
+    perspective: 1000
+}
+
+.tube ._body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    transition: opacity 1s, -webkit-transform 0.5s;
+    transition: opacity 1s, transform 0.5s
+}
+
+.hideTube .tube ._body {
+    opacity: 0
+}
+
+.tube .player {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -500px
+}
+
+.tube ._body ._mask {
+    position: absolute;
+    width: 100%;
+    left: 0
+}
+
+.tube ._body .tubetop {
+    z-index: 10;
+    top: 0;
+    background: #000
+}
+
+.tube ._body .tubebottom {
+    z-index: 10;
+    bottom: 0;
+    background: #000
+}
+
+.tube ._body .tubeall {
+    height: 100%;
+    z-index: 2;
+    top: 0
+}
+
+.player {
+    opacity: 1;
+    transition: all 1s
+}
+
+.captureWrap {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: all 1s;
+    top: 50%
+}
+
+.capture {
+    height: 100%;
+    width: 100%;
+    position: relative
+}
+
+.capture>div {
+    transition: all 0.7s;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.capture>div.show {
+    opacity: 1
+}
+
+.grabbegin .captureWrap {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    opacity: 0.4
+}
+
+.grabbegin .player {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    opacity: 0!important
+}
+
+.grabbegin.youtubefin .tube ._body {
+    -webkit-transform: scale(1);
+    transform: scale(1)
+}
+
+.youtubefin .tube ._body {
+    -webkit-transform: scale(1);
+    transform: scale(1)
+}
+
+.hide_movie.btns {
+    position: fixed;
+    right: 50px;
+    top: 50%;
+    z-index: 10;
+    background: none
+}
+
+.hide_movie.btns span {
+    width: 14px;
+    margin: -1px 0 0 -9px;
+    transition: all 0.5s
+}
+
+.hide_movie.btns span.b1 {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+
+.hide_movie.btns span.b2 {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg)
+}
+
+.lineCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    cursor: move;
+    cursor: grab;
+    cursor: -webkit-grab
+}
+
+.event_hover_point .lineCanvas {
+    cursor: pointer
+}
+
+.grabbable .lineCanvas {
+    cursor: grabbing;
+    cursor: -webkit-grabbing
+}
+
+.controls {
+    position: fixed;
+    margin: -420px 0 0 -624px;
+    top: 50%;
+    left: 50%;
+    z-index: 2
+}
+
+.controls.lineControl {
+    margin: 0;
+    top: 0;
+    left: 0
+}
+
+.controlsNav {
+    position: fixed;
+    z-index: 4
+}
+
+.polymask_body {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: -9999px;
+    top: 0
+}
+
+.circleControl {
+    -webkit-transform: rotate(-90deg) scale(0.9);
+    transform: rotate(-90deg) scale(0.9);
+    transition: all 0.5s;
+    opacity: 0
+}
+
+.showCircle .circleControl {
+    opacity: 1;
+    -webkit-transform: rotate(-90deg) scale(1);
+    transform: rotate(-90deg) scale(1)
+}
+
+.lineControl {
+    width: 0;
+    height: 100%;
+    transition: all 0.5s;
+    opacity: 0
+}
+
+.showLine .lineControl {
+    width: 100%;
+    transition: all 1s 0.3s;
+    opacity: 1
+}
+
+.media {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 4
+}
+
+.controlWrap {
+    background: rgba(0, 0, 0, 0);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    transition: all 1s;
+    opacity: 0!important
+}
+
+.cursorActive .controlWrap {
+    opacity: 1!important
+}
+
+.cursorActive .player {
+    opacity: 0.3
+}
+
+.controlsNav {
+    position: fixed;
+    top: 50%;
+    left: 50px;
+    z-index: 10;
+    height: 120px;
+    width: 160px;
+    margin-top: -60px
+}
+
+.controlsNav .controlsNavFade a {
+    position: relative;
+    line-height: 40px;
+    font-size: 10px;
+    font-weight: 400
+}
+
+.controlsNav .controlsNavFade span {
+    display: block
+}
+
+.controlsNav .controlsNavFade span.io {
+    position: absolute;
+    left: 0;
+    top: 10px
+}
+
+.controlsNav .controlsNavFade span.txt {
+    padding: 0 35px;
+    opacity: 0
+}
+
+.controlsNav ._body {
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    margin-left: -35px
+}
+
+.zu {
+    display: block
+}
+
+.controlsToggle .zu {
+    transition: all 0.3s;
+    opacity: 0
+}
+
+.controlsToggle .zu.on {
+    opacity: 1
+}
+
+.zu1 {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #fff;
+    border-radius: 100%
+}
+
+.zu2 {
+    width: 18px;
+    margin: 9px 0;
+    height: 2px;
+    background: #fff
+}
+
+.zu3 {
+    width: 16px;
+    margin: 2px 0;
+    height: 12px;
+    border: 2px solid #fff
+}
+
+.controlsNavFade .zu {
+    display: block;
+    opacity: 0
+}
+
+.controlsNavFade .zu .io {
+    transition: border 0.5s, background 0.5s
+}
+
+.controlsNavFade .zu1 {
+    border: 2px solid #fff
+}
+
+.controlsNavFade .zu2 {
+    background: #666
+}
+
+.controlsNavFade .zu3 {
+    border: 2px solid #666
+}
+
+.controlsNavFade .zu:hover .zu1 {
+    border: 2px solid #fff
+}
+
+.controlsNavFade .zu:hover .zu2 {
+    background: #fff
+}
+
+.controlsNavFade .zu:hover .zu3 {
+    border: 2px solid #fff
+}
+
+.controlsNavFade .zu {
+    color: #666;
+    transition: border 0.5s, background 0.5s, color 0.5s
+}
+
+.controlsNavFade .zu:hover {
+    color: #fff
+}
+
+.controlsToggle {
+    top: 49px;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    display: block
+}
+
+.controlsToggle span {
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.controlsNavIn {
+    position: relative;
+    opacity: 0;
+    transition: all 0.5s
+}
+
+.cursorActive .controlsNavIn {
+    opacity: 1
+}
+
+.pass .controlAll {
+    display: block
+}
+
+.controlAll {
+    display: none;
+    position: fixed;
+    z-index: 5;
+    bottom: 35px;
+    left: 50px;
+    opacity: 1;
+    transition: opacity 0.5s, left 0s
+}
+
+.controlAll {
+    z-index: 10000
+}
+
+.controlAll a {
+    display: inline-block;
+    text-align: center;
+    width: 40px;
+    color: #fff;
+    line-height: 40px;
+    font-size: 16px;
+    opacity: 1;
+    transition: all 0.5s
+}
+
+.controlAll a.pause {
+    font-size: 22px
+}
+
+.controlAll .cell {
+    vertical-align: middle
+}
+
+.sub .controlAll {
+    left: -100%;
+    opacity: 0;
+    transition: opacity 0.5s 0.5s, left 0s 0.5s
+}
+
+.openMenu.sub .controlAll {
+    left: 50px;
+    transition: opacity 0.5s, left 0s;
+    opacity: 1!important
+}
+
+.moviestatus {
+    position: absolute;
+    z-index: 5;
+    right: 50px;
+    top: 50px;
+    font-size: 11px;
+    letter-spacing: 1px
+}
+
+.cursorhide {
+    opacity: 0!important;
+    transition: opacity 0.5s
+}
+
+.cursorActive .cursorhide {
+    opacity: 1!important
+}
+
+.openMenu .cursorhide {
+    opacity: 1!important
+}
+
+.playback {
+    width: 100%;
+    height: 100%;
+    display: table;
+    position: fixed;
+    z-index: -9999;
+    top: 0;
+    left: -100%;
+    opacity: 0;
+    transition: opacity 1s
+}
+
+.youtubefin .playback {
+    z-index: 10;
+    left: 0;
+    opacity: 1
+}
+
+.youtubefin .tube {
+    opacity: 0.3!important
+}
+
+.youtubefin .visualPopup,
+.youtubefin .tube .player,
+.youtubefin .controls {
+    opacity: 0!important
+}
+
+.playbackin {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle
+}
+
+.playbackin a {
+    padding: 100px 0;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 11px;
+    vertical-align: middle;
+    display: table-cell;
+    width: 175px
+}
+
+.playbackin .table {
+    margin: 0 auto
+}
+
+.playbackin span {
+    display: block;
+    color: #fff;
+    text-align: center
+}
+
+.playbackin {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle
+}
+
+.playbackin a {
+    padding: 100px 0;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 11px;
+    vertical-align: middle;
+    display: table-cell;
+    width: 175px
+}
+
+.youtubefin .tube {
+    background: url(../img/bg.jpg) no-repeat center;
+    background-size: contain
+}
+
+.listWrap {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    bottom: -70px;
+    left: 0;
+    z-index: 10
+}
+
+.listWrap ._body {
+    position: relative;
+    height: 100%;
+    width: 100%
+}
+
+.listprop ._link {
+    color: #fff;
+    font-family: 'Trade Gothic W01';
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 1px;
+    display: none;
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.3s
+}
+
+.listIn {
+    height: 70px;
+    width: 100%;
+    display: table
+}
+
+.listprop {
+    position: relative;
+    display: table-cell;
+    height: 70px;
+    vertical-align: middle;
+    background-position: center;
+    cursor: pointer
+}
+
+.listOut {
+    height: 100%
+}
+
+.backtocicle {
+    transition: all 0.3s;
+    background: rgba(0, 0, 0, 0.6);
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0
+}
+
+.listprop:hover .backtocicle {
+    background: rgba(0, 0, 0, 0)
+}
+
+.listprop:hover ._link {
+    opacity: 1
+}
+
+.showList .controlWrap {
+    opacity: 0!important;
+    z-index: -9999;
+    transition: opacity 1s, z-index 0s 1s
+}
+
+.showList ._popup {
+    opacity: 0!important
+}
+
+.listWrap {
+    opacity: 0;
+    transition: opacity 1s
+}
+
+.cursorActive.showList .listWrap {
+    opacity: 1
+}
+
+.showList .listWrap {
+    opacity: 0
+}
+
+.scrollicon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 30px;
+    height: 7px
+}
+
+.scrollicon svg {
+    width: 30px;
+    height: 7px
+}
+
+.scrollicon svg line {
+    stroke: #000
+}
+
+.openMenu .scrollicon {
+    opacity: 0
+}
+
+.showList.cursorActive .player {
+    opacity: 1
+}
+
+.mousestatus {
+    transition: opacity 0.5s;
+    position: absolute;
+    z-index: 2;
+    color: #fff;
+    letter-spacing: 1px;
+    display: block;
+    font-weight: 400;
+    opacity: 0;
+    width: 37px;
+    height: 37px;
+    margin: 0 0 0 -19px;
+    overflow: hidden
+}
+
+.mousestatus div {
+    position: relative;
+    width: 37px;
+    height: 37px;
+    transition: all 0.3s;
+    background: url()
+}
+
+.cursorActive .mousestatus {
+    opacity: 1
+}
+
+.event_hover_controls .mousestatus,
+.event_hover_point .mousestatus {
+    opacity: 0
+}
+
+.mousestatus span {
+    display: block;
+    width: 37px;
+    height: 37px
+}
+
+._popup {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.5s, z-index 0s;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    width: 300px;
+    height: 100px;
+    -moz-perspective: 1000px;
+    -webkit-perspective: 1000;
+    -o-perspective: 1000;
+    -ms-perspective: 1000
+}
+
+.showCircle ._popup {
+    margin-bottom: -50px;
+    left: 50%!important;
+    bottom: 50%!important;
+    margin-top: 0px;
+    margin-left: -180px
+}
+
+.showLine ._popup {
+    margin-bottom: 25px;
+    top: auto;
+    left: 0;
+    margin-top: -80px;
+    margin-left: -150px
+}
+
+._popup svg {
+    margin-top: -5px;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    z-index: 2;
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    transition: all 0.3s
+}
+
+._popup ._path {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 1;
+    opacity: 1
+}
+
+._popup .circle {
+    transition: all 0.3s;
+    width: 90px;
+    height: 90px;
+    display: block;
+    border-radius: 90px;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -45px 0 0 -45px;
+    opacity: 0;
+    box-sizing: border-box;
+    -webkit-transform: scale(0.3);
+    transform: scale(0.3)
+}
+
+body ._popup:hover .circle {
+    opacity: 0.4;
+    transition: all 0.5s
+}
+
+.polymask_body {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: -9999px;
+    top: 0
+}
+
+._popup ._body {
+    display: block;
+    color: #fff;
+    text-align: center;
+    width: 360px;
+    height: 100px
+}
+
+._popup ._header {
+    height: auto!important;
+    position: absolute;
+    top: 120px;
+    width: 360px;
+    text-align: center
+}
+
+._popup._type2 ._header {
+    top: 110px
+}
+
+._popup ._header ._title {
+    transition: all 0.5s;
+    opacity: 0;
+    -webkit-transform: translate(0, 15px);
+    transform: translate(0, 15px)
+}
+
+._popup ._header ._ex,
+._popup ._header ._link {
+    display: block;
+    transition: all 0.5s;
+    opacity: 0;
+    -webkit-transform: translate(0, 15px);
+    transform: translate(0, 15px)
+}
+
+._popup.on {
+    z-index: 10001;
+    opacity: 1
+}
+
+._popup.on .circle {
+    transition: all 0.5s 0.3s;
+    opacity: 0.1;
+    -webkit-transform: scale(1);
+    transform: scale(1)
+}
+
+._popup.on ._header ._title {
+    transition: all 0.5s;
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0)
+}
+
+._popup.on ._header ._ex,
+._popup.on ._header ._link {
+    transition: all 0.5s 0.3s;
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0)
+}
+
+._popup.on .forline._header ._ex {
+    transition: all 0.5s 0.3s
+}
+
+._popup.on .forline._header ._link {
+    transition: all 0.5s 0.6s
+}
+
+._popup.off {
+    z-index: -10000;
+    transition: opacity 0.5s;
+    opacity: 0
+}
+
+._popup.off .circle {
+    transition: all 0.5s;
+    opacity: 0;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2)
+}
+
+._popup.off ._header ._title {
+    transition: all 0.5s;
+    opacity: 0;
+    -webkit-transform: translate(0, -15px);
+    transform: translate(0, -15px)
+}
+
+._popup.off ._header ._ex,
+._popup.off ._header ._link {
+    transition: all 0.5s;
+    opacity: 0;
+    -webkit-transform: translate(0, -15px);
+    transform: translate(0, -15px)
+}
+
+.showCircle ._popup .forline {
+    display: none
+}
+
+.showCircle ._popup .forcircle {
+    display: block
+}
+
+.showLine ._popup .forline {
+    display: block
+}
+
+.showLine ._popup .forcircle {
+    display: none
+}
+
+._popup .forline._header {
+    position: absolute;
+    top: -135px;
+    text-align: left;
+    left: 190px
+}
+
+._popup.max .forline._header {
+    position: absolute;
+    top: -150px;
+    left: -190px
+}
+
+._popup._type2.min .forline._header {
+    left: 80px
+}
+
+._popup._type2.max .forline._header {
+    left: -80px
+}
+
+._popup._type2 svg {
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6)
+}
+
+._popup._type2 ._header ._ex,
+._popup._type2 ._header ._title {
+    display: none
+}
+
+._popup._type2 .forline._header {
+    position: absolute;
+    top: -30px;
+    text-align: center;
+    left: 0
+}
+
+._popup._type2 ._header ._title {
+    font-size: 12px
+}
+
+._popup ._header ._title {
+    font-family: 'Trade Gothic W01';
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px
+}
+
+._popup ._header ._link {
+    margin-top: 10px;
+    font-family: 'Trade Gothic W01';
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 1px;
+    display: inline-block;
+    line-height: 1.5;
+    background: url(../img/pointer_Next@2x.png) center left no-repeat;
+    background-size: 18px;
+    padding: 0 0 0 30px
+}
+
+._popup ._header ._ex {
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin: 20px 0 10px 0
+}
+
+.progress {
+    position: fixed;
+    top: 0;
+    right: 0;
+    color: #fff;
+    text-align: center;
+    z-index: 0;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 10px
+}
+
+.openMenu .toggleWrap span {
+    background: #5fc9c9
+}
+
+.openMenu .toggleWrap span.toggle1 {
+    width: 11px;
+    -webkit-transform: translate(8px, 3px) rotate(45deg);
+    transform: translate(8px, 3px) rotate(45deg)
+}
+
+.openMenu .toggleWrap span.toggle3 {
+    width: 11px;
+    -webkit-transform: translate(8px, -3px) rotate(-45deg);
+    transform: translate(8px, -3px) rotate(-45deg)
+}
+
+.menuLeftBg {
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.menu {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    z-index: 9998;
+    width: 100%;
+    height: 100%
+}
+
+.menu .menuLR {
+    width: 50%;
+    height: 100%;
+    float: left;
+    position: relative;
+    overflow: hidden
+}
+
+.menuLeft {
+    background: #000000
+}
+
+.menu .header h1 a {
+    width: 400px;
+    margin: 0 auto;
+    display: block;
+    color: #fff;
+    line-height: 118px;
+    text-align: center;
+    font-family: 'Trade Gothic W01';
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 19px;
+    letter-spacing: 4px
+}
+
+.menu ._body {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: table
+}
+
+.menu ._body .cell {
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle
+}
+
+.menu ._body .cell ul {
+    width: 400px;
+    margin: 0 auto
+}
+
+.menu ._body .cell ul a {
+    font-family: 'Trade Gothic W01';
+    font-weight: 500;
+    width: 100%;
+    line-height: 80px;
+    font-size: 25px;
+    color: #adadad;
+    letter-spacing: 5px;
+    transition: all 1s
+}
+
+.menu ._body .cell ul a.now {
+    color: #fff
+}
+
+.menuLeft .footer {
+    position: absolute;
+    bottom: 39px;
+    left: 150px;
+    font-weight: 400;
+    font-size: 11px
+}
+
+.menuLeft .footer li {
+    text-align: center;
+    float: left;
+    border-radius: 100%;
+    margin-right: 20px
+}
+
+.menuLeft .footer a {
+    display: block;
+    line-height: 40px;
+    height: 40px;
+    width: 40px;
+    vertical-align: middle;
+    color: #fff;
+    border-radius: 100%;
+    box-sizing: border-box
+}
+
+.menuLeft .footer a .icon {
+    font-size: 20px
+}
+
+.menuLeft .footer a span {
+    transition: all 0.3s;
+    opacity: 0.3
+}
+
+.menuLeft .footer a:hover span {
+    opacity: 1
+}
+
+.menu ._body .cell ul a:hover,
+.menu ._body .cell ul a.on,
+.menu ._body .cell ul a.hi {
+    color: #fff
+}
+
+.menu ._body .cell ul a div {
+    display: inline-block;
+    position: relative
+}
+
+.menu ._body .cell ul a div .dash {
+    transition: all 0.5s;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: -5px;
+    margin-top: -1px;
+    height: 2px;
+    width: 0;
+    background: #5fc9c9;
+    padding: 0
+}
+
+.menu ._body .cell ul a.on div .dash {
+    width: 100%;
+    padding: 0 5px
+}
+
+.menuRight ._contets {
+    height: 100%;
+    width: 100%
+}
+
+.patan {
+    background: rgba(0, 0, 0, 0.9);
+    height: 100%;
+    box-sizing: border-box
+}
+
+.openHome .patan {
+    border: none;
+    padding: 0
+}
+
+.openArchive .patan {
+    height: 50%
+}
+
+.patan {
+    padding: 0 118px;
+    position: relative
+}
+
+.patan>h2 {
+    line-height: 1;
+    font-family: 'Trade Gothic W01';
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding: 52px 0px
+}
+
+.linklist a {
+    display: block;
+    width: 100%
+}
+
+.linklist span {
+    color: #666;
+    display: inline-block;
+    padding-right: 30px;
+    line-height: 55px
+}
+
+.linklist span.num,
+.linklist span.name {
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: 'Trade Gothic W01';
+    font-weight: 500
+}
+
+.linklist span.num {
+    padding-right: 20px;
+    color: #fff
+}
+
+.linklist span.latlng {
+    font-size: 10px;
+    color: #5E5E5E;
+    letter-spacing: 1px
+}
+
+.linklist h3 {
+    font-weight: 500;
+    font-size: 30px
+}
+
+.linklist h3 {
+    font-weight: 500;
+    font-size: 15px;
+    padding: 80px 0 40px 0;
+    letter-spacing: 1px
+}
+
+.linklist li:first-child h3 {
+    padding: 0 0 40px 0
+}
+
+.linklist h4 {
+    color: #fff;
+    font-family: 'Trade Gothic W01';
+    font-weight: 500;
+    font-size: 12px;
+    padding: 40px 0;
+    letter-spacing: 1px
+}
+
+.openCredit .linklist span.name {
+    font-weight: 300
+}
+
+.openCredit .linklist span.name {
+    font-size: 12px
+}
+
+.openCredit .linklist span {
+    line-height: 20px
+}
+
+.openMap .patan {
+    padding: 0;
+    overflow: hidden
+}
+
+.mapWrap {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding: 60px 0
+}
+
+.mapframe {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: -60px;
+    left: 0
+}
+
+.openContact .table {
+    height: 100%;
+    width: 100%
+}
+
+.openContact .cell {
+    vertical-align: middle;
+    text-align: center
+}
+
+.openContact .cell h2 {
+    font-family: 'Trade Gothic W01';
+    font-weight: 500;
+    font-size: 100px
+}
+
+.openHome .cell h2 {
+    font-family: 'Trade Gothic W01';
+    font-weight: 500;
+    font-size: 55px;
+    letter-spacing: 25px;
+    margin: 0 0 0 10px
+}
+
+.openContact.openHome .cell a {
+    font-size: 11px
+}
+
+.openContact .cell a {
+    display: inline-block;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #fff;
+    padding: 0 0 5px 0;
+    font-weight: 400
+}
+
+.btns {
+    height: 36px;
+    width: 36px;
+    background: #0F0F0F;
+    cursor: pointer
+}
+
+.btns ._body {
+    height: 36px;
+    width: 36px
+}
+
+.btns span {
+    display: block;
+    height: 2px;
+    width: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -1px 0 0 -5px;
+    background: #fff
+}
+
+.btns.zoomout span.b1 {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg)
+}
+
+.btns.zoomin span.b1 {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg)
+}
+
+.btns span.b1 {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg)
+}
+
+.gotoprev {
+    position: absolute;
+    right: 0;
+    bottom: 36px;
+    z-index: 10000
+}
+
+.gotonext {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 10000
+}
+
+.gotoprev span.b1 {
+    -webkit-transform: rotate(45deg) translate(2px, -2px);
+    transform: rotate(45deg) translate(2px, -2px)
+}
+
+.gotoprev span.b2 {
+    -webkit-transform: rotate(-45deg) translate(-2px, -2px);
+    transform: rotate(-45deg) translate(-2px, -2px)
+}
+
+.gotonext span.b1 {
+    -webkit-transform: rotate(45deg) translate(-2px, 2px);
+    transform: rotate(45deg) translate(-2px, 2px)
+}
+
+.gotonext span.b2 {
+    -webkit-transform: rotate(-45deg) translate(2px, 2px);
+    transform: rotate(-45deg) translate(2px, 2px)
+}
+
+.gotoprev.on span.b1 {
+    -webkit-transform: rotate(405deg) translate(2px, -2px);
+    transform: rotate(405deg) translate(2px, -2px);
+    transition: all 0.5s
+}
+
+.gotoprev.on span.b2 {
+    -webkit-transform: rotate(-405deg) translate(-2px, -2px);
+    transform: rotate(-405deg) translate(-2px, -2px);
+    transition: all 0.5s
+}
+
+.gotonext.on span.b1 {
+    -webkit-transform: rotate(405deg) translate(-2px, 2px);
+    transform: rotate(405deg) translate(-2px, 2px);
+    transition: all 0.5s
+}
+
+.gotonext.on span.b2 {
+    -webkit-transform: rotate(-405deg) translate(2px, 2px);
+    transform: rotate(-405deg) translate(2px, 2px);
+    transition: all 0.5s
+}
+
+.dottedNav {
+    -webkit-transform: rotate(-405deg);
+    transform: rotate(-405deg);
+    position: absolute;
+    z-index: 10000;
+    width: 26px;
+    height: 26px;
+    top: 50%;
+    left: 50%;
+    margin: -13px 0 0 -13px;
+    box-sizing: border-box;
+    border: 2px solid #fff
+}
+
+.audioMute .icon {
+    opacity: 1;
+    transition: all 0.3s
+}
+
+.audioMute.on .icon {
+    opacity: 0.3
+}
+
+.scrollWrap {
+    display: table;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 120px 118px;
+    box-sizing: border-box
+}
+
+.scrollOl {
+    display: table-cell;
+    vertical-align: middle;
+    position: relative
+}
+
+.scroll {
+    position: relative
+}
+
+.scrollArea {
+    width: 100%;
+    margin: 0
+}
+
+.scrollArea .viewport {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    position: relative
+}
+
+.scrollArea .overview {
+    padding: 0 20px 0 0;
+    list-style: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0
+}
+
+.scrollArea .scrollbar {
+    background: none;
+    position: absolute;
+    background-position: 0 0;
+    width: 2px;
+    top: 0;
+    right: 0
+}
+
+.scrollArea .track {
+    background: #5fc9c9;
+    height: 100%;
+    width: 2px;
+    position: relative;
+    padding: 0
+}
+
+.scrollOl .scrollArea .track {
+    background: none
+}
+
+.scrollArea .thumb {
+    background: none;
+    height: 20px;
+    width: 30px;
+    cursor: pointer;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: -30px;
+    border-right: 2px solid #fff
+}
+
+.scrollArea .disable {
+    display: none
+}
+
+.noSelect {
+    -ms-user-select: none;
+    user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none
+}
+
+.openCredit .scrollArea .viewport {
+    width: 100%;
+    height: 600px
+}
+
+.openCredit .linklist {
+    text-align: center
+}
+
+.openCredit .linklist span {
+    padding: 0
+}
+
+.openCredit .linklist span.latlng {
+    padding: 0 0 0 10px
+}
+
+.map {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box
+}
+
+.map a {
+    color: #fff
+}
+
+.mapControl {
+    position: absolute;
+    width: 36px;
+    height: 72px;
+    bottom: 60px;
+    left: 0px;
+    z-index: 10
+}
+
+.mapControl a {
+    color: #fff;
+    margin-top: 5px;
+    display: block;
+    height: 36px;
+    width: 36px;
+    text-align: center;
+    line-height: 27px;
+    font-weight: 400;
+    font-size: 15px;
+    background: #000;
+    cursor: pointer
+}
+
+#mapCanvas {
+    width: 100%;
+    height: 100%
+}
+
+.mapicon {
+    color: #f00
+}
+
+.pins {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    margin-left: -20px
+}
+
+.pins ._body {
+    border-radius: 100%;
+    height: 15px;
+    width: 15px;
+    margin: 11px 0 0 11px;
+    transition: all 0.3s
+}
+
+.pinsheader {
+    transition: all 0.3s;
+    border: 2px solid #5fc9c9;
+    border-radius: 100%;
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    margin: -21px 0 0 -21px;
+    text-align: center;
+    line-height: 39px;
+    font-weight: 400;
+    font-size: 12px
+}
+
+.pinsheader {
+    width: 20px;
+    height: 20px;
+    margin: -10px 0 0 -10px
+}
+
+.pinsheader span {
+    opacity: 0
+}
+
+.pins .pinsheader {
+    width: 40px;
+    height: 40px;
+    margin: -21px 0 0 -21px
+}
+
+.pinsheader span {
+    opacity: 1
+}
+
+.pinsbody {
+    width: 200px;
+    position: absolute;
+    top: 60px
+}
+
+.pins .pinsheader {
+    opacity: 1
+}
+
+.pins ._body {
+    margin: 0px;
+    height: 40px;
+    width: 40px
+}
+
+.pinsvg {
+    opacity: 0.3;
+    width: 101px;
+    height: 101px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -49px 0 0 -49px
+}
+
+.pinsvg polygon {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 1px
+}
+
+.info .openMap iframe {
+    padding-bottom: 100px;
+    box-sizing: border-box
+}
+
+.maplink {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 11px;
+    letter-spacing: 1px;
+    line-height: 24px
+}
+
+.openMap .closeBtn,
+.openMap .maplink {
+    z-index: 1
+}
+
+.pinsvg {
+    -webkit-animation: rotate 12s linear infinite;
+    animation: rotate 12s linear infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards
+}
+
+@-webkit-keyframes rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+.subpages {
+    position: fixed;
+    z-index: 2;
+    background: #000;
+    width: 370px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-right: 1px solid #202020
+}
+
+.side {
+    width: 100%;
+    height: 100%;
+    display: table;
+    z-index: 1;
+    top: 0;
+    left: 0
+}
+
+.side ._body {
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 0 50px;
+    border-top: 1px solid #202020
+}
+
+.side .row:first-child ._body {
+    border: none
+}
+
+.side .header {
+    height: 200px
+}
+
+.side .header h1 {
+    font-family: 'Trade Gothic W01';
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding-top: 125px;
+    text-transform: uppercase;
+    margin-bottom: 5px
+}
+
+.side .header h2 {
+    font-size: 10px;
+    color: #7f7f7f;
+    letter-spacing: 1px
+}
+
+.returnHome {
+    display: block;
+    position: fixed;
+    left: 250px;
+    top: 0;
+    z-index: 2;
+    height: 118px;
+    width: 118px
+}
+
+.returnHome .table {
+    height: 100%;
+    width: 100%
+}
+
+.returnHome .cell {
+    vertical-align: middle;
+    text-align: center
+}
+
+.returnHome svg {
+    height: 11px;
+    width: 19px
+}
+
+.toggleSide {
+    height: 36px;
+    width: 36px;
+    background: #000;
+    cursor: pointer;
+    position: fixed;
+    left: 370px;
+    top: 0
+}
+
+.toggleSide span.b1 {
+    transition: all 1s
+}
+
+.toggleSide.on span.b1 {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg)
+}
+
+.subpagesMapWrap {
+    z-index: 2;
+    position: fixed;
+    width: 370px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    overflow: hidden
+}
+
+.subpagesMapWrap ._body {
+    width: 100%;
+    height: 100%;
+    padding: 60px 0
+}
+
+.subpagesMapWrap ._body iframe {
+    position: absolute;
+    top: -59px;
+    left: 0;
+    height: 100%;
+    width: 100%
+}
+
+.panorama {
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: url(../img/loadbg.png) #000;
+    background-size: 15px;
+    background-position: 0 0;
+    -webkit-animation: bgload 30s linear infinite;
+    animation: zoom 30s linear infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards
+}
+
+.snaps {
+    background: url(../img/loadbg.png) #000;
+    background-size: 15px;
+    background-position: 0 0;
+    -webkit-animation: bgload 30s linear infinite;
+    animation: zoom 30s linear infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards
+}
+
+@-webkit-keyframes bgload {
+    0% {
+        background-position: 0 0
+    }
+    100% {
+        background-position: 100% 0
+    }
+}
+
+@keyframes bgload {
+    0% {
+        background-position: 0 0
+    }
+    100% {
+        background-position: 100% 0
+    }
+}
+
+.panochild {
+    height: 100%;
+    display: table-cell
+}
+
+.panochild .cover {
+    height: 100%;
+    width: 100%
+}
+
+.panorama {
+    width: 100%;
+    margin: 0;
+    height: 100%
+}
+
+.panorama .viewport {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative
+}
+
+.panorama .overview {
+    list-style: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    display: table
+}
+
+.panorama .track {
+    background: none;
+    height: 100%;
+    position: relative
+}
+
+.panorama .thumb {
+    background: none;
+    height: 15px;
+    width: 25px;
+    cursor: pointer;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #232323;
+    box-sizing: border-box
+}
+
+.panorama .disable {
+    display: none
+}
+
+.noSelect {
+    -ms-user-select: none;
+    user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none
+}
+
+.panotextscroll {
+    position: relative;
+    margin: 40px 0
+}
+
+.panorama .scrollbar {
+    display: none
+}
+
+.panotextscroll .viewport {
+    width: 100%;
+    height: 140px;
+    overflow: hidden;
+    position: relative
+}
+
+.panotextscroll .overview {
+    padding: 0 20px 0 0;
+    list-style: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0
+}
+
+.panotextscroll .scrollbar {
+    background: none;
+    position: absolute;
+    background-position: 0 0;
+    width: 2px;
+    top: 0;
+    right: 0
+}
+
+.panotextscroll .track {
+    background: #5fc9c9;
+    height: 100%;
+    width: 2px;
+    position: relative;
+    padding: 0
+}
+
+.panotextscroll .thumb {
+    background: none;
+    height: 20px;
+    width: 30px;
+    cursor: pointer;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: -30px;
+    border-right: 2px solid #fff
+}
+
+.panotextscroll .disable {
+    display: none
+}
+
+.overview p {
+    line-height: 1.4;
+    color: #989898;
+    letter-spacing: 1px
+}
+
+.panotextscrollWrap,
+.panotextscrollWrap ._body {
+    height: 220px
+}
+
+.panoControlCanvas {
+    cursor: pointer
+}
+
+.panoControl {
+    height: 45px;
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    z-index: 4
+}
+
+.panoControl .cell {
+    vertical-align: middle
+}
+
+.panoControl .cell:first-child {
+    padding-right: 20px
+}
+
+.panoPer {
+    font-size: 10px;
+    color: #989898;
+    letter-spacing: 1px
+}
+
+.audioArea ._body {
+    height: 100%
+}
+
+.audioVisual {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 370px;
+    opacity: 0;
+    transition: all 1s
+}
+
+.showAudio .audioVisual {
+    opacity: 1
+}
+
+.changeAudio {
+    position: absolute;
+    top: 0;
+    z-index: 3
+}
+
+.side .footer {
+    height: 70px;
+    width: 100%
+}
+
+.side .footer ._body {
+    padding: 0;
+    width: 100%
+}
+
+.footer a {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden
+}
+
+.footer a.nextprev {
+    height: 70px;
+    width: 70px;
+    border-right: 1px solid #202020;
+    box-sizing: border-box
+}
+
+.footer a.nextprev svg {
+    width: 17px;
+    height: 7px
+}
+
+.panoOpenMap {
+    text-align: center;
+    min-width: 230px;
+    font-size: 10px;
+    color: #989898;
+    letter-spacing: 1px;
+    transition: all 1s
+}
+
+.panoOpenMap.on {
+    background: #202020
+}
+
+.panoOpenMap span {
+    display: block;
+    line-height: 20px;
+    float: left
+}
+
+.panoOpenMap span.icon {
+    font-size: 20px;
+    color: #fff;
+    padding: 0 10px 0 0
+}
+
+.panoOpenMap div {
+    width: 110px;
+    margin: 0 auto
+}
+
+.changeAudio {
+    color: #fff
+}
+
+.changeAudio {
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 100%;
+    border: 1px solid #181818;
+    width: 220px;
+    height: 220px;
+    text-align: center;
+    line-height: 70px;
+    margin: -110px 0 0 -110px
+}
+
+.changeAudio .bd {
+    position: relative;
+    height: 100%;
+    width: 100%
+}
+
+.changeAudio .bd span {
+    position: absolute;
+    bottom: -35px;
+    width: 100%;
+    display: block;
+    text-align: center
+}
+
+.other .panotextscrollWrap,
+.other .panotextscrollWrap ._body {
+    height: auto
+}
+
+.other .panotextscroll .viewport {
+    height: 100%
+}
+
+.snapsWrap {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-position: center;
+    padding-left: 370px;
+    box-sizing: border-box
+}
+
+.snapsWrap ._body {
+    height: 100%;
+    width: 100%
+}
+
+.background {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-position: center;
+    opacity: 0;
+    transition: all 2s
+}
+
+.background.on {
+    opacity: 1
+}
+
+.snapControl {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    z-index: 4;
+    font-size: 0
+}
+
+.snapControl .cell {
+    vertical-align: middle;
+    text-align: center
+}
+
+.snapControl span {
+    display: inline-block;
+    height: 5px;
+    width: 5px;
+    border-radius: 100%;
+    background: #fff;
+    margin: 0 4px;
+    transition: all 0.3s;
+    cursor: pointer
+}
+
+.snapControl span.on {
+    background: #5FC9C9
+}
+
+.loaderFadeText span {
+    opacity: 0;
+    -webkit-transform: translate(0, 20px);
+    transform: translate(0, 20px);
+    transition: all 0.5s 0.5s
+}
+
+.mti-active .loaderFadeText span {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0)
+}
+
+.navFadeText span {
+    opacity: 0;
+    -webkit-transform: translate(0, 20px);
+    transform: translate(0, 20px);
+    transition: all 0.5s 0.5s
+}
+
+.openMenu .navFadeText span {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0)
+}
+
+.loaderheader {
+    position: relative;
+    z-index: 2;
+    opacity: 0;
+    transition: all 1s
+}
+
+.mti-active .loaderheader {
+    opacity: 1
+}
+
+.loader_ol {
+    position: fixed;
+    background: #000;
+    z-index: 99999998;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0
+}
+
+.loader {
+    position: absolute;
+    display: table;
+    width: 100%;
+    height: 100%
+}
+
+.loader>._body {
+    display: table-cell;
+    position: relative;
+    vertical-align: middle;
+    text-align: center
+}
+
+.loaderbg {
+    top: 0;
+    left: 0;
+    position: absolute
+}
+
+.loaderbg ._body {
+    position: relative
+}
+
+.loader ._body .loaderFadeBtn {
+    margin: 28px 0 40px 0;
+    color: #fff;
+    font-size: 10px;
+    letter-spacing: 2px
+}
+
+.loader ._body .loaderFadeBtn div {
+    display: inline-block
+}
+
+.loader ._body .loaderFadeBtn .soundChange {
+    font-weight: 400;
+    color: #fff
+}
+
+.loader .loaderCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1
+}
+
+.loader .loaderheader .soundChange b {
+    font-weight: 400;
+    cursor: pointer;
+    transition: opacity 0.2s
+}
+
+.loader .loaderheader .soundChange.on b {
+    opacity: 0.5
+}
+
+.enterWrap {
+    color: #fff;
+    display: block;
+    border: 2px solid #fff;
+    width: 180px;
+    text-align: center;
+    height: 38px;
+    letter-spacing: 2px;
+    box-sizing: border-box;
+    margin: 0 auto 10px auto;
+    cursor: default;
+    position: relative;
+    overflow: hidden
+}
+
+.enterWrap.on {
+    cursor: pointer
+}
+
+.enterWrap div,
+.enterWrap span.shine {
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    line-height: 34px;
+    height: 34px
+}
+
+.enter {
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 0.2s 0.3s;
+    top: 0;
+    left: 0
+}
+
+.enterbefore {
+    opacity: 1;
+    z-index: 2;
+    transition: opacity 0.2s 0.3s;
+    top: 0;
+    left: 0
+}
+
+.enterWrap.on .enter {
+    opacity: 1;
+    z-index: 2
+}
+
+.enterWrap.on .enterbefore {
+    opacity: 0;
+    z-index: 1
+}
+
+.enterWrap span.shine {
+    height: 300px;
+    width: 30px;
+    background: #fff;
+    top: 50%;
+    left: 0;
+    margin-top: -150px;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate(45deg) translate(-160px, 160px);
+    transform: rotate(45deg) translate(-160px, 160px);
+    transition: all 0.8s
+}
+
+.enterWrap.on span.shine {
+    -webkit-transform: rotate(45deg) translate(160px, -160px);
+    transform: rotate(45deg) translate(160px, -160px)
+}
+
+.enterWrap {
+    transition: all 0.3s;
+    font-weight: 400;
+    font-size: 11px
+}
+
+.other .panotextscrollWrap,
+.panotextscroll,
+.other .panotextscrollWrap ._body {
+    height: 100%;
+    box-sizing: border-box
+}
+
+.other .side .panotextscrollWrap ._body {
+    padding: 50px
+}
+
+.other .panotextscroll {
+    margin: 0
+}
+
+.sub .playbtn {
+    opacity: 0
+}
+
+.ctbtn {
+    position: relative;
+    height: 40px;
+    width: 40px
+}
+
+.playbtn div {
+    top: 50%;
+    left: 50%;
+    margin: -1px 0 0 -7px;
+    width: 14px;
+    height: 2px;
+    position: absolute;
+    background: #fff;
+    display: block;
+    transition: all 0.5s
+}
+
+.playbtn .b1 {
+    -webkit-transform: translate(-0px, -3px) rotate(30deg);
+    transform: translate(-0px, -3px) rotate(30deg)
+}
+
+.playbtn .b2 {
+    -webkit-transform: translate(-5px, 0px) rotate(90deg);
+    transform: translate(-5px, 0px) rotate(90deg)
+}
+
+.playbtn .b3 {
+    -webkit-transform: translate(-0px, 3px) rotate(-30deg);
+    transform: translate(-0px, 3px) rotate(-30deg)
+}
+
+.nowpause .playbtn .b1 {
+    -webkit-transform: translate(3px, 0px) rotate(90deg);
+    transform: translate(3px, 0px) rotate(90deg)
+}
+
+.nowpause .playbtn .b2 {
+    -webkit-transform: translate(-3px, 0px) rotate(90deg);
+    transform: translate(-3px, 0px) rotate(90deg)
+}
+
+.nowpause .playbtn .b3 {
+    -webkit-transform: translate(-3px, 0px) rotate(90deg);
+    transform: translate(-3px, 0px) rotate(90deg)
+}
+
+.mutebtn div {
+    width: 2px;
+    height: 14px;
+    left: 50%;
+    bottom: 0;
+    margin: 0;
+    position: absolute;
+    background: #fff;
+    display: block;
+    transition: all 0.5s
+}
+
+.unmute .mutebtn div {
+    height: 14px
+}
+
+.mute .mutebtn div {
+    height: 2px
+}
+
+.mutebtn .b1 {
+    -webkit-transform: translate(-6px, -12px);
+    transform: translate(-6px, -12px)
+}
+
+.mutebtn .b2 {
+    -webkit-transform: translate(-1px, -12px);
+    transform: translate(-1px, -12px)
+}
+
+.mutebtn .b3 {
+    -webkit-transform: translate(4px, -12px);
+    transform: translate(4px, -12px)
+}
+
+.unmute .mutebtn .b1 {
+    -webkit-animation: audiov 1.6s ease-in-out infinite;
+    animation: audiov 1.6s ease-in-out infinite
+}
+
+.unmute .mutebtn .b2 {
+    -webkit-animation: audiov 1.6s 0.2s ease-in-out infinite;
+    animation: audiov 1.6s 0.2s ease-in-out infinite
+}
+
+.unmute .mutebtn .b3 {
+    -webkit-animation: audiov 1.6s 0.4s ease-in-out infinite;
+    animation: audiov 1.6s 0.4s ease-in-out infinite
+}
+
+.nowpause .mutebtn .b1 {
+    height: 2px;
+    -webkit-animation: none;
+    animation: none
+}
+
+.nowpause .mutebtn .b2 {
+    height: 2px;
+    -webkit-animation: none;
+    animation: none
+}
+
+.nowpause .mutebtn .b3 {
+    height: 2px;
+    -webkit-animation: none;
+    animation: none
+}
+
+.sub .mutebtn .b1 {
+    height: 12px;
+    -webkit-animation: none;
+    animation: none
+}
+
+.sub .mutebtn .b2 {
+    height: 8px;
+    -webkit-animation: none;
+    animation: none
+}
+
+.sub .mutebtn .b3 {
+    height: 4px;
+    -webkit-animation: none;
+    animation: none
+}
+
+.sub.mute .mutebtn .b1 {
+    height: 2px;
+    -webkit-animation: none;
+    animation: none
+}
+
+.sub.mute .mutebtn .b2 {
+    height: 2px;
+    -webkit-animation: none;
+    animation: none
+}
+
+.sub.mute .mutebtn .b3 {
+    height: 2px;
+    -webkit-animation: none;
+    animation: none
+}
+
+@-webkit-keyframes audiov {
+    0% {
+        height: 2px
+    }
+    50% {
+        height: 12px
+    }
+    100% {
+        height: 2px
+    }
+}
+
+@keyframes audiov {
+    0% {
+        height: 2px
+    }
+    50% {
+        height: 12px
+    }
+    100% {
+        height: 2px
+    }
+}
+
+.subpages .mutebtnWrap {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 30px;
+    left: 45px;
+    margin: 0;
+    z-index: 4
+}
+
+.mutebtnWrap {
+    transition: opacity 0.5s
+}
+
+.i .controlAll,
+.i .mutebtnWrap {
+    opacity: 0
+}
+
+.notinie {
+    display: block!important
+}
+
+.inie {
+    display: none!important
+}
+
+.ie .notinie {
+    display: none!important
+}
+
+.ie .inie {
+    display: block!important
+}
+
+.ie .toggleWrap {
+    opacity: 1!important
+}
+
+.ie .controlWrap {
+    display: none 1!important
+}
+
+.ie .controlAll {
+    display: block;
+    opacity: 1
+}
+
+.ie .controlWrap {
+    background: none
+}
+
+.ie .toggleSide {
+    display: none!important
+}
+
+.update .controlWrap {
+    display: none!important
+}
+
+.update .loader_ol {
+    background: url(../img/kbg.jpg) center no-repeat #000;
+    background-size: cover
+}
+
+.update .audioArea {
+    display: none!important
+}
+
+.update .panotextscroll .viewport,
+.update .panotextscroll {
+    height: 400px
+}
+
+.update .panotextscrollWrap,
+.update .panotextscrollWrap ._body {
+    height: 500px
+}
+
+.update .footer a.nextprev {
+    border-right: none
+}
+
+.loader ._body h2 {
+    margin-top: -15px;
+    letter-spacing: 30px;
+    font-size: 50px;
+    font-weight: 500
+}
+
+@media screen and (min-width:1921px) {
+    .tubebottom,
+    .tubetop {
+        display: none!important
+    }
+    .tube .player {
+        margin-top: -400px;
+        height: 800px
+    }
+    .loader ._body h2 {
+        letter-spacing: 30px;
+        font-size: 50px
+    }
+}
+
+@media screen and (min-height:1200px) {
+    .tubebottom,
+    .tubetop {
+        display: none!important
+    }
+    .tube .player {
+        margin-top: -400px;
+        height: 800px
+    }
+}
+
+@media screen and (min-height:1000px) {
+    .changeAudio {
+        border: none
+    }
+}
+
+@media screen and (max-width:1800px) {
+    .openHome.openContact .cell h2 {
+        font-size: 45px;
+        letter-spacing: 25px
+    }
+    .loader ._body h2 {
+        letter-spacing: 30px;
+        font-size: 50px
+    }
+}
+
+@media screen and (max-width:1700px) {
+    .openHome.openContact .cell h2 {
+        font-size: 35px;
+        letter-spacing: 20px
+    }
+    .loader ._body h2 {
+        letter-spacing: 30px;
+        font-size: 40px
+    }
+}
+
+@media screen and (max-width:1600px) {
+    .openContact .cell h2 {
+        font-size: 40px
+    }
+    .loader ._body h2 {
+        letter-spacing: 30px;
+        font-size: 40px
+    }
+}
+
+@media screen and (max-width:1500px) {
+    .openContact .cell h2 {
+        font-size: 60px
+    }
+    .loader ._body h2 {
+        letter-spacing: 24px;
+        font-size: 35px
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .openHome.openContact .cell h2 {
+        font-size: 30px;
+        letter-spacing: 15px
+    }
+    .patan>h2 {
+        font-size: 12px
+    }
+    .openContact .cell h2 {
+        font-size: 70px
+    }
+}
+
+@media screen and (max-width:668px) {
+    .loader ._body h2 {
+        letter-spacing: 8px;
+        font-size: 20px
+    }
+    .loader ._body .loaderFadeBtn {
+        margin: 20px 0 30px 0
+    }
+}
+
+.jp ._popup ._header ._link {
+    font-size: 13px
+}
+
+.jp ._popup .forline._header {
+    position: absolute;
+    top: -185px
+}
+
+.jp ._popup._type2 .forline._header {
+    top: -40px
+}
+
+.jp .side .header h1 {
+    font-size: 15px;
+    margin-bottom: 3px
+}
+
+.jp .overview p {
+    font-size: 13px;
+    line-height: 1.6
+}
+
+.jp .loader ._body .loaderFadeBtn {
+    font-size: 11px
+}
+
+.jp .vmap {
+    font-size: 12px
+}
