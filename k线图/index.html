@@ -6,12 +6,26 @@
     <title>Document</title>
     <!-- <link rel="stylesheet" type="text/css" href="css/"> -->
     <script type="text/javascript" src="js/echarts.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
 </head>
 
 <body>
     <div id="main" style="width: 600px;height: 400px;"></div>
     <script type="text/javascript">
-    	var myChart = echarts.init(document.getElementById('main'));
+    $(document).ready(function() {
+        $.ajax({
+            type:'GET',
+            url:'http://coin_dev.365yf.cc/api/products/kline?code=test&debug=1&symbol=btc_usd&type=15min&exchange=okex',
+            dataType:'jsonp',
+            succes:function(){
+                console.log('1')
+            },
+            error:function(){
+                console.log('0')
+            }
+        })
+    });
+    var myChart = echarts.init(document.getElementById('main'));
     var upColor = '#ec0000';
     var upBorderColor = '#8A0000';
     var downColor = '#00da3c';
