@@ -27,6 +27,7 @@
             },
             dataType: 'jsonp',
             success: function(jsonp) {
+                console.log('success');
                 var data1 = jsonp.price;
                 var data0 = splitData2(data1)
                 // move
@@ -54,12 +55,12 @@
                     var values = []; // 除了时间戳之外的4个值
                     for (var i = 0; i < rawData.length; i++) {
                         categoryData.push(getLocalTime(rawData[i].splice(0, 1)[0])); // [0]是取数组中第一个元素
-                        values.push(rawData[i].splice(0, 4));
-                        
-                        change(values, 3);
-                        change(values, 2);
-                        change(values, 3);
-                        console.log(values);
+                        var itemt = rawData[i].splice(0, 4);
+                        change(itemt, 3);
+                        change(itemt, 2);
+                        change(itemt, 3);
+                        values.push(itemt);
+                        // console.log(values);
                     }
                     return {
                         categoryData: categoryData,
@@ -285,7 +286,7 @@
                 myChart.setOption(option);
             },
             error: function() {
-                console.log('false')
+                console.log('error')
             }
         })
     });
