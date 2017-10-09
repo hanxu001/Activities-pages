@@ -8,42 +8,23 @@
 </head>
 
 <body>
-    <div class="saber"></div>
     <script type="text/javascript">
-    function getLocalTime(nS) {
-        return new Date(parseInt(nS) * 1000).toLocaleString().replace(/:\d{1,2}$/, ' ');
-    };
-    console.log(getLocalTime(1506162300000));
-    $(document).ready(function() {
-        $.ajax({
-            type: 'GET',
-            url: 'http://coin_dev.365yf.cc/api/products/kline',
-            data: {
-                exchange: 'okex',
-                symbol: 'btc_usd',
-                type: '5min',
-                data_type: 'jsonp',
-                code: 'test',
-                debug: 1
-            },
-            dataType: 'jsonp',
-            success: function(jsonp) {
-            	var data1 = [];
-                data1 = jsonp.price;
-                for (var i = 0; i < data1.length; i++) {
-                   
-                    // console.log(data1[i][0]);
-                    console.log(getLocalTime(data1[i][0]));
-                };
-                console.log(data1);
-                $('.saber').text(data1);
-            },
-            error: function() {
-                console.log('011')
-            }
-        })
-    });
-    
+    var arr = ['开', '高','低','收'];
+
+    function change(arr, index) {
+        var temp;
+        if (index === 0 || index > arr.length - 1) {
+            return arr;
+        }
+        temp = arr[index];
+        arr[index] = arr[index - 1];
+        arr[index - 1] = temp;
+        return arr;
+    }
+    change(arr, 3);
+    change(arr, 2);
+    change(arr, 3);
+    console.log(arr)
     </script>
 </body>
 

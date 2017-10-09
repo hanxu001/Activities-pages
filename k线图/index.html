@@ -55,6 +55,11 @@
                     for (var i = 0; i < rawData.length; i++) {
                         categoryData.push(getLocalTime(rawData[i].splice(0, 1)[0])); // [0]是取数组中第一个元素
                         values.push(rawData[i].splice(0, 4));
+                        
+                        change(values, 3);
+                        change(values, 2);
+                        change(values, 3);
+                        console.log(values);
                     }
                     return {
                         categoryData: categoryData,
@@ -88,7 +93,18 @@
                     var result = y + "-" + (m < 10 ? "0" + m : m) + "-" + (d < 10 ? "0" + d : d) + " " + date.toTimeString().substr(0, 8);
                     return result;
                 }
-
+                
+                // 数组元素换位置，保证顺序是开盘、收盘、最低、最高
+                function change(arr, index) {
+                    var temp;
+                    if (index === 0 || index > arr.length - 1) {
+                        return arr;
+                    }
+                    temp = arr[index];
+                    arr[index] = arr[index - 1];
+                    arr[index - 1] = temp;
+                    return arr;
+                }
 
                 option = {
                     title: {
