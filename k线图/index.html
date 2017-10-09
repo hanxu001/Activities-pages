@@ -20,7 +20,7 @@
             data: {
                 exchange: 'okex',
                 symbol: 'btc_usd',
-                type: '5min',
+                type: '15min',
                 data_type: 'jsonp',
                 code: 'test',
                 debug: 1
@@ -53,7 +53,7 @@
                     var categoryData = []; // 时间戳
                     var values = []; // 除了时间戳之外的4个值
                     for (var i = 0; i < rawData.length; i++) {
-                        categoryData.push(rawData[i].splice(0, 1)[0]); // [0]是取数组中第一个元素
+                        categoryData.push(getLocalTime(rawData[i].splice(0, 1)[0])); // [0]是取数组中第一个元素
                         values.push(rawData[i].splice(0, 4));
                     }
                     return {
@@ -79,14 +79,20 @@
                     return result;
                 }
 
-                function getLocalTime(nS) {
-                    return new Date(parseInt(nS) * 1000).toLocaleString().replace(/:\d{1,2}$/, ' ');
-                };
+                // 时间戳转换日期格式
+                function getLocalTime(time) {
+                    var date = new Date(parseInt(time)),
+                        y = date.getFullYear(),
+                        m = date.getMonth() + 1,
+                        d = date.getDate();
+                    var result = y + "-" + (m < 10 ? "0" + m : m) + "-" + (d < 10 ? "0" + d : d) + " " + date.toTimeString().substr(0, 8);
+                    return result;
+                }
 
 
                 option = {
                     title: {
-                        text: '上证指数',
+                        text: 'demo',
                         left: 0
                     },
                     tooltip: {
