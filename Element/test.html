@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+
+<body>
+    <script type="text/javascript">
+    var arr = ['开', '高','低','收'];
+
+    function change(arr, index) {
+        var temp;
+        if (index === 0 || index > arr.length - 1) {
+            return arr;
+        }
+        temp = arr[index];
+        arr[index] = arr[index - 1];
+        arr[index - 1] = temp;
+        return arr;
+    }
+    change(arr, 3);
+    change(arr, 2);
+    change(arr, 3);
+    console.log(arr)
+    </script>
+</body>
+
+</html>
