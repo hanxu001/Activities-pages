@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container{
+	width: 6.9rem;
+	margin: 0 auto;
+}
+.row{
+	display: flex;
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	-o-flex-direction: row;
+	flex-direction: row;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: flex-start;
+}
+.row .head-icon{
+	width: .66rem;
+	height: .66rem;
+	border-radius: 50%;
+	margin-right: .3rem;
+}
+.row .head-info{
+	font-size: .26rem;
+	color: #333;
+}
+.section{
+	margin-top: .3rem;
+}
+.section .title{
+	display: flex;
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	-o-flex-direction: row;
+	flex-direction: row;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: flex-start;
+	margin-bottom: .3rem;
+	/*border: 1px solid #000;*/
+}
+.section .title p{
+	width: .06rem;
+	height: .28rem;
+	background-color: #FDC338;
+	margin-right: .18rem;
+}
+.section .title h2{
+	height: .3rem;
+	line-height: .3rem;
+	font-size: .3rem;
+	color: #1A1A1A;
+}
+
+.section .mixed{
+	padding-left: .3rem;
+	display: flex;
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	-o-flex-direction: row;
+	flex-direction: row;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-between;
+	/*border: 1px solid #000;*/
+}
+.section .mixed img{
+	width: 1.66rem;
+	height: 2.34rem;
+	/*border: 1px solid #000;*/
+}
+.section .mixed div{
+	height: 2rem;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	-ms-align-items: flex-start;
+	align-items: flex-start;
+	justify-content: space-between;
+	padding: .17rem 0;
+	/*border: 1px solid #000;*/
+}
+.section .mixed div p{
+	font-size: .26rem;
+	color: #1A1A1A;
+}
+.section .pure{
+	padding: .3rem;
+	background-color: #F6F6F6;
+	border-radius: .02rem;
+}
+.section .pure p{
+	font-size: .26rem;
+	color: #333;
+	line-height: 1.6em;
+}
+.section .banner{
+	width: 6.9rem;
+	height: 2.6rem;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>支付成功、失败</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript">
+    (function(t) {
+        var doc = t.documentElement;
+        var curDeviceWidth = doc.clientWidth || window.innerWidth;
+        doc.style.fontSize = curDeviceWidth * (50 / 375) + 'px';
+    })(document);
+    </script>
+</head>
+
+<body style="background-color: #fff;">
+    <div class="container success">
+        <img src="images/success.png">
+        <div class="content">
+            <h2>支付成功</h2>
+            <p>恭喜您成为尊贵的vip会员～</p>
+        </div>
+        <input type="button" name="" value="完成">
+    </div>
+    <div class="container failure">
+        <img src="images/failure.png">
+        <div class="content">
+            <h2>支付失败</h2>
+            <p>请重新支付</p>
+        </div>
+        <input type="button" name="" value="完成">
+    </div>
+    <script type="text/javascript">
+    $(function() {
+        // $('.failure').hide();
+        $('.success').hide();
+    });
+    </script>
+</body>
+
+</html>

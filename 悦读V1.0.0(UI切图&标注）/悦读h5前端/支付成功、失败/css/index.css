@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+input{
+    outline: none;
+    border: none;
+}
+.container {
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.container>img {
+    width: 3rem;
+    height: 2.4rem;
+    margin-top: 2.24rem;
+}
+.container .content {
+	margin-top: 1.2rem;
+}
+.container .content h2 {
+    font-size: .36rem;
+    color: #333;
+    text-align: center;
+}
+
+.container .content p {
+    font-size: .3rem;
+    color: #999;
+    margin-top: .52rem;
+}
+
+.success input {
+    width: 3.8rem;
+    height: .88rem;
+    line-height: .88rem;
+    text-align: center;
+    border-radius: 100px;
+    outline: none;
+    background-color: #01C5AD;
+    font-size: .34rem;
+    color: #fff;
+    margin-top: 1.2rem;
+}
+.failure input{
+	width: 3.8rem;
+    height: .88rem;
+    line-height: .88rem;
+    text-align: center;
+    border-radius: 100px;
+    outline: none;
+    background-color: #01C5AD;
+    font-size: .34rem;
+    color: #fff;
+    margin-top: 1.2rem;
+}

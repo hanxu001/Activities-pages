@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>充值</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript">
+    (function(t) {
+        var doc = t.documentElement;
+        var curDeviceWidth = doc.clientWidth || window.innerWidth;
+        doc.style.fontSize = curDeviceWidth * (50 / 375) + 'px';
+    })(document);
+    </script>
+</head>
+
+<body style="background-color: #f6f6f6;">
+    <div class="container">
+        <div class="banner">
+            <p class="text1">悦人生 读天下</p>
+            <p class="text2" style="margin-top: .46rem">立即购买可为当前用户开通会员</p>
+        </div>
+        <div class="content">
+            <div class="section1">
+                <p class="text1">时长（年）</p>
+                <div>
+                    <img src="images/reduce.png" class="reduce">
+                    <span class="myNum">1</span>
+                    <img src="images/add.png" class="add">
+                </div>
+            </div>
+            <div class="section2">
+                <p class="text1">合计</p>
+                <p class="text1 myMoney">365.0元</p>
+            </div>
+            <div class="section3 cur" data-id="0">
+                <div>
+                    <img src="images/Alipay.png">
+                    <p class="text1">支付宝支付</p>
+                </div>
+                <p class="default"></p>
+            </div>
+            <div class="section3" data-id="1">
+                <div>
+                    <img src="images/WeChat.png">
+                    <p class="text1">微信支付</p>
+                </div>
+                <p class="default"></p>
+            </div>
+            <div style="display: flex;flex-direction: row;align-items: center;justify-content: space-between;margin: 0 -.6rem;">
+                <p style="width: .6rem;height: .6rem;border-radius: 50%;z-index: 10;background-color: #f6f6f6"></p>
+                <div class="button">
+                    <p>开通会员</p>
+                </div>
+                <p style="width: .6rem;height: .6rem;border-radius: 50%;z-index: 10;background-color: #f6f6f6"></p>
+            </div>
+            <p class="text1" style="margin-top: .5rem">会员权益：</p>
+            <div class="text-shadow">
+                <div class="article">
+                    <h2>1.精选阅读书单</h2>
+                    <p>不再为不知道读什么而苦恼，悦读每周精选一本好书，帮您系统化 完善知识结构，每天实现自我提升。
+                    </p>
+                </div>
+                <div class="article">
+                    <h2>2.提升阅读效率</h2>
+                    <p>不再为没时间阅读而担心，线上碎片化阅读，专业行业大咖 提炼 精华内容，随时随地进行高质量阅读。
+                    </p>
+                </div>
+                <div class="article">
+                    <h2>3.优化阅读体验</h2>
+                    <p>不再为没有毅力坚持而自责，读书会让我们的生活更加丰富多彩， 让阅读成为一种生活习惯。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    $(function() {
+        var num = 1;
+        $('.reduce').click(function() {
+            num--;
+            if (num < 1) {
+                num = 1;
+            }
+            $('.myNum').text(num);
+            $('.myMoney').text(num * 365 + '.0元');
+        })
+        $('.add').click(function() {
+            num++;
+            if (num > 3) {
+                num = 3;
+            }
+            $('.myNum').text(num);
+            $('.myMoney').text(num * 365 + '.0元');
+        })
+        $('.section3').each(function(i, e) {
+            $(this).click(function() {
+                $(this).addClass('cur').siblings().removeClass('cur');
+                $(this).data('id', i);
+            });
+
+        })
+        $('.button').click(function() {
+
+        })
+
+
+    });
+    </script>
+</body>
+
+</html>
