@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>network_error</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="css/index.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript">
+    (function(t) {
+        var doc = t.documentElement;
+        var curDeviceWidth = doc.clientWidth || window.innerWidth;
+        doc.style.fontSize = curDeviceWidth * (50 / 375) + 'px';
+    })(document);
+    </script>
+</head>
+
+<body>
+    <div class="network_root">
+        <img src="images/demo.png" class="network_img">
+        <p class="network_text">网络状况待提升，点击重试</p>
+        <p class="network_but_text">查看解决方案</p>
+    </div>
+    <script type="text/javascript">
+    $('.network_but_text').click(function() {
+        console.log('查看解决方案')
+    })
+    </script>
+</body>
+
+</html>

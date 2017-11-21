@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>network_error</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="css/index.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript">
+    (function(t) {
+        var doc = t.documentElement;
+        var curDeviceWidth = doc.clientWidth || window.innerWidth;
+        doc.style.fontSize = curDeviceWidth * (50 / 375) + 'px';
+    })(document);
+    </script>
+</head>
+
+<body>
+    <div class="solve_error">
+        <p class="solve_error_title">1. 检查网络权限是否打开</p>
+        <div class="solve_error_con">
+            <p class="solve_error_text">iOS10系统，需要开启APP使用网络的权限。</p>
+            <div style="flex-direction: row;flex-wrap: wrap;width:6.60rem;">
+                <p class="solve_error_text">如果您第一次打开<span class="pname"></span>APP弹出下面对话框，请点击<span class="blue_text">"允许"</span></p>
+            </div>
+            <div class="solve_box">
+                <div class="solve_box_top">
+                    <p class="solve_box_text1">允许"<span class="pname"></span>"使用数据？</p>
+                    <p class="solve_box_text2">可能同时包含无线局域网和蜂窝移动数据。</p>
+                </div>
+                <div class="solve_box_bom">
+                    <div class="solve_box_but but_left">
+                        不允许
+                    </div>
+                    <div class="solve_box_but but_right">
+                        允许
+                    </div>
+                </div>
+            </div>
+            <p class="solve_error_text">如果您未遇到上述对话框，或已经选择了不允许。</p>
+            <p class="solve_error_text">解决方法：打开【设置】-【蜂窝移动网络】-【使用无线局域网与蜂窝移动的应用】，找到【<span class="pname"></span>】，勾选【无线局域网与蜂窝移动数据】即可。</p>
+            <p class="solve_error_text">如果在【使用无线局域网与蜂窝移动的应用】中，未找到【<span class="pname"></span>】，请重启手机，打开<span class="pname"></span>APP后，在进入【设置】中尝试。</p>
+            <p class="solve_error_text">如果您的手机不是中国版，则：打开【设置】-【蜂窝移动网络】，找到【<span class="pname"></span>】，启动开关即可。</p>
+        </div>
+        <p class="solve_error_title">2. 检查本地网络状况</p>
+        <div class="solve_error_con">
+            <p class="solve_error_text">请查看您本地的无线网络或手机信号情况，信号差的时候也无法正常获取数据。</p>
+        </div>
+    </div>
+    <script type="text/javascript">
+    $('.pname').text('APP')
+
+    function showInfoFromJava(product_name) {
+        console.log('product_name')
+        $('.pname').text(product_name)
+    }
+    $('.but_left').click(function() {
+        console.log('不允许')
+    })
+    $('.but_right').click(function() {
+        console.log('允许')
+    })
+    </script>
+</body>
+
+</html>
