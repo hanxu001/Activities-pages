@@ -20,15 +20,18 @@
 <body>
     <div class="main">
         <img src="imgs/Appstore.png" class="item" style="margin-top: 8.8rem">
-        <img src="imgs/Googlepay1.png" class="item">
-        <img src="imgs/Android1.png" class="item">
-        <!-- <img src="imgs/last.png" class="last"> -->
+        <div class="item item1">
+            <span>Google pay下载</span>
+        </div>
+        <div class="item item1">
+            <span>Android 本地下载</span>
+        </div>
     </div>
     <script type="text/javascript">
+    $('.main').on('touchstart',function(e){
+        $('.item').removeClass('active')
+    })
     $('.item').each(function(i, e) {
-        // $(this).click(function() {
-        //     console.log(i)
-        // })
         $(this).on('touchstart', function(e) {
             $(this).addClass('active')
         })

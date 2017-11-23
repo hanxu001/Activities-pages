@@ -193,16 +193,22 @@ select {
     cursor: pointer;
 }
 
-.item:active {
-    -webkit-filter: blur(1px);
-    /* Chrome, Opera */
-    -moz-filter: blur(1px);
-    -ms-filter: blur(1px);
-    filter: blur(1px);
+.item1 {
+    font-size: 17px;
+    color: #2e90ff;
+    background-image: url(../imgs/back.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    line-height: .84rem;
+    text-align: center;
 }
-.active{
+
+.item span {
+    margin-left: 38px;
+}
+
+.active {
     -webkit-filter: blur(1px);
-    /* Chrome, Opera */
     -moz-filter: blur(1px);
     -ms-filter: blur(1px);
     filter: blur(1px);
