@@ -200,6 +200,13 @@ select {
     -ms-filter: blur(1px);
     filter: blur(1px);
 }
+.active{
+    -webkit-filter: blur(1px);
+    /* Chrome, Opera */
+    -moz-filter: blur(1px);
+    -ms-filter: blur(1px);
+    filter: blur(1px);
+}
 
 .last {
     width: 4.64rem;

@@ -25,9 +25,15 @@
         <!-- <img src="imgs/last.png" class="last"> -->
     </div>
     <script type="text/javascript">
-    $('.item').each(function(i,e) {
-        $(this).click(function() {
-            console.log(i)
+    $('.item').each(function(i, e) {
+        // $(this).click(function() {
+        //     console.log(i)
+        // })
+        $(this).on('touchstart', function(e) {
+            $(this).addClass('active')
+        })
+        $(this).on('touchend', function(e) {
+            $(this).removeClass('active')
         })
     })
     </script>
