@@ -190,21 +190,21 @@ select {
     width: 4.52rem;
     height: .94rem;
     margin-top: .3rem;
-    cursor: pointer;
 }
 
 .item1 {
-    font-size: 17px;
+    font-size: .3rem;
     color: #2e90ff;
     background-image: url(../imgs/back.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    line-height: .84rem;
+    line-height: .94rem;
     text-align: center;
+    cursor: pointer;
 }
 
 .item span {
-    margin-left: 38px;
+    margin-left: .5rem;
 }
 
 .active {
