@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>币换算</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <script type="text/javascript">
+    (function(t) {
+        var doc = t.documentElement; //获取根元素的dom节点;
+
+        var curDeviceWidth = doc.clientWidth || window.innerWidth; //拿到当前设备的宽度
+
+        //动态的改变根元素字体大小：
+
+        doc.style.fontSize = curDeviceWidth * (50 / 375) + 'px';
+    })(document);
+    </script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+
+<body style="background-color: #fff;">
+    <div class="section">
+        <h2 class="clearfix">1.什么是币汇算？<span class="icon-bottom"></span></h2>
+        <div>
+            <p>币汇算是一款资产估算集行情查看工具，用户不需要您将币转入APP中，直接填写持有币种的数量，系统就会根据实时行情价格来计算资产收益，在保证币安全的同时，也计算的币的价值。
+            </p>
+        </div>
+    </div>
+    <div class="section">
+        <h2 class="clearfix">2.如何新建一个币种？<span class="icon-bottom"></span></h2>
+        <div>
+            <p>点击底部的"资产"，点击页面的"添加"按钮,输入币种数量，选择币种，保存即可完成创建了。</p>
+        </div>
+    </div>
+    <div class="section">
+        <h2 class="clearfix">3.如何修改或者删除币种？。<span class="icon-bottom"></span></h2>
+        <div>
+            <p>*在资产页面点击对应的资产，会弹出跟添加资产一样的页面，直接修改数量，保存即可 。</p>
+            <p>*如果您要删除一个已经创建的币种，您只要按住需要删除的币种，向左滑动，会出现一个删除按钮，点击删除按钮即可完成删除。</p>
+        </div>
+    </div>
+    <div class="section">
+        <h2 class="clearfix">4.我想看历史资产怎么办？<span class="icon-bottom"></span></h2>
+        <div>
+            <p>
+                您可以点击资产页面右上角的按钮进入历史记录页面，历史记录从您创建币种的那一天开始，截至你系统时间前一天的所有资产变化记录。
+            </p>
+        </div>
+    </div>
+    <div class="section">
+        <h2 class="clearfix">5.如何设置涨幅颜色？<span class="icon-bottom"></span></h2>
+        <div>
+            <p>
+                您可进入设置页面，点击涨幅颜色，勾选适合您的选项即可完成涨幅颜色转换。
+            </p>
+        </div>
+    </div>
+    <div class="section">
+        <h2 class="clearfix">6.目前支持几种货币计算资产？<span class="icon-bottom"></span></h2>
+        <div>
+            <p>
+                我们目前支持人民币，美元跟比特币等货币计算方式，您可以在设置的计价方式中勾选您需要的货币计算方式即可。
+            </p>
+        </div>
+    </div>
+    <div class="section">
+        <h2 class="clearfix">7.我想把这个软件推荐给朋友，需要怎么做？<span class="icon-bottom"></span></h2>
+        <div>
+            <p>
+                您可以通过设置中的分享推荐，您可以让您的朋友通过扫描二维码下载，或者通过第三方分享给您的朋友。
+            </p>
+        </div>
+    </div>
+    <div class="pagefooter">
+        <img src="imgs/logo.png" alt="">
+        <p>币汇算</p>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $('.section').click(function() {
+            $(this).toggleClass('cur').siblings().removeClass('cur');
+            $(this).find('span').toggleClass('icon-top');
+            $(this).siblings().find('span').removeClass('icon-top');
+        });
+    });
+    </script>
+</body>
+
+</html>
