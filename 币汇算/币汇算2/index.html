@@ -33,7 +33,19 @@
         </div>
         <p class="footer">如遇无法下载,请使用系统浏览器打开</p>
     </div>
+    <!-- add -->
+    <div class="wxtip" id="wxtip">
+        <span class="wxtip-icon"></span>
+        <p class="wxtip-txt">
+            点击右上角
+            <br/> 选择在浏览器中打开
+        </p>
+    </div>
     <script type="text/javascript">
+    $('#wxtip').hide();
+    $('#wxtip').click(function(){
+        $('#wxtip').hide();
+    })
     $('.main').on('touchstart', function(e) {
         $('.item2').removeClass('active')
     })
@@ -45,7 +57,7 @@
             $(this).removeClass('active')
         })
         $(this).on('click', function(e) {
-            $(this).addClass('active')
+            $('#wxtip').show();
         })
     })
     </script>
