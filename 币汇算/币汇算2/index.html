@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>币汇算</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="css/index.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript">
+    // (function(t) {
+    //     var doc = t.documentElement;
+    //     var curDeviceWidth = doc.clientWidth || window.innerWidth;
+    //     doc.style.fontSize = curDeviceWidth * (50 / 375) + 'px';
+    // })(document);
+    </script>
+</head>
+
+<body>
+    <div class="main">
+        <img src="imgs/logo.png" alt="" class="logo">
+        <h4>币汇算 APP</h4>
+        <div class="content">
+            <p>
+                <span class="num num1">1</span>
+                实现多种大多发 
+            </p>
+             <p>
+                <span class="num num2">2</span>
+                实现多种大多发 
+            </p>
+             <p>
+                <span class="num num3">3</span>
+                实现多种大多发 
+            </p>
+             <p>
+                <span class="num num4">4</span>
+                实现多种大多发 
+            </p>
+            
+        </div>
+        <div class="item item1">
+            Appstore 下载(敬请期待)
+        </div>
+        <div class="item item2">
+            Google pay下载
+        </div>
+        <div class="item item2">
+            Android 本地下载
+        </div>
+    </div>
+    <script type="text/javascript">
+    $('.main').on('touchstart', function(e) {
+        $('.item2').removeClass('active')
+    })
+    $('.item2').each(function(i, e) {
+        $(this).on('touchstart', function(e) {
+            $(this).addClass('active')
+        })
+        $(this).on('touchend', function(e) {
+            $(this).removeClass('active')
+        })
+    })
+    </script>
+</body>
+
+</html>
