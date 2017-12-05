@@ -170,28 +170,26 @@ h1,
 
 h2>span.icon-bottom {
     float: right;
-    margin-right: .26rem;
-    margin-top: .24rem;
+    background: url(../imgs/down.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     display: inline-block;
-    width: 0.18rem;
-    height: 0.18rem;
-    border: 0.02rem solid #808080;
-    border-width: 0 0.02rem 0.02rem 0;
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
+    width: 0.325rem;
+    height: 0.168rem;
+    margin-right: .26rem;
+    margin-top: .26rem;
 }
 
 h2>span.icon-top {
     float: right;
-    margin-right: .26rem;
-    margin-top: .34rem;
+    background: url(../imgs/up.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     display: inline-block;
-    width: 0.18rem;
-    height: 0.18rem;
-    border: 0.02rem solid #fc0048;
-    border-width: 0 0.02rem 0.02rem 0;
-    -webkit-transform: rotate(-135deg);
-    transform: rotate(-135deg);
+    width: 0.325rem;
+    height: 0.168rem;
+    margin-right: .26rem;
+    margin-top: .26rem;
 }
 
 h2+div>p {
