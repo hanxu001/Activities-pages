@@ -66,6 +66,7 @@
     })
     $('.wxtip').click(function() {
         $('.wxtip').hide()
+        $('.btn').removeClass('active')
     })
     function is_weixn() {
         var ua = navigator.userAgent.toLowerCase();
@@ -75,11 +76,14 @@
             return false;
         }
     }
-    $('.btn').click(function() {
+    // 下载
+    $('.Android').click(function(){
         if (is_weixn()) {
             $('.wxtip').show()
         }
-        // 下载逻辑写这里
+    })
+    $('.ios').click(function() {
+        
     })
     </script>
 </body>
