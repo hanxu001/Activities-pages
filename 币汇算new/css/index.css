@@ -231,13 +231,13 @@ select {
 
 .content>div>img {
     width: .26rem;
-    height: .4rem;
+    height: .24rem;
 }
 
 .content>div>p {
     font-size: .28rem;
     color: #4C4C4C;
-    letter-spacing: 0;
+    margin-left: .05rem;
 }
 
 .btn {
@@ -260,7 +260,7 @@ select {
     height: .75rem;
 }
 
-.btn p {
+.btn p{
     font-size: .32rem;
     color: #314E8C;
     letter-spacing: 0;
