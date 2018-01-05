@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<scroll-view scroll-y="true" 
+class="container" 
+bindscrolltoupper="upper" 
+enable-back-to-top='true'
+upper-threshold="10" 
+lower-threshold="5" 
+bindscrolltolower="lower" 
+scroll-into-view="{{toView}}" 
+scroll-top="{{scrollTop}}">
+  <block wx:for="{{list}}" wx:for-index="idx" wx:for-item="item" data-idx="{{idx}}" wx:key="">
+    <view class='item'>
+       <view class='l1'>{{item.name}}</view>
+        <view class='l2'>
+           <view class='l21'>{{item.english_name}}</view>
+           <view class='l22'>{{item.rmb_price}}</view>
+           <view class='l23' style="color:{{item.increase_status ===1?'#F01E1E':'#048B00 '}};">{{item.increase_ratio}}</view>
+        </view> 
+        <view class='l3'>
+           <view class='l31'>市值{{item.market_price}}</view>
+           <view class='l32'>${{item.usd_price}}</view>
+           <view class='l33'>量{{item.volume_human}}</view>
+        </view> 
+    </view>
+  </block>
+  <view class='more' bindtap="lookMore">加载更多</view>
+</scroll-view>
