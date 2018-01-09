@@ -8,11 +8,21 @@ lower-threshold="5"
 bindscrolltolower="lower" 
 scroll-into-view="{{toView}}" 
 scroll-top="{{scrollTop}}">
+  <view class='bottom'>
+    <view>
+      <input class='input1'
+       bindinput="bindKeyInput"
+       placeholder="请输入..." 
+       value='{{value1}}'
+       placeholder-class="search-placeholder"/>
+    </view>
+    <button class='button1' size='mini' bindtap="enter">搜索</button>
+  </view>
   <block wx:for="{{list}}" wx:for-index="idx" wx:for-item="item" data-idx="{{idx}}" wx:key="">
     <view class='item'>
        <view class='l1'>{{item.name}}</view>
         <view class='l2'>
-           <view class='l21'>{{item.english_name}}</view>
+           <view class='l21'>{{item.code}}</view>
            <view class='l22'>{{item.rmb_price}}</view>
            <view class='l23' style="color:{{item.increase_status ===1?'#F01E1E':'#048B00 '}};">{{item.increase_ratio}}</view>
         </view> 
@@ -23,5 +33,6 @@ scroll-top="{{scrollTop}}">
         </view> 
     </view>
   </block>
-  <view class='more' bindtap="lookMore">加载更多</view>
+  <view class='more' bindtap="lookMore" wx:if='{{isMore}}'>加载更多</view>
+  <view class='more' bindtap="closeMore" wx:if='{{!isMore}}'>取消</view>
 </scroll-view>
