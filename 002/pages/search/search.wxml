@@ -1,5 +1,5 @@
 <!--index.wxml-->
-<scroll-view class="container" scroll-y style='background-color: #f0f0f0;min-height:1100rpx;padding-bottom:120rpx;'>
+<view class="container" style='background-color: #f0f0f0;min-height:1100rpx;padding-bottom:120rpx;'>
   <block wx:for="{{dialog_list}}" wx:for-index="idx" wx:for-item="item" data-idx="{{idx}}" wx:key="idx">
     <view class='dialog0' wx:if="{{item.statue === 0}}">
       <view class='box0'>
@@ -39,5 +39,5 @@
     </view>
     <button class='button1' size='mini' bindtap="enter">发送</button>
   </view>
-</scroll-view>
+</view>
  

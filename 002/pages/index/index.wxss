@@ -1,6 +1,6 @@
 /**index.wxss**/
 .container{
-  padding-top: 100rpx;
+   padding-top: 100rpx; 
 }
 .userinfo {
   display: flex;
@@ -96,9 +96,11 @@
   align-items: center;
   height: 100rpx;
   background-color: #fff;
+  z-index: 999;
+  border-bottom: 1rpx solid #f2f2f2;
 }
 .input1{
-  border: 1rpx solid #ccc;
+  border: 1rpx solid #cccccc;
   width: 550rpx;
   height: 66rpx;
   margin-left: 20rpx;
@@ -106,7 +108,7 @@
   padding-left: 20rpx;
 }
 .button1{
-  background: #2566B5;
-  color: #fff;
+  background-color: #2566B5;
+  color: #ffffff;
   font-size: 20rpx;
 }
