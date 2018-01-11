@@ -72,7 +72,7 @@ Page({
         content: that.data.inputValue
       }),
     })
-    const url = 'https://wx.365yf.cc/wx_api/symbols/ticker?code=' + this.data.inputValue
+    const url = 'https://wx.365yf.cc/wx_api/symbols/ticker?symbol_code=' + this.data.inputValue
     
     util.getData(url).then(function (data) {
       console.log(data.data)

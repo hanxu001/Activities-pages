@@ -63,7 +63,7 @@ Page({
     if (this.data.inputValue === '') {
       return
     }
-    const url = 'https://wx.365yf.cc/wx_api/symbols/search?keyword_code=' + this.data.inputValue
+    const url = 'https://wx.365yf.cc/wx_api/symbols/search?symbol_code=' + this.data.inputValue
     util.getData(url).then(function (data) {
       console.log(data.data)
       if (data.data.error_code === 0) {

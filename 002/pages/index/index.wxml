@@ -4,8 +4,8 @@
     <view class='item'>
        <view class='l1'>{{item.name}}</view>
         <view class='l2'>
-           <view class='l21'>{{item.code}}</view>
-           <view class='l22'>{{item.rmb_price}}</view>
+           <view class='l21'>{{item.pair}}</view>
+           <view class='l22'>￥{{item.rmb_price}}</view>
            <view class='l23' style="color:{{item.increase_status ===1?'#F01E1E':'#048B00 '}};">{{item.increase_ratio}}</view>
         </view> 
         <view class='l3'>
