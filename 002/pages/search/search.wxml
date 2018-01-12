@@ -1,6 +1,6 @@
 <!--index.wxml-->
 <view class="container" style='background-color: #f0f0f0;min-height:1100rpx;padding-bottom:120rpx;'>
-  <block wx:for="{{dialog_list}}" wx:for-index="idx" wx:for-item="item" data-idx="{{idx}}" wx:key="idx">
+  <block wx:if="{{dialog_list.length>0}}" wx:for="{{dialog_list}}" wx:for-index="idx" wx:for-item="item" data-idx="{{idx}}" wx:key="idx">
     <view class='dialog0' wx:if="{{item.statue === 0}}">
       <view class='box0'>
         <view class="content0">{{item.content}}</view>
@@ -29,6 +29,7 @@
       </view>
     </view> 
   </block>
+  <text class='text1' wx:if="{{dialog_list.length===0}}">请输入搜索关键词，如BTC</text> 
  <view class='bottom'>
     <view>
       <input class='input1'
