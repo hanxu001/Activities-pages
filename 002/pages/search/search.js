@@ -76,11 +76,11 @@ Page({
     
     util.getData(url).then(function (data) {
       console.log(data.data)
-      if (data.data.error_code === 0){
+      if (data.data.symbol.code){
         that.data.answer = data.data.symbol
       }
       else{
-        that.data.answer = data.data.error_reason
+        that.data.answer = ''
       }
       // that.data.dialog_list = that.data.dialog_list.concat({
       //   statue:0,

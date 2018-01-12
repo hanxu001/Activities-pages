@@ -6,13 +6,14 @@
         <view class="content0">{{item.content}}</view>
         <view class='img_r'></view>
       </view>
-      <image class='header' src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <image class='header' src="{{userInfo.avatarUrl}}" background-size="cover" wx:if="{{userInfo.avatarUrl}}"></image>
+      <image class='header' src="images/demo.png" background-size="cover" wx:else></image>
     </view> 
     <view class='dialog1' wx:else>
       <image class='header' src="images/header.png" background-size="cover"></image>
       <view class='box1'>
         <view class='img_l'></view>
-        <view class="content1">
+        <view class="content1" wx:if="{{item.content.code}}">
           <view>{{item.content.code}}价格</view>
           <view style='margin-top: 4rpx'>CNY{{item.content.cny_price}}</view>
           <view style='margin-top: 4rpx'>USD{{item.content.price}}</view>
@@ -26,6 +27,7 @@
           <view style='margin-top: 20rpx'>币汇算：</view>
           <view style='margin-top: 4rpx'>https://du91.cn/d7sh9</view>
         </view>
+        <view class='content1' wx:else>未找到此币种</view>
       </view>
     </view> 
   </block>

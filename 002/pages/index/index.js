@@ -11,8 +11,10 @@ Page({
     answer:[],
     page:1,
     per_page:10,
+    total_page:10,
     value1: '',
-    isMore:true
+    isMore:true,
+    scrollTop:50
   },
   //事件处理函数
   bindViewTap: function() {
@@ -60,7 +62,8 @@ Page({
         console.log(that.data.products)
         that.setData({ 
           list: that.data.products,
-          isMore: true
+          isMore: true,
+          total_page: that.data.total_page
         })
       }
     });
@@ -74,8 +77,10 @@ Page({
     })
   }, 
   lookMore:function(){
-    this.data.page ++
-    this.getData()
+    if (this.data.page<this.data.total_page){
+      this.data.page++
+      this.getData()
+    }
   },
   closeMore:function(){
     this.data.page=1
@@ -94,18 +99,57 @@ Page({
     const url = 'https://wx.365yf.cc/wx_api/symbols/search?symbol_code=' + this.data.inputValue
     util.getData(url).then(function (data) {
       console.log(data.data)
-      if (data.data.error_code === 0) {
+      if (data.data.products) {
         that.data.answer = data.data.products
+        that.setData({
+          list: [].concat(that.data.answer),
+          value1: '',
+          inputValue: '',
+          isMore: false
+        })
       }
       else {
         that.data.answer = data.data.error_reason
+        that.setData({
+          list: [],
+          value1: '',
+          inputValue: '',
+          isMore: false
+        })
       }
-      that.setData({
-        list: [].concat(that.data.answer),
-        value1: '',
-        inputValue: '',
-        isMore:false
-      })
     });
-  }
+  },
+  upper: function () {
+    wx.showNavigationBarLoading()
+    this.refresh();
+    console.log("upper");
+    setTimeout(function () { wx.hideNavigationBarLoading(); wx.stopPullDownRefresh(); }, 2000);
+  },
+  lower: function (e) {
+    wx.showNavigationBarLoading();
+    var that = this;
+    setTimeout(function () { wx.hideNavigationBarLoading(); that.nextLoad(); }, 1000);
+    console.log("lower")
+  },
+  refresh: function () {
+    wx.showToast({
+      title: '刷新中',
+      icon: 'loading',
+      duration: 3000
+    });
+    // var feed = util.getData2();
+    // console.log("loaddata");
+    // var feed_data = feed.data;
+    // this.setData({
+    //   feed: feed_data,
+    //   feed_length: feed_data.length
+    // });
+    setTimeout(function () {
+      wx.showToast({
+        title: '刷新成功',
+        icon: 'success',
+        duration: 2000
+      })
+    }, 3000)
+  },
 })
