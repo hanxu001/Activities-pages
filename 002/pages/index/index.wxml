@@ -1,6 +1,6 @@
 <!--index.wxml-->
-<scroll-view scroll-y="true" class="container" bindscrolltoupper="upper" upper-threshold="10" lower-threshold="5" bindscrolltolower="lower"  scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
- <!-- <view class="container">  -->
+ <!-- <scroll-view scroll-y="true" class="container" bindscrolltoupper="upper" upper-threshold="10" lower-threshold="5" bindscrolltolower="lower"  scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}" style="height: 2000rpx;">  -->
+   <view class="container">   
   <block wx:if="{{list}}" wx:for="{{list}}" wx:for-index="idx" wx:for-item="item" data-idx="{{idx}}" wx:key="">
     <view class='item'>
        <view class='l1'>{{item.name}}</view>
@@ -29,5 +29,5 @@
   </view>
   <view class='more' bindtap="lookMore" wx:if='{{isMore}}'>加载更多</view>
   <view class='more' bindtap="closeMore" wx:if='{{!isMore}}'>取消</view>
- <!-- </view>  -->
-</scroll-view>
+   </view>   
+ <!-- </scroll-view>  -->

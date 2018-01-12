@@ -12,7 +12,9 @@ Page({
     dialog_list:[],
     inputValue:'',
     value1:'',
-    answer:''
+    answer:'',
+    toView: 'red',
+    scrollTop: 100
   },
   //事件处理函数
   bindViewTap: function() {
@@ -98,5 +100,20 @@ Page({
         inputValue:''
       })
     });
+  },
+  tap: function (e) {
+    for (var i = 0; i < order.length; ++i) {
+      if (order[i] === this.data.toView) {
+        this.setData({
+          toView: order[i + 1]
+        })
+        break
+      }
+    }
+  },
+  tapMove: function (e) {
+    this.setData({
+      scrollTop: this.data.scrollTop + 10
+    })
   }
 })

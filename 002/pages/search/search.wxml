@@ -1,5 +1,5 @@
 <!--index.wxml-->
-<view class="container" style='background-color: #f0f0f0;min-height:1100rpx;padding-bottom:120rpx;'>
+<view class="container" style='background-color: #f0f0f0;padding-bottom:120rpx;min-height:1200rpx'>
   <block wx:if="{{dialog_list.length>0}}" wx:for="{{dialog_list}}" wx:for-index="idx" wx:for-item="item" data-idx="{{idx}}" wx:key="idx">
     <view class='dialog0' wx:if="{{item.statue === 0}}">
       <view class='box0'>
