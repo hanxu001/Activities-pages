@@ -67,7 +67,7 @@
     <!--<div style="height:.18rem;background-color: #F2F3F8"></div>-->
     <!--3-->
     <div class="change">
-      <el-row :gutter="0" style="display: flex;flex-direction: row;justify-content: center;align-items: center;flex-wrap:wrap">
+      <el-row :gutter="0" style="display: flex;flex-direction: row;justify-content: center;align-items: center;flex-wrap:wrap;">
         <el-col :xs="22" :sm="18" :lg="18">
           <div class="title">
             <img src="../../../static/icon2.png" alt="">
@@ -75,7 +75,7 @@
           </div>
         </el-col>
       </el-row>
-      <el-row :gutter="0" style="display: flex;flex-direction: row;justify-content: center;align-items: center;flex-wrap:wrap">
+      <el-row :gutter="0" style="display: flex;flex-direction: row;justify-content: center;align-items: center;flex-wrap:wrap;">
         <el-col :xs="22" :sm="18" :lg="7">
           <div class="item1">
             <p class="name">BitCNY数量</p>
@@ -207,6 +207,7 @@
     height: 100%;
     padding: 60px 0 50px 0;
     background-color: #fff;
+    width: 100%;
   }
   .banner{
     width: 100%;
@@ -297,6 +298,7 @@
     margin: 0px auto;
     background-color: #fff;
     padding: 10px 0px;
+    /*border: 1px solid red;*/
   }
   .title{
     display: flex;
