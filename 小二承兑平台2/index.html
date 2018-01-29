@@ -43,19 +43,19 @@
         </div>
     </div>
     <div class="marquee">
-        <div class="container" style="background-color: #FECE68;">
-         <marquee behaviro="alternate"  onmouseover="this.stop()"  onmouseout="this.start()">
-            <p>
-                <span><img src="imgs/icon1.png" alt="" style="width: 12px;height:12px;margin-right: 0px;"></span>
-            小二承兑服务，为用户提供可靠的币币交易兑换服务，专业提供:BitCNY/BitUSD和法币的互相兑换</p>
-        </marquee>
-    </div> 
-</div>
-<div class="title container flex">
-   <img src="imgs/icon2.png" alt="">
-   <p>兑换计算器</p>
-</div>
-<div class="change container flex">
+        <div class="container flex" style="background-color: #FECE68;">
+            <img src="imgs/icon1.png" alt="" style="width: 16px;height:16px;margin-left: 24px;;margin-right: 0px;">
+            <marquee behaviro="alternate"  onmouseover="this.stop()"  onmouseout="this.start()">
+                <p>
+                小二承兑服务，为用户提供可靠的币币交易兑换服务，专业提供:BitCNY/BitUSD和法币的互相兑换。</p>
+            </marquee>
+        </div> 
+    </div>
+    <div class="title container flex">
+     <img src="imgs/icon2.png" alt="">
+     <p>兑换计算器</p>
+ </div>
+ <div class="change container flex">
     <div class="change-item flex">
         <p class="name">BitCNY数量</p>
         <div>
@@ -91,8 +91,8 @@
     </div>
 </div>
 <div class="title container flex">
-   <img src="imgs/icon3.png" alt="">
-   <p>承兑商家</p>
+ <img src="imgs/icon3.png" alt="">
+ <p>承兑商家</p>
 </div>
 <div class="seller container flex">
     <div>
@@ -114,9 +114,9 @@
 <script>
     function change() {
         if($('#value1').val() > 0 && $('#value2').val() > 0){
-           var count = $(" #value1 ").val() * (1 + $(" #value2 ").val() / 100)
-           $('#value3').text(count.toFixed(2))
-       } else{
+         var count = $(" #value1 ").val() * (1 + $(" #value2 ").val() / 100)
+         $('#value3').text(count.toFixed(2))
+     } else{
         $('#value3').text(0)
     }
 }
