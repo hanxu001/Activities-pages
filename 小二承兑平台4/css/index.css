@@ -133,12 +133,12 @@ input, select {
     cursor: pointer;
 }
 .header .right a{
- padding: 20px 10px;
- font-weight: bold;
- cursor: pointer;
- text-decoration: none;
- color: #333;
- font-size: 14px;
+   padding: 20px 10px;
+   font-weight: bold;
+   cursor: pointer;
+   text-decoration: none;
+   color: #333;
+   font-size: 14px;
 }
 .banner{
     width: 100%;
@@ -177,11 +177,11 @@ input, select {
     padding:8px 20px;
 }
 .banner_line_top{
- font-size:14px;
- color: #D8EBFF;
- text-align: center;
- width: 100%;
- margin-top: -16px;
+   font-size:14px;
+   color: #D8EBFF;
+   text-align: center;
+   width: 100%;
+   margin-top: -16px;
 }
 .banner_text{
     font-size:12px;
@@ -223,7 +223,6 @@ input, select {
 .marquee{
     background-color: #FECE68;
     width: 100%;
-    border: 1px solid red;
 }
 .marquee p{
     font-size:12px;
@@ -231,132 +230,114 @@ input, select {
     height: 40px;
     line-height: 40px;
 }
-.title{
-    width: 332px;
-    height: 3px;
-    margin-top: 30px;
-    justify-content: center;
-    background-image: url(../imgs/bgline.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+.title1{
+ font-size:18px;
+ color: #000;
+ margin-top: 34px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
 }
-.title p{
-    font-size:18px;
-    color: #333;
+.title1 span{
+    display: inline-block;
+    height:1px;
+    width: 40px;
+    border-top:1px solid #000;
+    margin-left: 10px;
+    margin-right: 10px;
 }
-.change{
+.list{
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 10px;
-}
-.change-item{
- justify-content: center;
- margin-top: 20px;
-}
-.change-item .name{
-    font-size:14px;
-    color: #576371;
-    text-align: left;
-    width: 90px;
-    padding-left: 20px;
-}
-.change-item  div{
-    background-color: #F7F8FC;
-    border: 1px solid #E9EAF2;
-    border-radius: 50px;
-    height: 35px;
-    padding: 0 15px;
-}
-.input{
-    /*border: 1px solid #ccc;*/
-    width: 160px;
-    height: 20px;
-    margin-right: 10px;
-    font-size: 18px;
-    color: #666;
-    outline: none;
-    border: 0;
-    background-color: #F7F8FC;
-    border-right: 1px solid #ddd;
-}
-
-.result{
-    width: 100%;
-    background-color: #F1F3F9;
-    height: 35px;
-    line-height: 35px;
-    text-align: center;
+    align-items: center;
     margin-top: 20px;
 }
-.result span{
-    color: #F51C1C;
-    /*font-size: 14px;*/
-}
-.seller{
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.seller div{
-    background-color: #EBECF2;
-    margin: 30px 20px;
-    border-radius: 10px;
-    padding: 20px 20px;
-    height: 200px;
-    width: 360px;
-    display: flex;
+.li{
+    border:1px solid #EBECF4;
+    width: 290px;
+    height: 290px;
+    margin: 10px;
+    background-color: #F7F8FE;
+    position: relative;
+    display:flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
+    -ms-align-items: flex-start;
     align-items: center;
 }
-.seller div .dian{
-   background-size: 100% 100%;
-   background-repeat: no-repeat;
-   line-height: 10px;
-   font-size:24px;
-   color: #000;
-   font-weight: bold;
+.li .shadow{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0,0,0,.4);
+    text-align: center;
+    display: none;
 }
-.seller div .name{
-    color: #033E8D;
-    font-size: 24px;
+.li .shadow img{
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
 }
-.seller div .recharge{
-    font-size: 18px;
-    color: #333;
+.li .shadow p{
+    font-size: 14px;
+    color: #FDFDFD;
+    margin-top: 10px;
 }
-.seller div .recharge span{
+.li .recharge{
+   font-size: 18px;
+   color: #666;
+   margin-top: 30px;
+}
+.li .recharge span{
     font-size:20px;
     color: #E11616;
 }
-.seller div .way{
-    font-size: 16px;
-    color: #666;
+.li .name{
+    font-size: 22px;
+    color: #333;
+    margin-top: 44px;
 }
-.seller div .qq{
-    padding: 10px 40px;
-    font-size:16px;
+.way{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 44px;
+}
+.qq{
+    background: #038D35;
+    border-radius: 100px;
+    width: 100px;
+    height: 24px;
+    margin: 0 10px;
+    font-size:9px;
     color: #fff;
     background: #033E8D;
-    border-radius: 5px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
-.seller div .qq img{
+.qq img{
     width: 18px;
     height: 18px;
+    margin-right: 4px;
 }
-.seller div .code{
-    width: 140px;
-    height: 140px;
+.wx{
+    background-color: #038D35;
+    cursor: pointer;
 }
-/*#value3{
-    color: #E11616;
-    display: inline-block;
-    width: 100px;
-    text-align: center;
-}*/
+
+
+
+
 .item{
     text-align: left;
     padding-left: 20px;
@@ -412,4 +393,11 @@ input, select {
 }
 .choose{
     display: block;
+}
+.cur{
+    border: 1px solid red;
+}
+.close{
+    text-align: right;margin-right: 28px;font-size: 20px;
+    cursor: pointer;
 }
