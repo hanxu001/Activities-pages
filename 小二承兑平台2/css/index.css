@@ -342,15 +342,7 @@ input, select {
     align-items: center;
     justify-content: space-between;
 }
-.up{
-    background-image: url("../imgs/up.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    display: inline-block;
-    width:20px;
-    height: 10px;
-    margin-right: 10px;
-}
+
 .down{
     background-image: url("../imgs/down.png");
     background-size: 100% 100%;
@@ -361,9 +353,19 @@ input, select {
     float: right;
     margin-right: 10px;
 }
+.up{
+    background-image: url("../imgs/up.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width:20px;
+    height: 10px;
+    margin-right: 10px;
+}
 .item .con{
     background-color: #FAFBFD;
     padding:5px 40px 10px 20px;
+    display: none;
 }
 .item .con p{
     font-size: 12px;
@@ -376,4 +378,7 @@ input, select {
   margin-top: 6px;
   width: 70%;
   height: auto;
+}
+.choose{
+    display: block;
 }
