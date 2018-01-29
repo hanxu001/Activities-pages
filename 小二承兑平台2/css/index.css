@@ -110,6 +110,7 @@ input, select {
     margin: 0 auto;
     background-color: #fff;
 }
+
 .flex{
     display:flex;
     -webkit-flex-direction: row;
@@ -132,11 +133,11 @@ input, select {
     cursor: pointer;
 }
 .header .right a{
- padding: 20px;
- font-weight: bold;
- cursor: pointer;
- text-decoration: none;
- color: #333;
+   padding: 20px;
+   font-weight: bold;
+   cursor: pointer;
+   text-decoration: none;
+   color: #333;
 }
 .banner{
     width: 100%;
@@ -235,8 +236,8 @@ input, select {
     margin-top: 10px;
 }
 .change-item{
- justify-content: center;
- margin-top: 20px;
+   justify-content: center;
+   margin-top: 20px;
 }
 .change-item .name{
     font-size:16px;
@@ -277,12 +278,12 @@ input, select {
     align-items: center;
 }
 .seller div .dian{
-   background-size: 100% 100%;
-   background-repeat: no-repeat;
-   line-height: 10px;
-   font-size:24px;
-   color: #000;
-   font-weight: bold;
+ background-size: 100% 100%;
+ background-repeat: no-repeat;
+ line-height: 10px;
+ font-size:24px;
+ color: #000;
+ font-weight: bold;
 }
 .seller div .name{
     color: #033E8D;
@@ -324,4 +325,55 @@ input, select {
     display: inline-block;
     width: 100px;
     text-align: center;
+}
+.item{
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+}
+.item .title{
+    font-size:16px;
+    color: #333;
+    border-bottom: 1px solid  #FAFBFD;
+    padding: 10px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.up{
+    background-image: url("../imgs/up.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width:20px;
+    height: 10px;
+    margin-right: 10px;
+}
+.down{
+    background-image: url("../imgs/down.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width:20px;
+    height: 10px;
+    float: right;
+    margin-right: 10px;
+}
+.item .con{
+    background-color: #FAFBFD;
+    padding:5px 40px 10px 20px;
+}
+.item .con p{
+    font-size: 12px;
+    color: #666;
+    margin-top: 6px;
+    text-indent: 2em;
+    line-height: 2em;
+}
+.item .con img{
+  margin-top: 6px;
+  width: 70%;
+  height: auto;
 }
