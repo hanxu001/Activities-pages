@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>index</title>
+    <title>小二承兑中心</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
     <meta name="format-detection" content="telephone=no" />
     <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon" />
@@ -52,8 +52,8 @@
     </div>
     <div class="marquee">
         <div class="container flex" style="background-color: #FECE68;">
-           <!-- <span><img src="imgs/icon1.png" alt="" style="width: 12px;height:12px;"></span> -->
-           <marquee behaviro="alternate">
+         <!-- <span><img src="imgs/icon1.png" alt="" style="width: 12px;height:12px;"></span> -->
+         <marquee behaviro="alternate">
             <p>     
             小二承兑服务，为用户提供可靠的币币交易兑换服务，专业提供:BitCNY/BitUSD和法币的互相兑换。</p>
         </marquee>
@@ -78,7 +78,8 @@
         <div class="shadow">
             <p style="text-align: right;"><img src="imgs/x.png" alt="" class="close"></p>
             <img src="imgs/code.png" alt="" class="code">
-            <p>微信扫码，快捷沟通</p>
+            <p id='pc'>微信扫码，快捷沟通</p>
+            <div id="move" class="button"><a href="imgs/code.png">点击下载图片</a></div>
         </div>
     </div>
     <div class="li">2</div>
@@ -102,8 +103,18 @@
     })
     $('.close').each(function(i,e){
         $(this).click(function(){
-         $('.shadow').eq(i).hide()
-     })
+           $('.shadow').eq(i).hide()
+       })
     })
+    isPc();
+    function isPc(){
+        if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+            console.log('move')
+            $('#pc').hide()
+        } else {
+            console.log('pc')
+            $('#move').hide()
+        }
+    }
 </script>
 </html>
