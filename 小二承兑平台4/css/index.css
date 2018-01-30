@@ -280,16 +280,22 @@ input, select {
     text-align: center;
     display: none;
 }
-.li .shadow img{
+.li .shadow .code{
     width: 200px;
     height: 200px;
-    margin-top: 20px;
+    margin-top: 10px;
+}
+.li .shadow .close{
+    margin-top: 10px;
+    width: 12px;
+    height: 12px;
 }
 .li .shadow p{
     font-size: 14px;
     color: #FDFDFD;
     margin-top: 10px;
 }
+
 .li .recharge{
  font-size: 18px;
  color: #666;

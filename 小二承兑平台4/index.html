@@ -52,8 +52,8 @@
     </div>
     <div class="marquee">
         <div class="container flex" style="background-color: #FECE68;">
-         <!-- <span><img src="imgs/icon1.png" alt="" style="width: 12px;height:12px;"></span> -->
-         <marquee behaviro="alternate">
+           <!-- <span><img src="imgs/icon1.png" alt="" style="width: 12px;height:12px;"></span> -->
+           <marquee behaviro="alternate">
             <p>     
             小二承兑服务，为用户提供可靠的币币交易兑换服务，专业提供:BitCNY/BitUSD和法币的互相兑换。</p>
         </marquee>
@@ -76,8 +76,8 @@
             </div>
         </div>
         <div class="shadow">
-            <p class="close">x</p>
-            <img src="imgs/code.png" alt="">
+            <p style="text-align: right;"><img src="imgs/x.png" alt="" class="close"></p>
+            <img src="imgs/code.png" alt="" class="code">
             <p>微信扫码，快捷沟通</p>
         </div>
     </div>
@@ -102,8 +102,8 @@
     })
     $('.close').each(function(i,e){
         $(this).click(function(){
-           $('.shadow').eq(i).hide()
-       })
+         $('.shadow').eq(i).hide()
+     })
     })
 </script>
 </html>
